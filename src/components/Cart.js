@@ -11,15 +11,13 @@ const Cart = (props) => {
         <div>
             {selectedItems.map(item =>{
                 return (
-                    <div>
+                    <div key={item.id}>
                         <Item 
                         name={item.name}
                         price={item.price}
-                        key={item.id}
                         />
                         <h2>Total price: {item.price*item.amount}</h2>
                     </div>
-                    
                 )
             })}
         </div>

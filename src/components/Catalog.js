@@ -5,8 +5,8 @@ const Catalog = (props) => {
 
     const {items, pickItem} = props;
 
-    const handleSelect = (itemName) =>{
-        pickItem(itemName);
+    const handleSelect = (itemSelected) =>{
+        pickItem(itemSelected);
     }
 
     return(

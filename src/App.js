@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useEffect, useState} from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import uniqid from 'uniqid';
 import Nav from "./components/Nav";
@@ -15,15 +15,20 @@ const App = () => {
     {name: 'Cuatro', price: 400, id: uniqid(), amount: 0},
   ]);
 
-  const addSelected = (itemName) => {
+  const addSelected = (itemSelected) => {
+    const {name, amount} = itemSelected;
     const selectedItems = items.map(item =>{
-      if(item.name === itemName) {
-        return {...item, amount: item.amount + 1}
+      if(item.name === name) {
+        return {...item, amount: item.amount + amount}
       }
       return item;
     })
     setItems(selectedItems);
   }
+
+  // useEffect(() => {
+  //   console.log(items);
+  // })
 
   return (
     <BrowserRouter>
