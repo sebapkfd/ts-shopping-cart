@@ -1,16 +1,17 @@
 import React from 'react';
+import ItemPage from './ItemPage';
 import { Link } from 'react-router-dom';
 
 const Item = (props) => {
-    const {item, onSelect} = props;
-    console.log(item);
+    const {item} = props;
     return (
         <div>
             <Link to={{
                 pathname: `/catalog/${item.id}`,
-                state: { itemName: item.name}
+                ItemName: { itemName: item.name}
             }}>
-                <h1>{item.name}</h1>
+                <h1>Name: {item.name}</h1>
+                <h1>Price: {item.price}</h1>
             </Link>
         </div>
     )

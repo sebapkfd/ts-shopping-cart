@@ -3,11 +3,7 @@ import Item from './Item';
 
 const Catalog = (props) => {
 
-    const {items, pickItem} = props;
-
-    const handleSelect = (itemSelected) =>{
-        pickItem(itemSelected);
-    }
+    const {items} = props;
 
     return(
         <div>
@@ -15,7 +11,6 @@ const Catalog = (props) => {
                 return (
                     <Item 
                         item={item}
-                        onSelect={handleSelect}
                         key={item.id}
                     />
                 )

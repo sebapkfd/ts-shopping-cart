@@ -37,13 +37,13 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/catalog">
-          <Catalog items={items} pickItem={addSelected}/>
+          <Catalog items={items}/>
         </Route>
         <Route exact path="/cart">
           <Cart items={items}/>
         </Route>
-        <Route exact path="/catalog/:id">
-          <ItemPage/>
+        <Route exact path="/catalog/:id" >
+          <ItemPage items={items} onSelect={addSelected}/>
         </Route>
       </Switch>
     </BrowserRouter>
