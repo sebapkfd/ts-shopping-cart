@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Home from "./components/Home";
 import Catalog from "./components/Catalog";
 import Cart from "./components/Cart";
+import ItemPage from "./components/ItemPage";
 
 const App = () => {
 
@@ -40,6 +41,9 @@ const App = () => {
         </Route>
         <Route exact path="/cart">
           <Cart items={items}/>
+        </Route>
+        <Route exact path="/catalog/:id">
+          <ItemPage/>
         </Route>
       </Switch>
     </BrowserRouter>

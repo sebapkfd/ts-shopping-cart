@@ -14,8 +14,7 @@ const Catalog = (props) => {
             {items.map(item =>{
                 return (
                     <Item 
-                        name={item.name}
-                        price={item.price}
+                        item={item}
                         onSelect={handleSelect}
                         key={item.id}
                     />
