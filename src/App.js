@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, {useState} from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import uniqid from 'uniqid';
 import Nav from "./components/Nav";
@@ -27,20 +27,25 @@ const App = () => {
     setItems(selectedItems);
   }
 
-  // useEffect(() => {
-  //   console.log(items);
-  // })
+  const cleanCart = () =>{
+    const defaultItems = items.map(item => {
+      return {...item, amount: 0}
+    })
+    setItems(defaultItems);
+  }
 
   return (
     <BrowserRouter>
       <Nav/>
       <Switch>
-        <Route exact path="/" component={Home}/>
+        <Route exact path="/">
+          <Home/>
+        </Route>
         <Route exact path="/catalog">
           <Catalog items={items}/>
         </Route>
         <Route exact path="/cart">
-          <Cart items={items}/>
+          <Cart items={items} onClean={cleanCart}/>
         </Route>
         <Route exact path="/catalog/:id" >
           <ItemPage items={items} onSelect={addSelected}/>

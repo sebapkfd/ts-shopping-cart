@@ -5,7 +5,6 @@ const ItemPage = (props) => {
     const {items, onSelect} = props;
     const {id} = useParams();
     const selectedItem = items.filter(item => item.id === id)[0];
-    console.log(selectedItem.name);
     
     const clickItem = (e) => {
         e.preventDefault();
