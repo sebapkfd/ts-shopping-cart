@@ -5,6 +5,8 @@ const Cart = (props) => {
 
     const {items, onClean} = props;
     const selectedItems = items.filter( item => item.amount > 0);
+    const prices = items.map(item => item.price*item.amount);
+    const totalToPay = prices.reduce((acc, cv) => acc + cv);
 
     const cleanItems = (e) => {
         e.preventDefault();
@@ -14,6 +16,7 @@ const Cart = (props) => {
     return(
         <div>
             <button onClick={cleanItems}>Clean</button>
+            <h1>Total to pay: {totalToPay}</h1>
             {selectedItems.map(item =>{
                 return (
                     <div key={item.id}>
