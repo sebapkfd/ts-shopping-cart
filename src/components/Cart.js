@@ -13,8 +13,15 @@ const Cart = (props) => {
         onClean();
     }
 
+    const payItems = () => {
+        if(totalToPay > 0){
+            alert('Thanks for your purchase!');
+        }
+    }
+
     return(
         <div>
+            <button onClick={payItems}>Pay</button>
             <button onClick={cleanItems}>Clean</button>
             <h1>Total to pay: {totalToPay}</h1>
             {selectedItems.map(item =>{
