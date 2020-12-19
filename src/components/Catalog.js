@@ -9,7 +9,7 @@ const Catalog = (props) => {
 
     return(
         <div>
-            <h1>In cart: {amountInCart}</h1>
+            <h2>In cart: {amountInCart}</h2>
             {items.map(item =>{
                 return (
                     <Item 

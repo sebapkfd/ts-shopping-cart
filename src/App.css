@@ -1,9 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.NavDiv {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+h1 {
+    color: white;
+    margin: 0;
+}
+.ItemPage {
+    display: flex;
+    flex-direction: row;
 }
 
 .ItemImgDiv {
     height: 60%;
     width: 60%;
 }
+
+.ItemCardDiv {
+    height: 30%;
+    width: 30%;
+}
+
+.ItemCardDiv {
+
+}
+
+

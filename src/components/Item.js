@@ -5,10 +5,15 @@ const Item = (props) => {
     const {item} = props;
     return (
         <div>
-            <Link to={`/catalog/${item.id}`}>
-                <h1>Name: {item.name}</h1>
-                <h1>Price: {item.price}</h1>
-            </Link>
+            <div className="ItemCardDiv">
+                <img src={`${item.imgSrc}`} alt={`${item.name}`} />
+            </div>
+            <div className="ItemCardInfo">
+                <Link to={`/catalog/${item.id}`}>
+                    <h3>Name: {item.name}</h3>
+                    <h3>Price: {item.price}</h3>
+                </Link>
+            </div>
         </div>
     )
 }

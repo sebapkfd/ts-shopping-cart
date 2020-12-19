@@ -16,16 +16,19 @@ const ItemPage = (props) => {
     }
 
     return (
-        <div>
+        <div className='ItemPage'>
             <div className="ItemImgDiv">
                 <img src={`${selectedItem.imgSrc}`} alt={`${selectedItem.name}`} />
             </div>
-            <h1>Name: {selectedItem.name}</h1>
-            <h1>Price: {selectedItem.price}</h1>
-            <form onSubmit={clickItem}>
-                <input type="number" name="amount" defaultValue="1" min="1"></input>
-                <button type="submit">Add to Cart</button>
-            </form>
+            <div className="IteminfoDiv">
+                <h2>Name: {selectedItem.name}</h2>
+                <h2>Price: {selectedItem.price}</h2>
+                <form onSubmit={clickItem}>
+                    <input type="number" name="amount" defaultValue="1" min="1"></input>
+                    <button type="submit">Add to Cart</button>
+                </form>
+            </div>
+            
         </div>
     )
 }
