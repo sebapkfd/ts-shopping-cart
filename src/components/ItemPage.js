@@ -17,7 +17,9 @@ const ItemPage = (props) => {
 
     return (
         <div>
-            {/* <img src={photo} alt="xd"/> */}
+            <div className="ItemImgDiv">
+                <img src={`${selectedItem.imgSrc}`} alt={`${selectedItem.name}`} />
+            </div>
             <h1>Name: {selectedItem.name}</h1>
             <h1>Price: {selectedItem.price}</h1>
             <form onSubmit={clickItem}>
