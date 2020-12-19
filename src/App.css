@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 img {
@@ -42,6 +43,7 @@ h1 {
     color: white;
     margin: 0;
 }
+
 .ItemPage {
     display: flex;
     flex-direction: row;
@@ -57,8 +59,16 @@ h1 {
     width: 30%;
 }
 
-.ItemCardDiv {
-
+.HomeButton {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    transition: 0.5s;
 }
 
-
+.HomeButton:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
