@@ -6,6 +6,7 @@ import Catalog from "./components/Catalog";
 import Cart from "./components/Cart";
 import ItemPage from "./components/ItemPage";
 import listofItems from "./components/listofItems";
+import "./App.css"
 
 const App = () => {
   const [items, setItems] = useState(listofItems);
