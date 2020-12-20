@@ -8,6 +8,9 @@ import Blade from '../assets/Razer-Blade.jpg';
 import GE from '../assets/MSI-GE66.jpg';
 import Predator from '../assets/Acer-Predator.jpg';
 import Ultra from '../assets/LG-Ultra.jpg';
+import Nitro from '../assets/Acer-Nitro.jpg';
+import VivoBook from '../assets/Asus-VivoBook.jpg';
+import ZenBook from '../assets/Asus-ZenBook.jpg';
 
 const listofItems = [
     {name: 'Acer Aspire 5',
@@ -63,6 +66,24 @@ const listofItems = [
     id: uniqid(),
     amount: 0,
     imgSrc: Ultra
+    },
+    {name: 'Acer Nitro 5',
+    price: 718,
+    id: uniqid(),
+    amount: 0,
+    imgSrc: Nitro
+    },
+    {name: 'Asus VivoBook',
+    price: 639,
+    id: uniqid(),
+    amount: 0,
+    imgSrc: VivoBook
+    },
+    {name: 'Asus ZenBook',
+    price: 1999,
+    id: uniqid(),
+    amount: 0,
+    imgSrc: ZenBook
     }
 ]
 export default listofItems;
