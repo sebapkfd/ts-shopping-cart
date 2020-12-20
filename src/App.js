@@ -31,7 +31,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Nav/>
+      <Nav items={items}/>
       <Switch>
         <Route exact path="/">
           <Home/>

@@ -2,14 +2,10 @@ import React from 'react';
 import Item from './Item';
 
 const Catalog = (props) => {
-
     const {items} = props;
-    const amounts = items.map(item => item.amount);
-    const amountInCart = amounts.reduce((acc, cv) => acc + cv);
 
     return(
-        <div>
-            <h2>In cart: {amountInCart}</h2>
+        <div className="CatalogDiv">
             {items.map(item =>{
                 return (
                     <Item 

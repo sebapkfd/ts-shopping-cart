@@ -55,8 +55,16 @@ h1 {
 }
 
 .ItemCardDiv {
-    height: 30%;
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ItemCardImg {
+    height: 200px;
+    width: 80%;
+    margin-bottom: 5px;
 }
 
 .HomeButton {
@@ -71,4 +79,26 @@ h1 {
 .HomeButton:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+}
+
+.Options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#AmountInCart {
+    color: white;
+}
+
+.CatalogDiv {
+    width: 100%;
+    display: grid;
+    padding: 15px 20px;
+    margin-top: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
+    grid-auto-rows: minmax(300px, auto);
+    justify-content: space-around;
+    column-gap: 10px;
+    row-gap: 15px;
 }
