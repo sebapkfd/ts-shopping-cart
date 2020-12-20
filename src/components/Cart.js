@@ -13,28 +13,33 @@ const Cart = (props) => {
         onClean();
     }
 
-    const payItems = () => {
+    const payItems = (e) => {
         if(totalToPay > 0){
             alert('Thanks for your purchase!');
+            cleanItems(e);
         }
     }
 
     return(
-        <div>
-            <button onClick={payItems}>Pay</button>
-            <button onClick={cleanItems}>Clean</button>
-            <h2>Total to pay: {totalToPay}</h2>
-            {selectedItems.map(item =>{
-                return (
-                    <div key={item.id}>
-                        <Item 
-                            item={item}
-                        />
-                        <h2>Amount: {item.amount}</h2>
-                        <h2>Total price: {item.price*item.amount}</h2>
-                    </div>
-                )
-            })}
+        <div className="CartDiv">
+            <div className="CartOptions">
+                <h3>Total to pay: ${totalToPay}</h3>
+                <button onClick={payItems} className="HomeButton">Pay</button>
+                <button onClick={cleanItems} className="HomeButton">Clean</button>
+            </div>
+            <div className="CartItems">
+                {selectedItems.map(item =>{
+                    return (
+                        <div key={item.id} className="CartItem">
+                            <Item 
+                                item={item}
+                            />
+                            <h3>Amount: {item.amount}</h3>
+                            <h3>Total price: ${item.price*item.amount}</h3>
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }

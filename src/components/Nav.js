@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CartIcon from "../assets/cart-icon.png";
 
 const Nav = (props) =>{
 
@@ -21,7 +22,8 @@ const Nav = (props) =>{
                         <li>Catalog</li>
                     </Link>
                 </ul>
-                <p id='AmountInCart'>In cart: {amountInCart}</p>
+                <img src={CartIcon} alt="Cart"/>
+                <p id='AmountInCart'>{amountInCart}</p>
             </div>
         </div>
     )
