@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import CartIcon from "../assets/cart-icon.png";
 
 const Nav = (props) =>{
-
-    const {items} = props;
-    const amounts = items.map(item => item.amount);
-    const amountInCart = amounts.reduce((acc, cv) => acc + cv);
+    const {amount} = props;
 
     return (
         <div className="NavDiv">
@@ -26,7 +23,7 @@ const Nav = (props) =>{
                 </ul>
                 <div id="CartIconDiv">
                     <img src={CartIcon} alt="Cart"/>
-                    <p id='AmountInCart'>{amountInCart}</p>
+                    <p id='AmountInCart'>{amount}</p>
                 </div>
             </div>
         </div>

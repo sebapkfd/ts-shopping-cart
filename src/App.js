@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
@@ -10,6 +10,7 @@ import "./App.css"
 
 const App = () => {
   const [items, setItems] = useState(listofItems);
+  const [totalAmount, setTotalAmount] = useState(0);
   
   const addSelected = (itemSelected) => {
     const {name, amount} = itemSelected;
@@ -29,9 +30,15 @@ const App = () => {
     setItems(defaultItems);
   }
 
+  useEffect(() => {
+    const amounts = items.map(item => item.amount);
+    const amountInCart = amounts.reduce((acc, cv) => acc + cv);
+    setTotalAmount(amountInCart);
+  }, [items, totalAmount])
+
   return (
     <BrowserRouter>
-      <Nav items={items}/>
+      <Nav amount={totalAmount}/>
       <Switch>
         <Route exact path="/catalog">
           <Catalog items={items}/>
