@@ -33,9 +33,6 @@ const App = () => {
     <BrowserRouter>
       <Nav items={items}/>
       <Switch>
-        <Route exact path="/">
-          <Home/>
-        </Route>
         <Route exact path="/catalog">
           <Catalog items={items}/>
         </Route>
@@ -44,6 +41,9 @@ const App = () => {
         </Route>
         <Route exact path="/catalog/:id" >
           <ItemPage items={items} onSelect={addSelected}/>
+        </Route>
+        <Route path="/">
+          <Home/>
         </Route>
       </Switch>
     </BrowserRouter>
