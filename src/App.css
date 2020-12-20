@@ -14,6 +14,10 @@ a{
     text-decoration: none;
 }
 
+input {
+    height: 30px;
+}
+
 .NavDiv {
     background-color: black;
     display: flex;
@@ -44,14 +48,9 @@ h1 {
     margin: 0;
 }
 
-.ItemPage {
-    display: flex;
-    flex-direction: column;
-}
-
 .ItemImgDiv {
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 90%;
     margin: 15px;
     display: flex;
     flex-direction: row;
@@ -97,7 +96,7 @@ h1 {
     margin-left: 8px;
 }
 
-.CatalogDiv, .CartItems {
+.CatalogDiv, .CartItems, .ItemPage {
     width: 100%;
     display: grid;
     padding-top: 15px;
@@ -107,6 +106,11 @@ h1 {
     justify-content: space-around;
     column-gap: 10px;
     row-gap: 15px;
+}
+
+.ItemPage {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 600px));
+    grid-auto-rows: minmax(200px, 350px);
 }
 
 .CartOptions {
@@ -124,5 +128,12 @@ h1 {
 #CartIconDiv {
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+
+.ItemInfoDiv {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
 }

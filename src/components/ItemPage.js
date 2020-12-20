@@ -20,7 +20,7 @@ const ItemPage = (props) => {
             <div className="ItemImgDiv">
                 <img src={`${selectedItem.imgSrc}`} alt={`${selectedItem.name}`} />
             </div>
-            <div className="IteminfoDiv">
+            <div className="ItemInfoDiv">
                 <h3>Name: {selectedItem.name}</h3>
                 <h3>Price: ${selectedItem.price}</h3>
                 <form onSubmit={clickItem}>
