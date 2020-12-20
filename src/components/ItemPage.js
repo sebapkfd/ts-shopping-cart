@@ -15,6 +15,8 @@ const ItemPage = (props) => {
         onSelect(pickedItem);
     }
 
+    const defaultAmount = (selectedItem.amount === 0) ? 1: selectedItem.amount;
+
     return (
         <div className='ItemPage'>
             <div className="ItemImgDiv">
@@ -24,7 +26,7 @@ const ItemPage = (props) => {
                 <h3>Name: {selectedItem.name}</h3>
                 <h3>Price: ${selectedItem.price}</h3>
                 <form onSubmit={clickItem}>
-                    <input type="number" name="amount" defaultValue="1" min="1"></input>
+                    <input type="number" name="amount" defaultValue={defaultAmount} min="1"></input>
                     <button type="submit" className="HomeButton">Add to Cart</button>
                 </form>
             </div>

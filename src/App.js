@@ -16,7 +16,7 @@ const App = () => {
     const {name, amount} = itemSelected;
     const selectedItems = items.map(item =>{
       if(item.name === name) {
-        return {...item, amount: item.amount + amount}
+        return {...item, amount: amount}
       }
       return item;
     })
