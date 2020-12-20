@@ -17,7 +17,7 @@ const listofItems = [
     imgSrc: Aspire
     },
     {name: 'Asus TUF',
-    price: 749,
+    price: 867,
     id: uniqid(),
     amount: 0,
     imgSrc: TUF
