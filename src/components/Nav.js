@@ -10,9 +10,11 @@ const Nav = (props) =>{
 
     return (
         <div className="NavDiv">
-            <Link to='/'>
-                <h1>Home</h1>
-            </Link>
+            <div>
+                <Link to='/'>
+                    <h1>Home</h1>
+                </Link>
+            </div>
             <div className="Options">
                 <ul>
                     <Link to='/cart'>
@@ -22,8 +24,10 @@ const Nav = (props) =>{
                         <li>Catalog</li>
                     </Link>
                 </ul>
-                <img src={CartIcon} alt="Cart"/>
-                <p id='AmountInCart'>{amountInCart}</p>
+                <div id="CartIconDiv">
+                    <img src={CartIcon} alt="Cart"/>
+                    <p id='AmountInCart'>{amountInCart}</p>
+                </div>
             </div>
         </div>
     )
