@@ -23,6 +23,8 @@ const ItemPage = (props) => {
                 <img src={`${selectedItem.imgSrc}`} alt={`${selectedItem.name}`} />
             </div>
             <div className="ItemInfoDiv">
+                <h2>Computer's Specs</h2>
+                <br></br>
                 <h3>Name: {selectedItem.name}</h3>
                 <h4>Processor: {selectedItem.cpu}</h4>
                 <h4>RAM: {selectedItem.ram}</h4>
