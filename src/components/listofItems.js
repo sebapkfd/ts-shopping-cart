@@ -17,73 +17,109 @@ const listofItems = [
     price: 668,
     id: uniqid(),
     amount: 0,
-    imgSrc: Aspire
+    imgSrc: Aspire,
+    cpu: 'i5-1035G1',
+    ram: '8GB DDR4',
+    storage: '256GB SSD'
     },
     {name: 'Asus TUF',
     price: 867,
     id: uniqid(),
     amount: 0,
-    imgSrc: TUF
+    imgSrc: TUF,
+    cpu: 'i5-10300H',
+    ram: '16GB DDR4',
+    storage: '1TB SSD'
     },
     {name: 'MSI GL65',
     price: 1399,
     id: uniqid(),
     amount: 0,
-    imgSrc: GL
+    imgSrc: GL,
+    cpu: 'i7-10750H',
+    ram: '16GB DDR4',
+    storage: '512GB SSD'
     },
     {name: 'Asus ROG',
     price: 1499,
     id: uniqid(),
     amount: 0,
-    imgSrc: ROG
+    imgSrc: ROG,
+    cpu: 'i7-10750H',
+    ram: '16GB DDR4',
+    storage: '1TB SSD'
     },
     {name: 'MSI Creator 15',
     price: 1879,
     id: uniqid(),
     amount: 0,
-    imgSrc: Creator
+    imgSrc: Creator,
+    cpu: 'i7-10875H',
+    ram: '32GB DDR4',
+    storage: '1TB SSD'
     },
     {name: 'Razer Blade 13',
     price: 1699,
     id: uniqid(),
     amount: 0,
-    imgSrc: Blade
+    imgSrc: Blade,
+    cpu: 'i7-1165G7',
+    ram: '16GB DDR4',
+    storage: '512GB SSD'
     },
     {name: 'MSI GE66',
     price: 2649,
     id: uniqid(),
     amount: 0,
-    imgSrc: GE
+    imgSrc: GE,
+    cpu: 'i7-10875H',
+    ram: '32GB DDR4',
+    storage: '1TB SSD'
     },
     {name: 'Acer Predator',
     price: 1629,
     id: uniqid(),
     amount: 0,
-    imgSrc: Predator
+    imgSrc: Predator,
+    cpu: 'i7-9750H',
+    ram: '16GB DDR4',
+    storage: '512GB SSD'
     },
     {name: 'LG Ultra',
     price: 1279,
     id: uniqid(),
     amount: 0,
-    imgSrc: Ultra
+    imgSrc: Ultra,
+    cpu: 'i7-10510U',
+    ram: '16GB DDR4',
+    storage: '512GB SSD'
     },
     {name: 'Acer Nitro 5',
-    price: 718,
+    price: 999,
     id: uniqid(),
     amount: 0,
-    imgSrc: Nitro
+    imgSrc: Nitro,
+    cpu: 'i5-9300H',
+    ram: '8GB DDR4',
+    storage: '256GB SSD'
     },
     {name: 'Asus VivoBook',
     price: 639,
     id: uniqid(),
     amount: 0,
-    imgSrc: VivoBook
+    imgSrc: VivoBook,
+    cpu: 'i5-1035G1',
+    ram: '8GB DDR4',
+    storage: '512 SSD'
     },
     {name: 'Asus ZenBook',
     price: 1999,
     id: uniqid(),
     amount: 0,
-    imgSrc: ZenBook
+    imgSrc: ZenBook,
+    cpu: 'i7-9750H',
+    ram: '16GB DDR4',
+    storage: '1TB SSD'
     }
 ]
 export default listofItems;

@@ -23,7 +23,7 @@ const Cart = (props) => {
     return(
         <div className="CartDiv">
             <div className="CartOptions">
-                <h3>Total to pay: ${totalToPay}</h3>
+                <h3>Total to pay: US$ {totalToPay}</h3>
                 <button onClick={payItems}>Pay</button>
                 <button onClick={cleanItems}>Clean</button>
             </div>
@@ -35,7 +35,7 @@ const Cart = (props) => {
                                 item={item}
                             />
                             <h3>Amount: {item.amount}</h3>
-                            <h3>Total price: ${item.price*item.amount}</h3>
+                            <h3>Total price: US$ {item.price*item.amount}</h3>
                         </div>
                     )
                 })}
