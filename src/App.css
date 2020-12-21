@@ -49,8 +49,6 @@ h1 {
 }
 
 .HomeDiv {
-    background-image: url("./assets/Grey.jpg");
-    background-size: 100%;
     height: calc(100vh - 46px);
 }
 
