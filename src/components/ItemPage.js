@@ -27,7 +27,7 @@ const ItemPage = (props) => {
                 <h3>Price: ${selectedItem.price}</h3>
                 <form onSubmit={clickItem}>
                     <input type="number" name="amount" defaultValue={defaultAmount} min="1"></input>
-                    <button type="submit" className="HomeButton">Add to Cart</button>
+                    <button type="submit">Add to Cart</button>
                 </form>
             </div>
         </div>

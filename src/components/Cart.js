@@ -24,8 +24,8 @@ const Cart = (props) => {
         <div className="CartDiv">
             <div className="CartOptions">
                 <h3>Total to pay: ${totalToPay}</h3>
-                <button onClick={payItems} className="HomeButton">Pay</button>
-                <button onClick={cleanItems} className="HomeButton">Clean</button>
+                <button onClick={payItems}>Pay</button>
+                <button onClick={cleanItems}>Clean</button>
             </div>
             <div className="CartItems">
                 {selectedItems.map(item =>{
