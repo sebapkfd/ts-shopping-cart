@@ -48,6 +48,12 @@ h1 {
     margin: 0;
 }
 
+.HomeDiv {
+    background-image: url("./assets/Grey.jpg");
+    background-size: 100%;
+    height: calc(100vh - 46px);
+}
+
 .ItemImgDiv {
     height: 90%;
     width: 90%;
@@ -81,7 +87,7 @@ h1 {
 }
 
 .HomeButton:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     color: rgb(0, 0, 0);
 }
 
