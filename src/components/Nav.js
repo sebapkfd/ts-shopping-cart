@@ -14,10 +14,10 @@ const Nav = (props) =>{
             </div>
             <div className="Options">
                 <ul>
-                    <Link to='/cart'>
+                    <Link to='/shopping-cart/cart'>
                         <li>Cart</li>
                     </Link>
-                    <Link to='/catalog'>
+                    <Link to='/shopping-cart/catalog'>
                         <li>Catalog</li>
                     </Link>
                 </ul>

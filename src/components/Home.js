@@ -11,7 +11,7 @@ const Home = () => {
                 <h1 className="HomeInfo">for you!</h1>
             </div>
             <div className="HomeButtonsDiv">
-                <Link to='/Catalog'>
+                <Link to='/shopping-cart/catalog'>
                     <button className="HomeButton">Start Shopping</button>
                 </Link>
                 <a href="https://github.com/sebapkfd/shopping-cart" target="_blank" rel="noreferrer">
