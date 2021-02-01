@@ -8,7 +8,7 @@ const Nav = (props) =>{
     return (
         <div className="NavDiv">
             <div>
-                <Link to='/'>
+                <Link to='/shopping-cart'>
                     <h1>Home</h1>
                 </Link>
             </div>

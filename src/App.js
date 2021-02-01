@@ -49,7 +49,7 @@ const App = () => {
         <Route exact path="/catalog/:id" >
           <ItemPage items={items} onSelect={addSelected}/>
         </Route>
-        <Route path="/">
+        <Route path="/shopping-cart">
           <Home/>
         </Route>
       </Switch>
