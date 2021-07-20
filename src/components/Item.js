@@ -5,11 +5,11 @@ const Item = (props) => {
     const {item} = props;
     return (
         <Link to={`/shopping-cart/catalog/${item.id}`}>
-            <div className="ItemCardDiv">
-                <div className="ItemCardImg">
+            <div className="item-card">
+                <div className="item-card__img">
                     <img src={`${item.imgSrc}`} alt={`${item.name}`} />
                 </div>
-                <div className="ItemCardInfo">
+                <div className="item-card__info">
                     <h3>{item.name}</h3>
                     <h3>Price: US$ {item.price}</h3>
                 </div>

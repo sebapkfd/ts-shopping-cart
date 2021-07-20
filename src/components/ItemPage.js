@@ -18,11 +18,11 @@ const ItemPage = (props) => {
     const defaultAmount = (selectedItem.amount === 0) ? 1: selectedItem.amount;
 
     return (
-        <div className='ItemPage'>
-            <div className="ItemImgDiv">
+        <div className='item-page'>
+            <div className="item-page__img">
                 <img src={`${selectedItem.imgSrc}`} alt={`${selectedItem.name}`} />
             </div>
-            <div className="ItemInfoDiv">
+            <div className="item-page__info">
                 <h2>Computer's Specs</h2>
                 <br></br>
                 <h3>Name: {selectedItem.name}</h3>

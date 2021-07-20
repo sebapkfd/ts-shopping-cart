@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     
     return(
-        <div className="HomeDiv">
-            <div className="HomeInfoDiv">
-                <h1 className="HomeInfo">Find the right</h1>
-                <h1 className="HomeInfo">Computer</h1>
-                <h1 className="HomeInfo">for you!</h1>
+        <div className="home">
+            <div className="home-info">
+                <h1>Find the right</h1>
+                <h1>Computer</h1>
+                <h1>for you!</h1>
             </div>
-            <div className="HomeButtonsDiv">
+            <div className="home__buttons">
                 <Link to='/shopping-cart/catalog'>
                     <button className="HomeButton">Start Shopping</button>
                 </Link>

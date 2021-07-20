@@ -6,13 +6,13 @@ const Nav = (props) =>{
     const {amount} = props;
 
     return (
-        <div className="NavDiv">
+        <div className="navbar">
             <div>
                 <Link to='/shopping-cart'>
                     <h1>Home</h1>
                 </Link>
             </div>
-            <div className="Options">
+            <div className="navbar__options">
                 <ul>
                     <Link to='/shopping-cart/cart'>
                         <li>Cart</li>
@@ -21,9 +21,9 @@ const Nav = (props) =>{
                         <li>Catalog</li>
                     </Link>
                 </ul>
-                <div id="CartIconDiv">
+                <div id="cart-icon">
                     <img src={CartIcon} alt="Cart"/>
-                    <p id='AmountInCart'>{amount}</p>
+                    <p id='cart-amount'>{amount}</p>
                 </div>
             </div>
         </div>

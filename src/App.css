@@ -18,12 +18,12 @@ input {
     height: 30px;
 }
 
-.NavDiv {
+.navbar {
     background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 30px;
 }
 
 ul {
@@ -48,7 +48,7 @@ h1 {
     margin: 0;
 }
 
-.HomeDiv {
+.home {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -56,7 +56,7 @@ h1 {
     height: calc(100vh - 46px);
 }
 
-.HomeInfoDiv {
+.home-info {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -64,11 +64,11 @@ h1 {
     margin-bottom: 15vh;
 }
 
-.HomeInfo {
+.home-info h1 {
     color: black;
 }
 
-.ItemImgDiv {
+.item__img {
     height: 90%;
     width: 90%;
     margin: 15px;
@@ -77,7 +77,7 @@ h1 {
     justify-content: center;
 }
 
-.ItemCardDiv {
+.item-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,11 +89,11 @@ h1 {
     border-radius: 15px;
 }
 
-.ItemCardDiv:hover {
+.item-card:hover {
     border-color: rgb(219, 219, 219);
 }
 
-.ItemCardImg {
+.item-card__img {
     height: 200px;
     width: 80%;
     margin-bottom: 5px;
@@ -113,18 +113,18 @@ button:hover {
     color: rgb(0, 0, 0);
 }
 
-.Options {
+.navbar__options {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#AmountInCart {
+#cart-amount {
     color: white;
     margin-left: 8px;
 }
 
-.CatalogDiv, .CartItems, .ItemPage {
+.catalog, .cart__items, .item-page {
     width: 100%;
     display: grid;
     padding-top: 15px;
@@ -136,30 +136,30 @@ button:hover {
     row-gap: 55px;
 }
 
-.ItemPage {
+.item-page {
     grid-template-columns: repeat(auto-fit, minmax(200px, 600px));
     grid-auto-rows: minmax(200px, 350px);
 }
 
-.CartOptions {
+.cart__options {
     display: flex;
     align-items: center;
     padding-left: 5%;
 }
 
-.CartItem {
+.cart-item {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#CartIconDiv {
+#cart-icon {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.ItemInfoDiv {
+.item-page__info {
     display: flex;
     flex-direction: column;
     justify-content: center;

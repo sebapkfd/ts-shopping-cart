@@ -5,7 +5,7 @@ const Catalog = (props) => {
     const {items} = props;
 
     return(
-        <div className="CatalogDiv">
+        <div className="catalog">
             {items.map(item =>{
                 return (
                     <Item 

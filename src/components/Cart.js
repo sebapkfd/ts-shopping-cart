@@ -2,7 +2,6 @@ import React from 'react';
 import Item from './Item';
 
 const Cart = (props) => {
-
     const {items, onClean} = props;
     const selectedItems = items.filter( item => item.amount > 0);
     const prices = items.map(item => item.price*item.amount);
@@ -21,19 +20,17 @@ const Cart = (props) => {
     }
 
     return(
-        <div className="CartDiv">
-            <div className="CartOptions">
+        <div className="cart">
+            <div className="cart__options">
                 <h3>Total to pay: US$ {totalToPay}</h3>
                 <button onClick={payItems}>Pay</button>
                 <button onClick={cleanItems}>Clean</button>
             </div>
-            <div className="CartItems">
+            <div className="cart__items">
                 {selectedItems.map(item =>{
                     return (
-                        <div key={item.id} className="CartItem">
-                            <Item 
-                                item={item}
-                            />
+                        <div key={item.id} className="cart-item">
+                            <Item item={item}/>
                             <h3>Amount: {item.amount}</h3>
                             <h3>Total price: US$ {item.price*item.amount}</h3>
                         </div>
