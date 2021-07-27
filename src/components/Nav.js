@@ -13,14 +13,12 @@ const Nav = (props) =>{
                 </Link>
             </div>
             <div className="navbar__options">
-                <ul>
-                    <Link to='/shopping-cart/cart'>
-                        <li>Cart</li>
-                    </Link>
-                    <Link to='/shopping-cart/catalog'>
-                        <li>Catalog</li>
-                    </Link>
-                </ul>
+                <Link to='/shopping-cart/catalog'>
+                    <p>Catalog</p>
+                </Link>
+                <Link to='/shopping-cart/cart'>
+                    <p>Cart</p>
+                </Link>
                 <div id="cart-icon">
                     <img src={CartIcon} alt="Cart"/>
                     <p id='cart-amount'>{amount}</p>
