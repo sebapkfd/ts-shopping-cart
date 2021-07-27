@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Nav from "./components/Nav";
+import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Catalog from "./components/Catalog";
 import Cart from "./components/Cart";
@@ -38,7 +38,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Nav amount={totalAmount} />
+      <Navbar amount={totalAmount} />
       <Switch>
         <Route exact path="/shopping-cart/catalog">
           <Catalog items={items} />
