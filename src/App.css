@@ -148,6 +148,10 @@ button:hover {
     grid-auto-rows: minmax(200px, 350px);
 }
 
+.cart {
+    padding-top: 60px;
+}
+
 .cart__options {
     display: flex;
     align-items: center;
