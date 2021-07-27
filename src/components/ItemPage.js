@@ -1,10 +1,14 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
+import { itemAdded } from '../redux/cartSlide';
+import { useDispatch } from 'react-redux';
 
 const ItemPage = (props) => {
     const {items, onSelect} = props;
     const {id} = useParams();
     const selectedItem = items.filter(item => item.id === id)[0];
+
+    const dispatch = useDispatch();
     
     const clickItem = (e) => {
         e.preventDefault();
@@ -13,6 +17,7 @@ const ItemPage = (props) => {
             amount: parseInt(e.target.amount.value)
         }
         onSelect(pickedItem);
+        dispatch(itemAdded(pickedItem));
     }
 
     const defaultAmount = (selectedItem.amount === 0) ? 1: selectedItem.amount;
