@@ -10,7 +10,8 @@ Small project, built for assignment as part of the curriculum for [The Odin Proj
 * HTML
 * Git
 * Npm
-* [Create React App](https://github.com/facebook/create-react-app)
+* React
+* Redux
 
 In the project directory, you can run:
 
