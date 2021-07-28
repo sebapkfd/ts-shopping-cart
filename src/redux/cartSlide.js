@@ -10,7 +10,7 @@ const CartSlice = createSlice({
             state.push(action.payload)
         },
         clearCart(state, action) {
-            state.length = 0
+            state.splice(0, state.length)
         }
     }
 })
