@@ -1,18 +1,16 @@
 import React from 'react';
 import Item from './Item';
 import { clearCart, itemRemoved } from '../redux/cartSlide';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
-const Cart = (props) => {
-    const {items, onClean} = props;
-    const selectedItems = items.filter( item => item.amount > 0);
-    const prices = items.map(item => item.price*item.amount);
-    const totalToPay = prices.reduce((acc, cv) => acc + cv);
+const Cart = () => {
+    const selectedItems = useSelector(state => state.cart)
+    const prices = selectedItems.map(item => item.price*item.amount);
+    const totalToPay = (prices.length > 0) ? prices.reduce((acc, cv) => acc + cv) : 0;
     const dispatch = useDispatch();
 
     const cleanItems = (e) => {
         e.preventDefault();
-        onClean();
         dispatch(clearCart())
 
     }
