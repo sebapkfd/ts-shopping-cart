@@ -1,9 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import CartIcon from "../assets/cart-icon.png";
+import { useSelector } from "react-redux";
 
-const Navbar = (props) =>{
-    const {amount} = props;
+const Navbar = () =>{
+
+    const amount = useSelector(state => state.cart.reduce((acc, cv) => {
+        if (state.length === 0) {
+            return 0
+        }
+        return acc + cv.amount
+    }, 0))
 
     return (
         <div className="navbar">
