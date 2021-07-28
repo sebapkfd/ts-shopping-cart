@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from './Item';
-import { clearCart } from '../redux/cartSlide';
+import { clearCart, itemRemoved } from '../redux/cartSlide';
 import { useDispatch } from 'react-redux';
 
 const Cart = (props) => {
@@ -24,6 +24,10 @@ const Cart = (props) => {
         }
     }
 
+    const removeitem = (id) => {
+        dispatch(itemRemoved({ id }))
+    }
+
     return(
         <div className="cart">
             <div className="cart__options">
@@ -38,6 +42,9 @@ const Cart = (props) => {
                             <Item item={item}/>
                             <h3>Amount: {item.amount}</h3>
                             <h3>Total price: US$ {item.price*item.amount}</h3>
+                            <button onClick={() => removeitem(item.id)}>
+                                Remove
+                            </button>
                         </div>
                     )
                 })}
