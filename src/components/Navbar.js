@@ -4,7 +4,6 @@ import CartIcon from "../assets/cart-icon.png";
 import { useSelector } from "react-redux";
 
 const Navbar = () =>{
-
     const amount = useSelector(state => state.cart.reduce((acc, cv) => {
         if (state.length === 0) {
             return 0

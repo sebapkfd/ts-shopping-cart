@@ -38,16 +38,16 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Navbar amount={totalAmount} />
+      <Navbar />
       <Switch>
         <Route exact path="/shopping-cart/catalog">
-          <Catalog items={items} />
+          <Catalog />
         </Route>
         <Route exact path="/shopping-cart/cart">
           <Cart items={items} onClean={cleanCart}/>
         </Route>
         <Route exact path="/shopping-cart/catalog/:id" >
-          <ItemPage items={items} onSelect={addSelected} />
+          <ItemPage />
         </Route>
         <Route path="/shopping-cart">
           <Home />

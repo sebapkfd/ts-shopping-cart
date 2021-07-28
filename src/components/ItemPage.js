@@ -1,22 +1,16 @@
 import React from 'react';
-import {useParams} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { itemAdded } from '../redux/cartSlide';
 import { useDispatch } from 'react-redux';
+import listofItems from './listofItems';
 
-const ItemPage = (props) => {
-    const {items, onSelect} = props;
+const ItemPage = () => {
     const {id} = useParams();
-    const selectedItem = items.filter(item => item.id === id)[0];
-
+    const selectedItem = listofItems.find(item =>item.id === id);
     const dispatch = useDispatch();
     
     const clickItem = (e) => {
         e.preventDefault();
-        const pickedItem = {
-            name: selectedItem.name,
-            amount: parseInt(e.target.amount.value)
-        }
-        onSelect(pickedItem);
         dispatch(itemAdded({...selectedItem, amount: parseInt(e.target.amount.value)}));
     }
 

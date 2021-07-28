@@ -1,12 +1,12 @@
 import React from 'react';
 import Item from './Item';
+import listofItems from './listofItems';
 
-const Catalog = (props) => {
-    const {items} = props;
+const Catalog = () => {
 
     return(
         <div className="catalog">
-            {items.map(item =>{
+            {listofItems.map(item =>{
                 return (
                     <Item 
                         item={item}
