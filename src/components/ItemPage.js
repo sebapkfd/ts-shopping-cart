@@ -17,7 +17,7 @@ const ItemPage = (props) => {
             amount: parseInt(e.target.amount.value)
         }
         onSelect(pickedItem);
-        dispatch(itemAdded(pickedItem));
+        dispatch(itemAdded({...selectedItem, amount: parseInt(e.target.amount.value)}));
     }
 
     const defaultAmount = (selectedItem.amount === 0) ? 1: selectedItem.amount;
