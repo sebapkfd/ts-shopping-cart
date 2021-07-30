@@ -130,7 +130,7 @@ button:hover {
     color: var(--dark);
 }
 
-.catalog, .cart__items, .item-page {
+.catalog, .cart__items {
     width: 100%;
     display: grid;
     padding-top: 60px;
@@ -143,8 +143,16 @@ button:hover {
 }
 
 .item-page {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 600px));
-    grid-auto-rows: minmax(200px, 350px);
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-page div {
+    width: 480px;
+    margin-bottom: 50px;
+    padding: 0 10px;
 }
 
 .cart {
