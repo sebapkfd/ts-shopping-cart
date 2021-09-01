@@ -130,7 +130,8 @@ button:hover {
     color: var(--dark);
 }
 
-.catalog, .cart__items {
+.catalog,
+.cart__items {
     width: 100%;
     display: grid;
     padding-top: 60px;

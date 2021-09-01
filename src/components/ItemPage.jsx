@@ -2,11 +2,11 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { itemAdded } from '../redux/cartSlide';
 import { useDispatch } from 'react-redux';
-import listofItems from './listofItems';
+import itemsList from '../assets/itemsList';
 
 const ItemPage = () => {
     const {id} = useParams();
-    const selectedItem = listofItems.find(item =>item.id === id);
+    const selectedItem = itemsList.find(item =>item.id === id);
     const dispatch = useDispatch();
     
     const clickItem = (e) => {

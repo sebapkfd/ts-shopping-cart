@@ -1,12 +1,11 @@
 import React from 'react';
 import Item from './Item';
-import listofItems from './listofItems';
+import itemsList from '../assets/itemsList';
 
 const Catalog = () => {
-
     return(
         <div className="catalog">
-            {listofItems.map(item =>{
+            {itemsList.map(item =>{
                 return (
                     <Item 
                         item={item}

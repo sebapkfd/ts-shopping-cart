@@ -12,7 +12,6 @@ const Cart = () => {
     const cleanItems = (e) => {
         e.preventDefault();
         dispatch(clearCart())
-
     }
 
     const payItems = (e) => {

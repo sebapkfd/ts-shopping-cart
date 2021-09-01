@@ -1,17 +1,17 @@
-import Aspire from '../assets/Acer-Aspire5.jpg';
-import TUF from '../assets/Asus-TUF.jpg';
-import GL from '../assets/MSI-GL65.jpg'
-import ROG from '../assets/Asus-ROG.jpg'
-import Creator from '../assets/MSI-Creator15.jpg';
-import Blade from '../assets/Razer-Blade.jpg';
-import GE from '../assets/MSI-GE66.jpg';
-import Predator from '../assets/Acer-Predator.jpg';
-import Ultra from '../assets/LG-Ultra.jpg';
-import Nitro from '../assets/Acer-Nitro.jpg';
-import VivoBook from '../assets/Asus-VivoBook.jpg';
-import ZenBook from '../assets/Asus-ZenBook.jpg';
+import Aspire from './Acer-Aspire5.jpg';
+import TUF from './Asus-TUF.jpg';
+import GL from './MSI-GL65.jpg'
+import ROG from './Asus-ROG.jpg'
+import Creator from './MSI-Creator15.jpg';
+import Blade from './Razer-Blade.jpg';
+import GE from './MSI-GE66.jpg';
+import Predator from './Acer-Predator.jpg';
+import Ultra from './LG-Ultra.jpg';
+import Nitro from './Acer-Nitro.jpg';
+import VivoBook from './Asus-VivoBook.jpg';
+import ZenBook from './Asus-ZenBook.jpg';
 
-const listofItems = [
+const itemsList = [
     {
         name: 'Acer Aspire 5',
         price: 668,
@@ -133,4 +133,4 @@ const listofItems = [
         storage: '1TB SSD'
     }
 ]
-export default listofItems;
+export default itemsList;
