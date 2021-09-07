@@ -3,11 +3,16 @@ import { useParams } from 'react-router-dom';
 import { itemAdded } from '../redux/cartSlide';
 import { useDispatch } from 'react-redux';
 import itemsList from '../assets/itemsList';
+import { Redirect } from 'react-router';
 
 const ItemPage = () => {
     const {id} = useParams();
-    const selectedItem = itemsList.find(item =>item.id === id);
     const dispatch = useDispatch();
+    const selectedItem = itemsList.find(item =>item.id === id);
+
+    if (!selectedItem) {
+        return <Redirect to='/shopping-cart/catalog'/>
+    }
     
     const clickItem = (e) => {
         e.preventDefault();
