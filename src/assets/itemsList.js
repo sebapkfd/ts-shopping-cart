@@ -14,123 +14,160 @@ import ZenBook from './Asus-ZenBook.jpg';
 const itemsList = [
     {
         name: 'Acer Aspire 5',
+        brand: 'Acer',
         price: 668,
         id: '1',
         amount: 0,
         imgSrc: Aspire,
         cpu: 'i5-1035G1',
-        ram: '8GB DDR4',
-        storage: '256GB SSD'
+        ram: '8GB',
+        ramType: 'DDR4',
+        storage: '256GB',
+        storageType: 'SSD'
     },
     {
         name: 'Asus TUF',
+        brand: 'Asus',
         price: 867,
         id: '2',
         amount: 0,
         imgSrc: TUF,
         cpu: 'i5-10300H',
-        ram: '16GB DDR4',
-        storage: '1TB SSD'
+        ram: '16GB',
+        ramType: 'DDR4',
+        storage: '1TB',
+        storageType: 'SSD'
     },
     {
         name: 'MSI GL65',
+        brand: 'MSI',
         price: 1399,
         id: '3',
         amount: 0,
         imgSrc: GL,
         cpu: 'i7-10750H',
-        ram: '16GB DDR4',
-        storage: '512GB SSD'
+        ram: '16GB',
+        ramType: 'DDR4',
+        storage: '512GB',
+        storageType: 'SSD'
     },
     {
         name: 'Asus ROG',
+        brand: 'Asus',
         price: 1499,
         id: '4',
         amount: 0,
         imgSrc: ROG,
         cpu: 'i7-10750H',
-        ram: '16GB DDR4',
-        storage: '1TB SSD'
+        ram: '16GB',
+        ramType: 'DDR4',
+        storage: '1TB',
+        storageType: 'SSD'
     },
     {
         name: 'MSI Creator 15',
+        brand: 'MSI',
         price: 1879,
         id: '5',
         amount: 0,
         imgSrc: Creator,
         cpu: 'i7-10875H',
-        ram: '32GB DDR4',
-        storage: '1TB SSD'
+        ram: '32GB',
+        ramType: 'DDR4',
+        storage: '1TB',
+        storageType: 'SSD'
     },
     {
         name: 'Razer Blade 13',
+        brand: 'Razer',
         price: 1699,
         id: '6',
         amount: 0,
         imgSrc: Blade,
         cpu: 'i7-1165G7',
-        ram: '16GB DDR4',
-        storage: '512GB SSD'
+        ram: '16GB',
+        ramType: 'DDR4',
+        storage: '512GB',
+        storageType: 'SSD'
     },
     {
         name: 'MSI GE66',
+        brand: 'MSI',
         price: 2649,
         id: '7',
         amount: 0,
         imgSrc: GE,
         cpu: 'i7-10875H',
-        ram: '32GB DDR4',
-        storage: '1TB SSD'
+        ram: '32GB',
+        ramType: 'DDR4',
+        storage: '1TB',
+        storageType: 'SSD'
     },
     {
         name: 'Acer Predator',
+        brand: 'Acer',
         price: 1629,
         id: '8',
         amount: 0,
         imgSrc: Predator,
         cpu: 'i7-9750H',
-        ram: '16GB DDR4',
-        storage: '512GB SSD'
+        ram: '16GB',
+        ramType: 'DDR4',
+        storage: '512GB',
+        storageType: 'SSD'
     },
     {
         name: 'LG Ultra',
+        brand: 'LG',
         price: 1279,
         id: '9',
         amount: 0,
         imgSrc: Ultra,
         cpu: 'i7-10510U',
-        ram: '16GB DDR4',
-        storage: '512GB SSD'
+        ram: '16GB',
+        ramType: 'DDR4',
+        storage: '512GB',
+        storageType: 'SSD'
     },
     {
         name: 'Acer Nitro 5',
+        brand: 'Acer',
         price: 999,
         id: '10',
         amount: 0,
         imgSrc: Nitro,
         cpu: 'i5-9300H',
-        ram: '8GB DDR4',
-        storage: '256GB SSD'
+        ram: '8GB',
+        ramType: 'DDR4',
+        storage: '256GB',
+        storageType: 'SSD'
     },
     {
         name: 'Asus VivoBook',
-    price: 639,
-    id: '11',
-    amount: 0,
-    imgSrc: VivoBook,
-    cpu: 'i5-1035G1',
-    ram: '8GB DDR4',
-    storage: '512 SSD'
+        brand: 'Asus',
+        price: 639,
+        id: '11',
+        amount: 0,
+        imgSrc: VivoBook,
+        cpu: 'i5-1035G1',
+        ram: '8GB',
+        ramType: 'DDR4',
+        storage: '512',
+        storageType: 'SSD'
     },
     {
         name: 'Asus ZenBook',
+        brand: 'Asus',
         price: 1999,
         id: '12',
         amount: 0,
         imgSrc: ZenBook,
         cpu: 'i7-9750H',
-        ram: '16GB DDR4',
-        storage: '1TB SSD'
+        ram: '16GB',
+        ramType: 'DDR4',
+        storage: '1TB',
+        storageType: 'SSD'
     }
 ]
+
 export default itemsList;

@@ -8,32 +8,32 @@ import { Redirect } from 'react-router';
 const ItemPage = () => {
     const {id} = useParams();
     const dispatch = useDispatch();
-    const selectedItem = itemsList.find(item =>item.id === id);
+    const item = itemsList.find(item =>item.id === id);
 
-    if (!selectedItem) {
+    if (!item) {
         return <Redirect to='/shopping-cart/catalog'/>
     }
     
     const clickItem = (e) => {
         e.preventDefault();
-        dispatch(itemAdded({...selectedItem, amount: parseInt(e.target.amount.value)}));
+        dispatch(itemAdded({...item, amount: parseInt(e.target.amount.value)}));
     }
 
-    const defaultAmount = (selectedItem.amount === 0) ? 1: selectedItem.amount;
+    const defaultAmount = (item.amount === 0) ? 1: item.amount;
 
     return (
         <div className='item-page'>
             <div className="item-page__img">
-                <img src={`${selectedItem.imgSrc}`} alt={`${selectedItem.name}`} />
+                <img src={`${item.imgSrc}`} alt={`${item.name}`} />
             </div>
             <div className="item-page__info">
                 <h2>Computer's Specs</h2>
                 <br></br>
-                <h3>Name: {selectedItem.name}</h3>
-                <h4>Processor: {selectedItem.cpu}</h4>
-                <h4>RAM: {selectedItem.ram}</h4>
-                <h4>Storage: {selectedItem.storage}</h4>
-                <h3>Price: US$ {selectedItem.price}</h3>
+                <h3>Name: {item.name}</h3>
+                <h4>Processor: {item.cpu}</h4>
+                <h4>RAM: {item.ram} {item.ramType}</h4>
+                <h4>Storage: {item.storage} {item.storageType}</h4>
+                <h3>Price: US$ {item.price}</h3>
                 <form onSubmit={clickItem}>
                     <input type="number" name="amount" defaultValue={defaultAmount} min="1"/>
                     <button type="submit">Add to Cart</button>
