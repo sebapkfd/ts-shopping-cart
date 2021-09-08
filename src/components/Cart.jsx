@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from './Item';
-import { clearCart, itemRemoved } from '../redux/cartSlide';
+import { clearCart, itemRemoved } from '../redux/cartSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
 const Cart = () => {
@@ -25,7 +25,7 @@ const Cart = () => {
         dispatch(itemRemoved({ id }))
     }
 
-    return(
+    return (
         <div className="cart">
             <div className="cart__options">
                 <h3>Total to pay: US$ {totalToPay}</h3>
