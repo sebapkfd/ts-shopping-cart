@@ -31,7 +31,7 @@ const ItemPage = () => {
                 <br></br>
                 <h3>Name: {item.name}</h3>
                 <h4>Processor: {item.cpu}</h4>
-                <h4>RAM: {item.ram} {item.ramType}</h4>
+                <h4>RAM: {item.ram}GB {item.ramType}</h4>
                 <h4>Storage: {item.storage} {item.storageType}</h4>
                 <h3>Price: US$ {item.price}</h3>
                 <form onSubmit={clickItem}>

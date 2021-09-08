@@ -20,7 +20,7 @@ const itemsList = [
         amount: 0,
         imgSrc: Aspire,
         cpu: 'i5-1035G1',
-        ram: '8GB',
+        ram: 8,
         ramType: 'DDR4',
         storage: '256GB',
         storageType: 'SSD'
@@ -33,7 +33,7 @@ const itemsList = [
         amount: 0,
         imgSrc: TUF,
         cpu: 'i5-10300H',
-        ram: '16GB',
+        ram: 16,
         ramType: 'DDR4',
         storage: '1TB',
         storageType: 'SSD'
@@ -46,7 +46,7 @@ const itemsList = [
         amount: 0,
         imgSrc: GL,
         cpu: 'i7-10750H',
-        ram: '16GB',
+        ram: 16,
         ramType: 'DDR4',
         storage: '512GB',
         storageType: 'SSD'
@@ -59,7 +59,7 @@ const itemsList = [
         amount: 0,
         imgSrc: ROG,
         cpu: 'i7-10750H',
-        ram: '16GB',
+        ram: 16,
         ramType: 'DDR4',
         storage: '1TB',
         storageType: 'SSD'
@@ -72,7 +72,7 @@ const itemsList = [
         amount: 0,
         imgSrc: Creator,
         cpu: 'i7-10875H',
-        ram: '32GB',
+        ram: 32,
         ramType: 'DDR4',
         storage: '1TB',
         storageType: 'SSD'
@@ -85,7 +85,7 @@ const itemsList = [
         amount: 0,
         imgSrc: Blade,
         cpu: 'i7-1165G7',
-        ram: '16GB',
+        ram: 16,
         ramType: 'DDR4',
         storage: '512GB',
         storageType: 'SSD'
@@ -98,7 +98,7 @@ const itemsList = [
         amount: 0,
         imgSrc: GE,
         cpu: 'i7-10875H',
-        ram: '32GB',
+        ram: 32,
         ramType: 'DDR4',
         storage: '1TB',
         storageType: 'SSD'
@@ -111,7 +111,7 @@ const itemsList = [
         amount: 0,
         imgSrc: Predator,
         cpu: 'i7-9750H',
-        ram: '16GB',
+        ram: 16,
         ramType: 'DDR4',
         storage: '512GB',
         storageType: 'SSD'
@@ -124,7 +124,7 @@ const itemsList = [
         amount: 0,
         imgSrc: Ultra,
         cpu: 'i7-10510U',
-        ram: '16GB',
+        ram: 16,
         ramType: 'DDR4',
         storage: '512GB',
         storageType: 'SSD'
@@ -137,7 +137,7 @@ const itemsList = [
         amount: 0,
         imgSrc: Nitro,
         cpu: 'i5-9300H',
-        ram: '8GB',
+        ram: 8,
         ramType: 'DDR4',
         storage: '256GB',
         storageType: 'SSD'
@@ -150,7 +150,7 @@ const itemsList = [
         amount: 0,
         imgSrc: VivoBook,
         cpu: 'i5-1035G1',
-        ram: '8GB',
+        ram: 8,
         ramType: 'DDR4',
         storage: '512',
         storageType: 'SSD'
@@ -163,7 +163,7 @@ const itemsList = [
         amount: 0,
         imgSrc: ZenBook,
         cpu: 'i7-9750H',
-        ram: '16GB',
+        ram: 16,
         ramType: 'DDR4',
         storage: '1TB',
         storageType: 'SSD'
