@@ -20,6 +20,7 @@ const ItemPage = () => {
     }
 
     const defaultAmount = (item.amount === 0) ? 1: item.amount;
+    const storage = (item.storage > 1024) ? `${item.storage}GB` : `${item.storage/1024}TB`;
 
     return (
         <div className='item-page'>
@@ -32,7 +33,7 @@ const ItemPage = () => {
                 <h3>Name: {item.name}</h3>
                 <h4>Processor: {item.cpu}</h4>
                 <h4>RAM: {item.ram}GB {item.ramType}</h4>
-                <h4>Storage: {item.storage} {item.storageType}</h4>
+                <h4>Storage: {storage} {item.storageType}</h4>
                 <h3>Price: US$ {item.price}</h3>
                 <form onSubmit={clickItem}>
                     <input type="number" name="amount" defaultValue={defaultAmount} min="1"/>

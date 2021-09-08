@@ -22,7 +22,7 @@ const itemsList = [
         cpu: 'i5-1035G1',
         ram: 8,
         ramType: 'DDR4',
-        storage: '256GB',
+        storage: 256,
         storageType: 'SSD'
     },
     {
@@ -35,7 +35,7 @@ const itemsList = [
         cpu: 'i5-10300H',
         ram: 16,
         ramType: 'DDR4',
-        storage: '1TB',
+        storage: 1024,
         storageType: 'SSD'
     },
     {
@@ -48,7 +48,7 @@ const itemsList = [
         cpu: 'i7-10750H',
         ram: 16,
         ramType: 'DDR4',
-        storage: '512GB',
+        storage: 512,
         storageType: 'SSD'
     },
     {
@@ -61,7 +61,7 @@ const itemsList = [
         cpu: 'i7-10750H',
         ram: 16,
         ramType: 'DDR4',
-        storage: '1TB',
+        storage: 1024,
         storageType: 'SSD'
     },
     {
@@ -74,7 +74,7 @@ const itemsList = [
         cpu: 'i7-10875H',
         ram: 32,
         ramType: 'DDR4',
-        storage: '1TB',
+        storage: 1024,
         storageType: 'SSD'
     },
     {
@@ -87,7 +87,7 @@ const itemsList = [
         cpu: 'i7-1165G7',
         ram: 16,
         ramType: 'DDR4',
-        storage: '512GB',
+        storage: 512,
         storageType: 'SSD'
     },
     {
@@ -100,7 +100,7 @@ const itemsList = [
         cpu: 'i7-10875H',
         ram: 32,
         ramType: 'DDR4',
-        storage: '1TB',
+        storage: 1024,
         storageType: 'SSD'
     },
     {
@@ -113,7 +113,7 @@ const itemsList = [
         cpu: 'i7-9750H',
         ram: 16,
         ramType: 'DDR4',
-        storage: '512GB',
+        storage: 512,
         storageType: 'SSD'
     },
     {
@@ -126,7 +126,7 @@ const itemsList = [
         cpu: 'i7-10510U',
         ram: 16,
         ramType: 'DDR4',
-        storage: '512GB',
+        storage: 512,
         storageType: 'SSD'
     },
     {
@@ -139,7 +139,7 @@ const itemsList = [
         cpu: 'i5-9300H',
         ram: 8,
         ramType: 'DDR4',
-        storage: '256GB',
+        storage: 256,
         storageType: 'SSD'
     },
     {
@@ -152,7 +152,7 @@ const itemsList = [
         cpu: 'i5-1035G1',
         ram: 8,
         ramType: 'DDR4',
-        storage: '512',
+        storage: 512,
         storageType: 'SSD'
     },
     {
@@ -165,7 +165,7 @@ const itemsList = [
         cpu: 'i7-9750H',
         ram: 16,
         ramType: 'DDR4',
-        storage: '1TB',
+        storage: 1024,
         storageType: 'SSD'
     }
 ]
