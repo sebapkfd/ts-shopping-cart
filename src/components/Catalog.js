@@ -1,6 +1,7 @@
 import React from 'react';
 import Item from './Item';
 import itemsList from '../assets/itemsList';
+import Filter from './Filter';
 
 const filters = {
     brands: ['Asus', 'Acer', 'LG'],
@@ -21,19 +22,21 @@ const requeriments = (element) => {
 }
 
 const Catalog = () => {
-
     const filteredList = itemsList.filter(requeriments);
 
     return(
-        <div className="catalog">
-            {filteredList.map(item =>{
-                return (
-                    <Item 
-                        item={item}
-                        key={item.id}
-                    />
-                )
-            })}
+        <div>
+            <Filter />
+            <div className="catalog">
+                {filteredList.map(item =>{
+                    return (
+                        <Item 
+                            item={item}
+                            key={item.id}
+                        />
+                    )
+                })}
+            </div>
         </div>
     )
 }
