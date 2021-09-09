@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
+export const initialState = {
     brands: ['Asus', 'Acer', 'LG', 'Razer', 'MSI'],
     minPrice: 0,
     maxPrice: 99999,

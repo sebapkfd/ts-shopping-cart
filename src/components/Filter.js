@@ -1,22 +1,15 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setValues } from "../redux/filterSlice";
-
-const values = {
-    brands: ['Asus', 'Acer', 'LG'],
-    minPrice: 1000,
-    maxPrice: 2000,
-    minRam: 16,
-    minStorage: 512
-}
+import { initialState } from "../redux/filterSlice";
 
 const Filter  = () => {
-    const [minPrice, setMinPrice] = useState(0);
+    const [values, setNewValues] = useState(initialState);
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(setValues({ values}))
+        dispatch(setValues({values}))
     }
 
     return (
@@ -24,8 +17,16 @@ const Filter  = () => {
             <input
                 type='number'    
                 name='minPrice'
-                value={minPrice}
-                onChange={e => setMinPrice(e.target.value)}
+                defaultValue={values.minPrice}
+                min='0'
+                onChange={e => setNewValues({...values, minPrice: parseInt(e.target.value)})}
+            />
+            <input
+                type='number'    
+                name='maxPrice'
+                defaultValue={values.maxPrice}
+                max='99999'
+                onChange={e => setNewValues({...values, maxPrice: parseInt(e.target.value)})}
             />
             <button type='submit'>Ok</button>
         </form>
