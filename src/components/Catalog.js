@@ -4,13 +4,13 @@ import itemsList from '../assets/itemsList';
 import Filter from './Filter';
 import { useSelector } from 'react-redux';
 
-const requeriments = (element, filters) => {
+const requeriments = (element, filter) => {
     return (
-        element.price >= filters.minPrice && 
-        element.price <= filters.maxPrice && 
-        element.ram >= filters.minRam &&
-        element.storage > filters.minStorage &&
-        filters.brands.includes(element.brand)
+        element.price >= filter.minPrice && 
+        element.price <= filter.maxPrice && 
+        element.ram >= filter.minRam &&
+        element.storage > filter.minStorage &&
+        filter.brands.includes(element.brand)
         );
 }
 

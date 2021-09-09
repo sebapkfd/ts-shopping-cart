@@ -1,6 +1,14 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setNewFilter } from "../redux/filterSlice";
+import { setValues } from "../redux/filterSlice";
+
+const values = {
+    brands: ['Asus', 'Acer', 'LG'],
+    minPrice: 1000,
+    maxPrice: 2000,
+    minRam: 16,
+    minStorage: 512
+}
 
 const Filter  = () => {
     const [minPrice, setMinPrice] = useState(0);
@@ -8,7 +16,7 @@ const Filter  = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch(setNewFilter({ key: 'minPrice', value: parseInt(minPrice)}))
+        dispatch(setValues({ values}))
     }
 
     return (
