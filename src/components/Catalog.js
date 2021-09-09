@@ -2,16 +2,9 @@ import React from 'react';
 import Item from './Item';
 import itemsList from '../assets/itemsList';
 import Filter from './Filter';
+import { useSelector } from 'react-redux';
 
-const filters = {
-    brands: ['Asus', 'Acer', 'LG'],
-    minPrice: 0,
-    maxPrice: 99999,
-    minRam: 0,
-    minStorage: 0
-}
-
-const requeriments = (element) => {
+const requeriments = (element, filters) => {
     return (
         element.price >= filters.minPrice && 
         element.price <= filters.maxPrice && 
@@ -22,7 +15,8 @@ const requeriments = (element) => {
 }
 
 const Catalog = () => {
-    const filteredList = itemsList.filter(requeriments);
+    const filter = useSelector(state => state.filter)
+    const filteredList = itemsList.filter(element => requeriments(element, filter));
 
     return(
         <div>
