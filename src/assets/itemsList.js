@@ -170,6 +170,9 @@ const itemsList = [
     }
 ];
 
+
+export const itemsBrands = [...new Set(itemsList.map(item => item.brand))];
+
 export const itemsRam = [...new Set(itemsList.map(item => item.ram))];
 
 export const itemsStorage = [...new Set(itemsList.map(item => item.storage))];
