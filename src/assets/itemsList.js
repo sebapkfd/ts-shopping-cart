@@ -168,6 +168,10 @@ const itemsList = [
         storage: 1024,
         storageType: 'SSD'
     }
-]
+];
+
+export const itemsRam = [...new Set(itemsList.map(item => item.ram))];
+
+export const itemsStorage = [...new Set(itemsList.map(item => item.storage))];
 
 export default itemsList;
