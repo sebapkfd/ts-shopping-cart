@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setValues } from "../redux/filterSlice";
 import { initialState } from "../redux/filterSlice";
+import { itemsBrands } from "../assets/itemsList";
 
 const Filter  = () => {
     const [values, setNewValues] = useState(initialState);
@@ -28,10 +29,10 @@ const Filter  = () => {
                 max='99999'
                 onChange={e => setNewValues({...values, maxPrice: parseInt(e.target.value)})}
             />
-            <select multiple onChange={e => setNewValues({...values, brands: [...values.brands, e.target.value]})}>
-                <option value="Low">Low</option>
-                <option value="Medium">Medium</option>
-                <option value="High">High</option>
+            <select onChange={e => setNewValues({...values, brands: [e.target.value]})}>
+                {itemsBrands.map(brand => {
+                    return <option value={`${brand}`} key={`${brand}Option`}>{brand}</option>
+                })}
             </select>
             <button type='submit'>Ok</button>
         </form>
