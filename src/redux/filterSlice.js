@@ -16,12 +16,21 @@ const FilterSlice = createSlice({
             const {key, value} = action.payload
             state[key] = value
         },
-        setValues: (state, action) => {
-            const {values} = action.payload
-            for (const key in state) {
-                state[key] = values[key]
+        setValues: {
+            reducer: (state, action) => {
+                const {values} = action.payload
+                for (const key in state) {
+                    state[key] = values[key]
+                }
+            },
+            prepare: ({values}) => {
+                return {
+                    payload: {
+                        values: {...values, brands: [...new Set(values.brands)]}
+                    }
+                }
             }
-        }
+        } 
     }
 })
 
