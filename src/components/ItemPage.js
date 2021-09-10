@@ -4,6 +4,7 @@ import { itemAdded } from '../redux/cartSlice';
 import { useDispatch } from 'react-redux';
 import itemsList from '../assets/itemsList';
 import { Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const ItemPage = () => {
     const {id} = useParams();
@@ -38,6 +39,11 @@ const ItemPage = () => {
                 <form onSubmit={clickItem}>
                     <input type="number" name="amount" defaultValue={defaultAmount} min="1"/>
                     <button type="submit">Add to Cart</button>
+                    <Link to='/shopping-cart/catalog'>
+                        <button>
+                            Back to catalog
+                        </button>
+                    </Link>
                 </form>
             </div>
         </div>
