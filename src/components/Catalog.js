@@ -9,7 +9,7 @@ const requeriments = (element, filter) => {
         element.price >= filter.minPrice && 
         element.price <= filter.maxPrice && 
         element.ram >= filter.minRam &&
-        element.storage > filter.minStorage &&
+        element.storage >= filter.minStorage &&
         filter.brands.includes(element.brand)
         );
 }
