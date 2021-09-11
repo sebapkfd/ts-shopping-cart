@@ -22,7 +22,7 @@ const ItemPage = () => {
     }
 
     const defaultAmount = (item.amount === 0) ? 1: item.amount;
-    const storage = (item.storage > 1024) ? `${item.storage}GB` : `${item.storage/1024}TB`;
+    const storage = (item.storage >= 1024) ? `${item.storage/1024}TB`: `${item.storage}GB`;
 
     return (
         <div className='item-page'>
