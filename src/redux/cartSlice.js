@@ -24,11 +24,18 @@ const CartSlice = createSlice({
             const itemToDelete = state.find(item => item.id === id )
             const indexToDelete = state.indexOf(itemToDelete)
             state.splice(indexToDelete, 1)
+        },
+        changeAmount(state, action) {
+            const {id, amount} = action.payload;
+            const existing = state.find(item => item.id === id)
+            if (existing) {
+                existing.amount = amount
+            }
         }
     }
 })
 
-export const { itemAdded, clearCart, itemRemoved } = CartSlice.actions;
+export const { itemAdded, clearCart, itemRemoved, changeAmount } = CartSlice.actions;
 
 export const selectItemById = (state, id) => state.cart.find(item => item.id === id)
 
