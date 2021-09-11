@@ -1,16 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { itemAdded, selectItemById } from '../redux/cartSlice';
-import { useDispatch, useSelector } from 'react-redux';
+import { itemAdded } from '../redux/cartSlice';
+import { useDispatch } from 'react-redux';
 import itemsList from '../assets/itemsList';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
+import AddButton from './AddButton';
 
 const ItemPage = () => {
     const {id} = useParams();
     const dispatch = useDispatch();
     const item = itemsList.find(item =>item.id === id);
-    const itemAlreadyAdded = useSelector(state => selectItemById(state, id))
 
     if (!item) {
         return <Redirect to='/shopping-cart/catalog'/>
@@ -23,7 +23,6 @@ const ItemPage = () => {
 
     const defaultAmount = (item.amount === 0) ? 1: item.amount;
     const storage = (item.storage > 1024) ? `${item.storage}GB` : `${item.storage/1024}TB`;
-    const submitButtonText = (itemAlreadyAdded) ? 'Added to cart' : 'Add to cart';
 
     return (
         <div className='item-page'>
@@ -40,7 +39,7 @@ const ItemPage = () => {
                 <h3>Price: US$ {item.price}</h3>
                 <form onSubmit={clickItem}>
                     <input type="number" name="amount" defaultValue={defaultAmount} min="1"/>
-                    <button type="submit">{submitButtonText}</button>
+                    <AddButton id={id} />
                     <Link to='/shopping-cart/catalog'>
                         <button>
                             Back to catalog
