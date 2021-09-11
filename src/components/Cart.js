@@ -1,7 +1,7 @@
 import React from 'react';
-import Item from './Item';
-import { clearCart, itemRemoved } from '../redux/cartSlice';
+import { clearCart } from '../redux/cartSlice';
 import { useDispatch, useSelector } from 'react-redux';
+import CartItem from './CartItem';
 
 const Cart = () => {
     const selectedItems = useSelector(state => state.cart)
@@ -11,7 +11,7 @@ const Cart = () => {
 
     const cleanItems = (e) => {
         e.preventDefault();
-        dispatch(clearCart())
+        dispatch(clearCart());
     }
 
     const payItems = (e) => {
@@ -19,10 +19,6 @@ const Cart = () => {
             alert('Thanks for your purchase!');
             cleanItems(e);
         }
-    }
-
-    const removeitem = (id) => {
-        dispatch(itemRemoved({ id }))
     }
 
     return (
@@ -34,16 +30,7 @@ const Cart = () => {
             </div>
             <div className="cart__items">
                 {selectedItems.map(item =>{
-                    return (
-                        <div key={item.id} className="cart-item">
-                            <Item item={item}/>
-                            <h3>Amount: {item.amount}</h3>
-                            <h3>Total price: US$ {item.price*item.amount}</h3>
-                            <button onClick={() => removeitem(item.id)}>
-                                Remove
-                            </button>
-                        </div>
-                    )
+                    return <CartItem item={item} key={item.id} />
                 })}
             </div>
         </div>
