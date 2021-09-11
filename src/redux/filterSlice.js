@@ -30,10 +30,15 @@ const FilterSlice = createSlice({
                     }
                 }
             }
-        } 
+        },
+        clearFilter: (state, action) => {
+            for (const key in state) {
+                state[key] = initialState[key]
+            }
+        }
     }
 })
 
-export const { setNewFilter, setValues } = FilterSlice.actions
+export const { setNewFilter, setValues, clearFilter } = FilterSlice.actions
 
 export default FilterSlice.reducer;

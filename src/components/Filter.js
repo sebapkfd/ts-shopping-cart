@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setValues } from "../redux/filterSlice";
-import { initialState } from "../redux/filterSlice";
+import { initialState, clearFilter } from "../redux/filterSlice";
 import { itemsBrands, itemsStorage, itemsRam } from "../assets/itemsList";
 
 const Filter  = () => {
@@ -11,6 +11,11 @@ const Filter  = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         dispatch(setValues({values}))
+    }
+
+    const handleClear = (e) => {
+        e.preventDefault();
+        dispatch(clearFilter())
     }
 
     return (
@@ -45,6 +50,7 @@ const Filter  = () => {
                 })}
             </select>
             <button type='submit'>Ok</button>
+            <button onClick={(e)=> handleClear(e)}>Clear</button>
         </form>
     )
 }
