@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { setValues } from "../redux/filterSlice";
 import { initialState, clearFilter } from "../redux/filterSlice";
-import { itemsBrands, itemsStorage, itemsRam } from "../assets/itemsList";
+import { itemsStorage, itemsRam } from "../assets/itemsList";
 import BrandFilter from "./BrandFilter";
 
 const Filter  = () => {
