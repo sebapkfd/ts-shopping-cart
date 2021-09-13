@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { setValues } from "../redux/filterSlice";
 import { initialState, clearFilter } from "../redux/filterSlice";
 import { itemsBrands, itemsStorage, itemsRam } from "../assets/itemsList";
+import BrandFilter from "./BrandFilter";
 
 const Filter  = () => {
     const [values, setNewValues] = useState(initialState);
@@ -34,11 +35,7 @@ const Filter  = () => {
                 max='99999'
                 onChange={e => setNewValues({...values, maxPrice: parseInt(e.target.value)})}
             />
-            <select onChange={e => setNewValues({...values, brands: [e.target.value]})}>
-                {itemsBrands.map(brand => {
-                    return <option value={`${brand}`} key={`${brand}Option`}>{brand}</option>
-                })}
-            </select>
+            <BrandFilter />
             <select onChange={e => setNewValues({...values, minStorage: parseInt(e.target.value)})}>
                 {itemsStorage.map(item => {
                     return <option value={`${item}`} key={`${item}Option`}>{item}GB</option>
