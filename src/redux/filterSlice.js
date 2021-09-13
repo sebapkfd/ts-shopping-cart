@@ -35,10 +35,16 @@ const FilterSlice = createSlice({
             for (const key in state) {
                 state[key] = initialState[key]
             }
+        },
+        addBrand: (state, action) => {
+            const { brand } = action.payload
+            if(!state.brands.includes(brand)) {
+                state.brands.push(brand)
+            }
         }
     }
 })
 
-export const { setNewFilter, setValues, clearFilter } = FilterSlice.actions
+export const { setNewFilter, setValues, clearFilter, addBrand } = FilterSlice.actions
 
 export default FilterSlice.reducer;
