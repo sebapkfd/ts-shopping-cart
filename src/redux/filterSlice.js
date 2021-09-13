@@ -36,15 +36,19 @@ const FilterSlice = createSlice({
                 state[key] = initialState[key]
             }
         },
-        addBrand: (state, action) => {
+        setBrands: (state, action) => {
             const { brand } = action.payload
             if(!state.brands.includes(brand)) {
                 state.brands.push(brand)
+            }
+            else if(state.brands.includes(brand)) {
+                const indexToDelete = state.brands.indexOf(brand)
+                state.brands.splice(indexToDelete, 1)
             }
         }
     }
 })
 
-export const { setNewFilter, setValues, clearFilter, addBrand } = FilterSlice.actions
+export const { setNewFilter, setValues, clearFilter, setBrands } = FilterSlice.actions
 
 export default FilterSlice.reducer;
