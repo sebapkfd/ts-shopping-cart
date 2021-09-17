@@ -1,18 +1,10 @@
-import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { setValues } from "../redux/filterSlice";
-import { initialState, clearFilter } from "../redux/filterSlice";
+import { initialState, clearFilter, setNewFilter } from "../redux/filterSlice";
 import { itemsStorage, itemsRam } from "../assets/itemsList";
 import BrandFilter from "./BrandFilter";
 
 const Filter  = () => {
-    const [values, setNewValues] = useState(initialState);
     const dispatch = useDispatch();
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        dispatch(setValues({values}))
-    }
 
     const handleClear = (e) => {
         e.preventDefault();
@@ -20,32 +12,34 @@ const Filter  = () => {
     }
 
     return (
-        <form className={'filter'} onSubmit={e => handleSubmit(e)}>
+        <form className={'filter'}>
             <input
                 type='number'    
                 name='minPrice'
-                defaultValue={values.minPrice}
                 min='0'
-                onChange={e => setNewValues({...values, minPrice: parseInt(e.target.value)})}
+                defaultValue={initialState.minPrice}
+                max='99999'
+                onChange={(e) => dispatch(setNewFilter({key: 'minPrice', value: parseInt(e.target.value)}))}
             />
             <input
                 type='number'    
                 name='maxPrice'
-                defaultValue={values.maxPrice}
+                min='0'
                 max='99999'
-                onChange={e => setNewValues({...values, maxPrice: parseInt(e.target.value)})}
+                defaultValue={initialState.maxPrice}
+                onChange={(e) => dispatch(setNewFilter({key: 'maxPrice', value: parseInt(e.target.value)}))}
             />
-            <BrandFilter />
-            <select onChange={e => setNewValues({...values, minStorage: parseInt(e.target.value)})}>
+            <select onChange={e => dispatch(setNewFilter({key: 'minStorage', value: parseInt(e.target.value)}))}>
                 {itemsStorage.map(item => {
                     return <option value={`${item}`} key={`${item}Option`}>{item}GB</option>
                 })}
             </select>
-            <select onChange={e => setNewValues({...values, minRam: parseInt(e.target.value)})}>
+            <select onChange={e => dispatch(setNewFilter({key: 'minRam', value: parseInt(e.target.value)}))}>
                 {itemsRam.map(ram => {
                     return <option value={`${ram}`} key={`${ram}Option`}>{ram}GB</option>
                 })}
             </select>
+            <BrandFilter />
             <button type='submit'>Ok</button>
             <button onClick={(e)=> handleClear(e)}>Clear</button>
         </form>
