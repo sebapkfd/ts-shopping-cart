@@ -8,7 +8,7 @@ const Filter  = () => {
 
     const handleClear = (e) => {
         e.preventDefault();
-        dispatch(clearFilter())
+        dispatch(clearFilter());
     }
 
     return (

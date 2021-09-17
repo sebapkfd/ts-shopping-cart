@@ -1,24 +1,14 @@
 import { itemsBrands } from "../assets/itemsList";
 import { setBrands } from "../redux/filterSlice";
-import { useDispatch } from "react-redux";
-import { useState } from "react";
-
-const brandsChecked = {
-    Asus : true,
-    Acer: true,
-    LG: true,
-    Razer: true,
-    MSI: true
-}
+import { useDispatch, useSelector } from "react-redux";
 
 const BrandFilter = () => {
-    const [checked, setChecked] = useState(brandsChecked);
+    const checked = useSelector(state => state.filter.brands)
     const dispatch = useDispatch();
 
     const handleClick = (e) => {
         const brand = e.target.value;
         dispatch(setBrands({ brand }));
-        setChecked({...checked, [brand]: !checked[brand]})
     }
 
     return (

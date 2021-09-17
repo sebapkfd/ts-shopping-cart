@@ -10,8 +10,8 @@ const requeriments = (element, filter) => {
         element.price <= filter.maxPrice && 
         element.ram >= filter.minRam &&
         element.storage >= filter.minStorage &&
-        filter.brands.includes(element.brand)
-        );
+        filter.brands[element.brand]
+    );
 }
 
 const Catalog = () => {

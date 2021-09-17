@@ -1,7 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const initialState = {
-    brands: ['Asus', 'Acer', 'LG', 'Razer', 'MSI'],
+    brands: {
+        Asus : true,
+        Acer: true,
+        LG: true,
+        Razer: true,
+        MSI: true
+    },
     minPrice: 0,
     maxPrice: 99999,
     minRam: 0,
@@ -38,13 +44,7 @@ const FilterSlice = createSlice({
         },
         setBrands: (state, action) => {
             const { brand } = action.payload
-            if(!state.brands.includes(brand)) {
-                state.brands.push(brand)
-            }
-            else if(state.brands.includes(brand)) {
-                const indexToDelete = state.brands.indexOf(brand)
-                state.brands.splice(indexToDelete, 1)
-            }
+            state.brands[brand] = !state.brands[brand]
         }
     }
 })
