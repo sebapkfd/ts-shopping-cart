@@ -1,11 +1,11 @@
 import { useDispatch } from "react-redux";
-import { initialState, clearFilter, setNewFilter } from "../redux/filterSlice";
+import { initialState, clearFilter } from "../redux/filterSlice";
 import { itemsStorage, itemsRam } from "../assets/itemsList";
 import BrandFilter from "./BrandFilter";
 import Input from "./Input";
 import Select from "./Select";
 
-const Filter  = () => {
+const Filter = () => {
     const dispatch = useDispatch();
 
     const handleClear = (e) => {
@@ -20,7 +20,6 @@ const Filter  = () => {
             <Select itemsList={itemsStorage} name={'minStorage'} />
             <Select itemsList={itemsRam} name={'minRam'} />
             <BrandFilter />
-            <button type='submit'>Ok</button>
             <button onClick={(e)=> handleClear(e)}>Clear</button>
         </form>
     )
