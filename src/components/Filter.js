@@ -2,6 +2,7 @@ import { useDispatch } from "react-redux";
 import { initialState, clearFilter, setNewFilter } from "../redux/filterSlice";
 import { itemsStorage, itemsRam } from "../assets/itemsList";
 import BrandFilter from "./BrandFilter";
+import Input from "./Input";
 
 const Filter  = () => {
     const dispatch = useDispatch();
@@ -13,22 +14,8 @@ const Filter  = () => {
 
     return (
         <form className={'filter'}>
-            <input
-                type='number'    
-                name='minPrice'
-                min='0'
-                defaultValue={initialState.minPrice}
-                max='99999'
-                onChange={(e) => dispatch(setNewFilter({key: 'minPrice', value: parseInt(e.target.value)}))}
-            />
-            <input
-                type='number'    
-                name='maxPrice'
-                min='0'
-                max='99999'
-                defaultValue={initialState.maxPrice}
-                onChange={(e) => dispatch(setNewFilter({key: 'maxPrice', value: parseInt(e.target.value)}))}
-            />
+            <Input defaultVal={initialState.minPrice} name={'minPrice'}/>
+            <Input defaultVal={initialState.maxPrice} name={'maxPrice'}/>
             <select onChange={e => dispatch(setNewFilter({key: 'minStorage', value: parseInt(e.target.value)}))}>
                 {itemsStorage.map(item => {
                     return <option value={`${item}`} key={`${item}Option`}>{item}GB</option>
