@@ -192,3 +192,12 @@ button:hover {
 .filter {
     padding-top: 10vh;
 }
+
+.brand-option {
+    display: flex;
+    align-items: center;
+}
+
+.brand-option input {
+    margin-right: 1vw;
+}
