@@ -173,8 +173,8 @@ const itemsList = [
 
 export const itemsBrands = [...new Set(itemsList.map(item => item.brand))];
 
-export const itemsRam = [...new Set(itemsList.map(item => item.ram))];
+export const itemsRam = [...new Set(itemsList.map(item => item.ram))].sort((a,b) => a - b);
 
-export const itemsStorage = [...new Set(itemsList.map(item => item.storage))];
+export const itemsStorage = [...new Set(itemsList.map(item => item.storage))].sort((a,b) => a - b);
 
 export default itemsList;
