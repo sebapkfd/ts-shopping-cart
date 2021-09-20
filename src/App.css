@@ -130,7 +130,7 @@ button:hover {
     color: var(--dark);
 }
 
-.catalog,
+/* .catalog, */
 .cart__items {
     width: 100%;
     display: grid;
@@ -189,8 +189,17 @@ button:hover {
     align-items: center;
 }
 
+.catalog-page {
+    display: flex;
+    padding-top: 60px;
+}
+
 .filter {
     padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
 }
 
 .brand-option {
@@ -200,4 +209,8 @@ button:hover {
 
 .brand-option input {
     margin-right: 1vw;
+}
+
+.catalog {
+    width: 75vw;
 }

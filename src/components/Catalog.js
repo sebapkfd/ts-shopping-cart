@@ -19,7 +19,7 @@ const Catalog = () => {
     const filteredList = itemsList.filter(element => requeriments(element, filter));
 
     return(
-        <div>
+        <div className='catalog-page'>
             <Filter />
             <div className="catalog">
                 {filteredList.map(item =>{
