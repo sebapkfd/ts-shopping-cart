@@ -9,6 +9,7 @@
     --dark: rgb(0, 0, 0);
     --clear: rgb(255, 255, 255);
     --gray: rgb(219, 219, 219);
+    --top-space: 10vh;
 }
 
 img {
@@ -145,7 +146,7 @@ button:hover {
 
 .item-page {
     display: flex;
-    padding-top: 100px;
+    padding-top: var(--top-space);
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -157,7 +158,7 @@ button:hover {
 }
 
 .cart {
-    padding-top: 60px;
+    padding-top: var(--top-space);
 }
 
 .cart__options {
@@ -191,11 +192,10 @@ button:hover {
 
 .catalog-page {
     display: flex;
-    padding-top: 60px;
+    padding-top: var(--top-space);
 }
 
 .filter {
-    padding-top: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
