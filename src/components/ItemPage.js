@@ -6,6 +6,7 @@ import itemsList from '../assets/itemsList';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import AddButton from './AddButton';
+import formatStorage from '../functions/storageFormat';
 
 const ItemPage = () => {
     const {id} = useParams();
@@ -22,7 +23,7 @@ const ItemPage = () => {
     }
 
     const defaultAmount = (item.amount === 0) ? 1: item.amount;
-    const storage = (item.storage >= 1024) ? `${item.storage/1024}TB`: `${item.storage}GB`;
+    const storage = formatStorage(item.storage);
 
     return (
         <div className='item-page'>

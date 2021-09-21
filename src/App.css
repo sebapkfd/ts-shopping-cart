@@ -104,7 +104,7 @@ h1 {
     background-color: var(--clear);
     padding: 5px;
     border-radius: 15px;
-    border: solid 2px var(--clear)
+    border: solid 2px var(--clear);
 }
 
 .item-card:hover {
@@ -131,7 +131,7 @@ button:hover {
     color: var(--dark);
 }
 
-/* .catalog, */
+.catalog,
 .cart__items {
     width: 100%;
     display: grid;

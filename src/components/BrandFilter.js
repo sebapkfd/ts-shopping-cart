@@ -3,7 +3,7 @@ import { setBrands } from "../redux/filterSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const BrandFilter = () => {
-    const checked = useSelector(state => state.filter.brands)
+    const checked = useSelector(state => state.filter.brands);
     const dispatch = useDispatch();
 
     return (
