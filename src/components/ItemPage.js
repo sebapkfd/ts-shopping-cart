@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { itemAdded } from '../redux/cartSlice';
 import { useDispatch } from 'react-redux';
-import itemsList from '../assets/itemsList';
+import {itemsList} from '../assets/itemsList';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import formatStorage from '../functions/storageFormat';

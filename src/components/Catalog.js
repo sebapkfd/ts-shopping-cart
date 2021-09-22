@@ -1,6 +1,6 @@
 import React from 'react';
 import Item from './Item';
-import itemsList from '../assets/itemsList';
+import { itemsList } from '../assets/itemsList';
 import Filter from './Filter';
 import { useSelector } from 'react-redux';
 import requeriments from '../functions/requirements';

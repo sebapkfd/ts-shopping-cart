@@ -20,9 +20,9 @@ const Filter = () => {
             <label>Max price</label>
             <Input defaultVal={initialState.maxPrice} name={'maxPrice'} />
             <label>Storage</label>
-            <Select itemsList={itemsStorage} name={'minStorage'} />
+            <Select list={itemsStorage} name={'minStorage'} />
             <label>RAM</label>
-            <Select itemsList={itemsRam} name={'minRam'} />
+            <Select list={itemsRam} name={'minRam'} />
             <label>Brands</label>
             <BrandFilter />
             <button onClick={(e)=> handleClear(e)}>Clear</button>

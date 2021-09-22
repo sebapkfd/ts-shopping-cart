@@ -11,7 +11,7 @@ import Nitro from './Acer-Nitro.jpg';
 import VivoBook from './Asus-VivoBook.jpg';
 import ZenBook from './Asus-ZenBook.jpg';
 
-const itemsList = [
+export const itemsList = [
     {
         name: 'Acer Aspire 5',
         brand: 'Acer',
@@ -236,5 +236,3 @@ export const itemsBrands = [...new Set(itemsList.map(item => item.brand))];
 export const itemsRam = [...new Set(itemsList.map(item => item.ram))].sort((a,b) => a - b);
 
 export const itemsStorage = [...new Set(itemsList.map(item => item.storage))].sort((a,b) => a - b);
-
-export default itemsList;
