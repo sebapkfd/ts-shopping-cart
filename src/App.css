@@ -213,3 +213,24 @@ button:hover {
 .brand-option input {
     margin-right: 1vw;
 }
+
+@media screen and (max-width: 600px) {
+    .catalog-page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .filter {
+        position: initial;
+    }
+
+    .catalog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
