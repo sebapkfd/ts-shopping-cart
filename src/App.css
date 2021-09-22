@@ -154,7 +154,8 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.item-page div {
+.item-page__img,
+.item-page__info {
     width: 480px;
     margin-bottom: 50px;
     padding: 0 10px;

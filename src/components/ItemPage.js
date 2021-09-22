@@ -7,6 +7,7 @@ import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import AddButton from './AddButton';
 import formatStorage from '../functions/storageFormat';
+import AddItemOptions from './AddItemOptions';
 
 const ItemPage = () => {
     const {id} = useParams();
@@ -22,9 +23,6 @@ const ItemPage = () => {
         dispatch(itemAdded({...item, amount: parseInt(e.target.amount.value)}));
     }
 
-    const defaultAmount = (item.amount === 0) ? 1: item.amount;
-    const storage = formatStorage(item.storage);
-
     return (
         <div className='item-page'>
             <div className="item-page__img">
@@ -34,12 +32,11 @@ const ItemPage = () => {
                 <h3>{item.name}</h3>
                 <p>Processor: {item.cpu}</p>
                 <p>RAM: {item.ram}GB {item.ramType}</p>
-                <p>Storage: {storage} {item.storageType}</p>
+                <p>Storage: {formatStorage(item.storage)} {item.storageType}</p>
                 <p>Price: US$ {item.price}</p>
                 <p>Stock: {item.stock}</p>
                 <form onSubmit={(e) => clickItem(e)}>
-                    <input type="number" name="amount" defaultValue={defaultAmount} min="1" max={item.stock}/>
-                    <AddButton id={id} />
+                    <AddItemOptions item={item} />
                     <Link to='/shopping-cart/catalog'>
                         <button>
                             Back to catalog
