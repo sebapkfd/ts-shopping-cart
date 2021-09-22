@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import itemsList from '../assets/itemsList';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
-import AddButton from './AddButton';
 import formatStorage from '../functions/storageFormat';
 import AddItemOptions from './AddItemOptions';
 
@@ -35,7 +34,7 @@ const ItemPage = () => {
                 <p>Storage: {formatStorage(item.storage)} {item.storageType}</p>
                 <p>Price: US$ {item.price}</p>
                 <p>Stock: {item.stock}</p>
-                <form onSubmit={(e) => clickItem(e)}>
+                <form className='item-page__form' onSubmit={(e) => clickItem(e)}>
                     <AddItemOptions item={item} />
                     <Link to='/shopping-cart/catalog'>
                         <button>

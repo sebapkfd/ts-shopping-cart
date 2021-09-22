@@ -219,6 +219,10 @@ button:hover {
     margin-right: 1vw;
 }
 
+.item-page__form {
+    display: flex;
+}
+
 @media screen and (max-width: 600px) {
     .catalog-page {
         display: flex;
