@@ -233,6 +233,12 @@ export const itemsList = [
 
 export const itemsBrands = [...new Set(itemsList.map(item => item.brand))];
 
+export const itemsPerBrands = itemsBrands.map(brand => {
+    return {
+        brand, amount: itemsList.reduce((acc, cv) => (cv.brand === brand) ? acc + 1 : acc, 0)
+    }
+})
+
 export const itemsRam = [...new Set(itemsList.map(item => item.ram))].sort((a,b) => a - b);
 
 export const itemsStorage = [...new Set(itemsList.map(item => item.storage))].sort((a,b) => a - b);
