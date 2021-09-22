@@ -22,21 +22,6 @@ const FilterSlice = createSlice({
             const {key, value} = action.payload
             state[key] = value
         },
-        setValues: {
-            reducer: (state, action) => {
-                const {values} = action.payload
-                for (const key in state) {
-                    state[key] = values[key]
-                }
-            },
-            prepare: ({values}) => {
-                return {
-                    payload: {
-                        values: {...values, brands: [...new Set(values.brands)]}
-                    }
-                }
-            }
-        },
         clearFilter: (state, action) => {
             for (const key in state) {
                 state[key] = initialState[key]
@@ -49,6 +34,6 @@ const FilterSlice = createSlice({
     }
 })
 
-export const { setNewFilter, setValues, clearFilter, setBrands } = FilterSlice.actions
+export const { setNewFilter, clearFilter, setBrands } = FilterSlice.actions;
 
 export default FilterSlice.reducer;

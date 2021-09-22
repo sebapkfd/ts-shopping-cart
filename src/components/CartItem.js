@@ -8,11 +8,11 @@ const CartItem = (props) => {
     const dispatch = useDispatch();
 
     const removeitem = () => {
-        dispatch(itemRemoved({id: item.id}))
+        dispatch(itemRemoved({id: item.id}));
     }
 
     const handleChange = (e) => {
-        dispatch(changeAmount({id: item.id, amount: parseInt(e.target.value)}))
+        dispatch(changeAmount({id: item.id, amount: parseInt(e.target.value)}));
     }
 
     return (
@@ -24,6 +24,7 @@ const CartItem = (props) => {
                 name="amount" 
                 defaultValue={item.amount} 
                 min="1"
+                max="20"
                 onChange={e => handleChange(e)}
                 />
             <h3>Total price: US$ {item.price*item.amount}</h3>

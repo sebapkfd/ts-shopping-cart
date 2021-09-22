@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import requeriments from '../functions/requirements';
 
 const Catalog = () => {
-    const filter = useSelector(state => state.filter)
+    const filter = useSelector(state => state.filter);
     const filteredList = itemsList.filter(element => requeriments(element, filter));
 
     return(
