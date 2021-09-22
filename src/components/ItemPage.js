@@ -31,13 +31,11 @@ const ItemPage = () => {
                 <img src={`${item.imgSrc}`} alt={`${item.name}`} />
             </div>
             <div className="item-page__info">
-                <h2>Computer's Specs</h2>
-                <br></br>
-                <h3>Name: {item.name}</h3>
-                <h4>Processor: {item.cpu}</h4>
-                <h4>RAM: {item.ram}GB {item.ramType}</h4>
-                <h4>Storage: {storage} {item.storageType}</h4>
-                <h3>Price: US$ {item.price}</h3>
+                <h3>{item.name}</h3>
+                <p>Processor: {item.cpu}</p>
+                <p>RAM: {item.ram}GB {item.ramType}</p>
+                <p>Storage: {storage} {item.storageType}</p>
+                <p>Price: US$ {item.price}</p>
                 <form onSubmit={(e) => clickItem(e)}>
                     <input type="number" name="amount" defaultValue={defaultAmount} min="1"/>
                     <AddButton id={id} />

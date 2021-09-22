@@ -18,7 +18,7 @@ const CartItem = (props) => {
     return (
         <div className="cart-item">
             <Item item={item}/>
-            <h3>Amount</h3>
+            <p>Amount</p>
             <input 
                 type="number" 
                 name="amount" 
@@ -27,7 +27,7 @@ const CartItem = (props) => {
                 max="20"
                 onChange={e => handleChange(e)}
                 />
-            <h3>Total price: US$ {item.price*item.amount}</h3>
+            <p>Total price: US$ {item.price*item.amount}</p>
             <button onClick={() => removeitem()}>
                 Remove
             </button>

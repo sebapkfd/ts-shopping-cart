@@ -23,7 +23,12 @@ const itemsList = [
         ram: 8,
         ramType: 'DDR4',
         storage: 256,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 7,
+        sold: 0,
+        stock: 3,
+        delivery: true,
+        pickUp: false
     },
     {
         name: 'Asus TUF',
@@ -36,7 +41,12 @@ const itemsList = [
         ram: 16,
         ramType: 'DDR4',
         storage: 1024,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 7,
+        sold: 2,
+        stock: 1,
+        delivery: true,
+        pickUp: true
     },
     {
         name: 'MSI GL65',
@@ -49,7 +59,12 @@ const itemsList = [
         ram: 16,
         ramType: 'DDR4',
         storage: 512,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 7,
+        sold: 0,
+        stock: 3,
+        delivery: true,
+        pickUp: true
     },
     {
         name: 'Asus ROG',
@@ -62,7 +77,12 @@ const itemsList = [
         ram: 16,
         ramType: 'DDR4',
         storage: 1024,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 8,
+        sold: 3,
+        stock: 1,
+        delivery: false,
+        pickUp: true
     },
     {
         name: 'MSI Creator 15',
@@ -75,7 +95,12 @@ const itemsList = [
         ram: 32,
         ramType: 'DDR4',
         storage: 1024,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 8,
+        sold: 3,
+        stock: 0,
+        delivery: false,
+        pickUp: false
     },
     {
         name: 'Razer Blade 13',
@@ -88,7 +113,12 @@ const itemsList = [
         ram: 16,
         ramType: 'DDR4',
         storage: 512,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 9,
+        sold: 4,
+        stock: 1,
+        delivery: true,
+        pickUp: true
     },
     {
         name: 'MSI GE66',
@@ -101,7 +131,12 @@ const itemsList = [
         ram: 32,
         ramType: 'DDR4',
         storage: 1024,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 9,
+        sold: 1,
+        stock: 1,
+        delivery: false,
+        pickUp: true
     },
     {
         name: 'Acer Predator',
@@ -114,7 +149,12 @@ const itemsList = [
         ram: 16,
         ramType: 'DDR4',
         storage: 512,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 8,
+        sold: 0,
+        stock: 3,
+        delivery: true,
+        pickUp: true
     },
     {
         name: 'LG Ultra',
@@ -127,7 +167,12 @@ const itemsList = [
         ram: 16,
         ramType: 'DDR4',
         storage: 512,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 6,
+        sold: 1,
+        stock: 5,
+        delivery: true,
+        pickUp: true
     },
     {
         name: 'Acer Nitro 5',
@@ -140,7 +185,12 @@ const itemsList = [
         ram: 8,
         ramType: 'DDR4',
         storage: 256,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 8,
+        sold: 4,
+        stock: 2,
+        delivery: false,
+        pickUp: true
     },
     {
         name: 'Asus VivoBook',
@@ -153,7 +203,12 @@ const itemsList = [
         ram: 8,
         ramType: 'DDR4',
         storage: 512,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 8,
+        sold: 2,
+        stock: 1,
+        delivery: true,
+        pickUp: true
     },
     {
         name: 'Asus ZenBook',
@@ -166,7 +221,12 @@ const itemsList = [
         ram: 16,
         ramType: 'DDR4',
         storage: 1024,
-        storageType: 'SSD'
+        storageType: 'SSD',
+        rating: 9,
+        sold: 2,
+        stock: 2,
+        delivery: true,
+        pickUp: true
     }
 ];
 
