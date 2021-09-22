@@ -11,7 +11,7 @@ const Item = (props) => {
                 </div>
                 <div className="item-card__info">
                     <h3>{item.name}</h3>
-                    <h3>Price: US$ {item.price}</h3>
+                    <h3>US$ {item.price}</h3>
                 </div>
             </div>
         </Link>
