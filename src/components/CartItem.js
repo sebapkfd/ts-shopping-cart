@@ -24,7 +24,7 @@ const CartItem = (props) => {
                 name="amount" 
                 defaultValue={item.amount} 
                 min="1"
-                max="20"
+                max={item.stock}
                 onChange={e => handleChange(e)}
                 />
             <p>Total price: US$ {item.price*item.amount}</p>

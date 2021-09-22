@@ -36,8 +36,9 @@ const ItemPage = () => {
                 <p>RAM: {item.ram}GB {item.ramType}</p>
                 <p>Storage: {storage} {item.storageType}</p>
                 <p>Price: US$ {item.price}</p>
+                <p>Stock: {item.stock}</p>
                 <form onSubmit={(e) => clickItem(e)}>
-                    <input type="number" name="amount" defaultValue={defaultAmount} min="1"/>
+                    <input type="number" name="amount" defaultValue={defaultAmount} min="1" max={item.stock}/>
                     <AddButton id={id} />
                     <Link to='/shopping-cart/catalog'>
                         <button>
