@@ -34,6 +34,8 @@ const ItemPage = () => {
                 <p>Storage: {formatStorage(item.storage)} {item.storageType}</p>
                 <p>Price: US$ {item.price}</p>
                 <p>Stock: {item.stock}</p>
+                <p>Shipment available: {(item.shipping) ? 'Yes' : 'No'}</p>
+                <p>Store pickup: {(item.pickUp) ? 'Yes' : 'No'}</p>
                 <form className='item-page__form' onSubmit={(e) => clickItem(e)}>
                     <AddItemOptions item={item} />
                     <Link to='/shopping-cart/catalog'>

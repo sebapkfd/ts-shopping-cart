@@ -27,7 +27,7 @@ const itemsList = [
         rating: 7,
         sold: 0,
         stock: 3,
-        delivery: true,
+        shipping: true,
         pickUp: false
     },
     {
@@ -45,7 +45,7 @@ const itemsList = [
         rating: 7,
         sold: 2,
         stock: 1,
-        delivery: true,
+        shipping: true,
         pickUp: true
     },
     {
@@ -63,7 +63,7 @@ const itemsList = [
         rating: 7,
         sold: 0,
         stock: 3,
-        delivery: true,
+        shipping: true,
         pickUp: true
     },
     {
@@ -81,7 +81,7 @@ const itemsList = [
         rating: 8,
         sold: 3,
         stock: 1,
-        delivery: false,
+        shipping: false,
         pickUp: true
     },
     {
@@ -99,7 +99,7 @@ const itemsList = [
         rating: 8,
         sold: 3,
         stock: 0,
-        delivery: false,
+        shipping: false,
         pickUp: false
     },
     {
@@ -117,7 +117,7 @@ const itemsList = [
         rating: 9,
         sold: 4,
         stock: 1,
-        delivery: true,
+        shipping: true,
         pickUp: true
     },
     {
@@ -135,7 +135,7 @@ const itemsList = [
         rating: 9,
         sold: 1,
         stock: 1,
-        delivery: false,
+        shipping: false,
         pickUp: true
     },
     {
@@ -153,7 +153,7 @@ const itemsList = [
         rating: 8,
         sold: 0,
         stock: 3,
-        delivery: true,
+        shipping: true,
         pickUp: true
     },
     {
@@ -171,7 +171,7 @@ const itemsList = [
         rating: 6,
         sold: 1,
         stock: 5,
-        delivery: true,
+        shipping: true,
         pickUp: true
     },
     {
@@ -189,7 +189,7 @@ const itemsList = [
         rating: 8,
         sold: 4,
         stock: 2,
-        delivery: false,
+        shipping: false,
         pickUp: true
     },
     {
@@ -207,7 +207,7 @@ const itemsList = [
         rating: 8,
         sold: 2,
         stock: 1,
-        delivery: true,
+        shipping: true,
         pickUp: true
     },
     {
@@ -225,7 +225,7 @@ const itemsList = [
         rating: 9,
         sold: 2,
         stock: 2,
-        delivery: true,
+        shipping: true,
         pickUp: true
     }
 ];
