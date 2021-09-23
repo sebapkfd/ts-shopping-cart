@@ -1,15 +1,15 @@
-import Aspire from './Acer-Aspire5.jpg';
-import TUF from './Asus-TUF.jpg';
-import GL from './MSI-GL65.jpg'
-import ROG from './Asus-ROG.jpg'
-import Creator from './MSI-Creator15.jpg';
-import Blade from './Razer-Blade.jpg';
-import GE from './MSI-GE66.jpg';
-import Predator from './Acer-Predator.jpg';
-import Ultra from './LG-Ultra.jpg';
-import Nitro from './Acer-Nitro.jpg';
-import VivoBook from './Asus-VivoBook.jpg';
-import ZenBook from './Asus-ZenBook.jpg';
+import Aspire from './thumbnails/Acer-Aspire5.jpg';
+import TUF from './thumbnails/Asus-TUF.jpg';
+import GL from './thumbnails/MSI-GL65.jpg'
+import ROG from './thumbnails/Asus-ROG.jpg'
+import Creator from './thumbnails/MSI-Creator15.jpg';
+import Blade from './thumbnails/Razer-Blade.jpg';
+import GE from './thumbnails/MSI-GE66.jpg';
+import Predator from './thumbnails/Acer-Predator.jpg';
+import Ultra from './thumbnails/LG-Ultra.jpg';
+import Nitro from './thumbnails/Acer-Nitro.jpg';
+import VivoBook from './thumbnails/Asus-VivoBook.jpg';
+import ZenBook from './thumbnails/Asus-ZenBook.jpg';
 
 export const itemsList = [
     {
@@ -241,4 +241,16 @@ export const itemsPerBrands = itemsBrands.map(brand => {
 
 export const itemsRam = [...new Set(itemsList.map(item => item.ram))].sort((a,b) => a - b);
 
+export const itemsPerRam = itemsRam.map(ram => {
+    return {
+        ram, amount: itemsList.reduce((acc, cv) => (cv.ram >= ram) ? acc + 1 : acc, 0)
+    }
+})
+
 export const itemsStorage = [...new Set(itemsList.map(item => item.storage))].sort((a,b) => a - b);
+
+export const itemsPerStorage = itemsStorage.map(storage => {
+    return {
+        storage, amount: itemsList.reduce((acc, cv) => (cv.storage >= storage) ? acc + 1 : acc, 0)
+    }
+})

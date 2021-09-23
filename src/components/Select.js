@@ -2,13 +2,15 @@ import { useDispatch } from "react-redux";
 import { setNewFilter } from "../redux/filterSlice";
 import formatStorage from "../functions/storageFormat";
 
-const Select = ({list, name}) => {
+const Select = ({list, name, options}) => {
     const dispatch = useDispatch();
+    const optionToFind = (name === 'minRam') ? 'ram' : 'storage';
 
     return (
         <select onChange={e => dispatch(setNewFilter({key: name, value: parseInt(e.target.value)}))}>
             {list.map(item => {
-                return <option value={`${item}`} key={`${item}Option`}>{formatStorage(item)}</option>
+                let itemsPerOption = options.find(opt => opt[optionToFind] === item).amount;
+                return <option value={`${item}`} key={`${item}Option`}>{formatStorage(item)} ({itemsPerOption})</option>
             })}
         </select>
     )
