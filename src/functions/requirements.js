@@ -2,8 +2,8 @@ const requeriments = (element, filter) => {
     return (
         element.price >= filter.minPrice && 
         element.price <= filter.maxPrice && 
-        element.ram >= filter.minRam &&
-        element.storage >= filter.minStorage &&
+        element.ram >= filter.ram &&
+        element.storage >= filter.storage &&
         filter.brands[element.brand]
     );
 }

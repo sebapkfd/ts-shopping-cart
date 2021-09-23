@@ -1,5 +1,5 @@
-import { useDispatch } from "react-redux";
-import { initialState, clearFilter } from "../redux/filterSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { clearFilter } from "../redux/filterSlice";
 import { itemsStorage, itemsRam, itemsPerRam, itemsPerStorage } from "../assets/itemsList";
 import BrandFilter from "./BrandFilter";
 import Input from "./Input";
@@ -7,6 +7,7 @@ import Select from "./Select";
 
 const Filter = () => {
     const dispatch = useDispatch();
+    const state = useSelector(state => state.filter);
 
     const handleClear = (e) => {
         e.preventDefault();
@@ -16,13 +17,13 @@ const Filter = () => {
     return (
         <form className={'filter'}>
             <label>Min price</label>
-            <Input defaultVal={initialState.minPrice} name={'minPrice'} />
+            <Input defaultVal={state.minPrice} name={'minPrice'} />
             <label>Max price</label>
-            <Input defaultVal={initialState.maxPrice} name={'maxPrice'} />
+            <Input defaultVal={state.maxPrice} name={'maxPrice'} />
             <label>Storage</label>
-            <Select list={itemsStorage} options={itemsPerStorage} name={'minStorage'} />
+            <Select list={itemsStorage} options={itemsPerStorage} name={'storage'} />
             <label>RAM</label>
-            <Select list={itemsRam} options={itemsPerRam} name={'minRam'} />
+            <Select list={itemsRam} options={itemsPerRam} name={'ram'} />
             <label>Brands</label>
             <BrandFilter />
             <button onClick={(e)=> handleClear(e)}>Clear</button>
