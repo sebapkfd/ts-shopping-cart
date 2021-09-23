@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { clearFilter } from "../redux/filterSlice";
-import { itemsStorage, itemsRam, itemsPerRam, itemsPerStorage } from "../assets/itemsList";
+import { itemsStorage, itemsRam } from "../assets/itemsList";
 import BrandFilter from "./BrandFilter";
 import Input from "./Input";
 import Select from "./Select";
@@ -21,9 +21,9 @@ const Filter = () => {
             <label>Max price</label>
             <Input defaultVal={state.maxPrice} name={'maxPrice'} />
             <label>Storage</label>
-            <Select list={itemsStorage} options={itemsPerStorage} name={'storage'} />
+            <Select list={itemsStorage} name={'storage'} />
             <label>RAM</label>
-            <Select list={itemsRam} options={itemsPerRam} name={'ram'} />
+            <Select list={itemsRam} name={'ram'} />
             <label>Brands</label>
             <BrandFilter />
             <button onClick={(e)=> handleClear(e)}>Clear</button>

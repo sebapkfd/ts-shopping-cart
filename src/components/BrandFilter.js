@@ -1,4 +1,4 @@
-import { itemsBrands, itemsPerBrands } from "../assets/itemsList";
+import { itemsBrands } from "../assets/itemsList";
 import { setBrands } from "../redux/filterSlice";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -8,17 +8,16 @@ const BrandFilter = () => {
 
     return (
         <div>
-            {itemsBrands.map(brand => {
-                const brandOptions = itemsPerBrands.find(item => item.brand === brand).amount;
+            {itemsBrands.map(item => {
                 return(
-                    <div key={`${brand}Opt`} className='brand-option'>
+                    <div key={`${item.brand}Opt`} className='brand-option'>
                         <input
                             type='checkbox'
-                            checked={checked[brand]}
+                            checked={checked[item.brand]}
                             onChange={e=> dispatch(setBrands({ brand: e.target.value }))}
-                            value={brand}
+                            value={item.brand}
                         />
-                        <label>{brand} ({brandOptions})</label>
+                        <label>{item.brand} ({item.amount})</label>
                     </div>
                 )
             })}
