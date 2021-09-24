@@ -116,12 +116,14 @@ h1 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 96%;
     border-radius: 15px;
     border: solid 2px var(--clear);
+    margin-bottom: 2vh;
 }
 
-.item-card:hover {
+.item-card-table:hover,
+.item-card-list:hover {
     border-color: var(--gray);
 }
 
