@@ -4,7 +4,7 @@ import { itemRemoved } from "../redux/cartSlice";
 import { changeAmount } from "../redux/cartSlice";
 
 const CartItem = (props) => {
-    const {item} = props;
+    const { item } = props;
     const dispatch = useDispatch();
 
     const removeitem = () => {
