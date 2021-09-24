@@ -130,7 +130,6 @@ button:hover {
     flex-direction: column;
 }
 
-
 .item__img {
     height: 90%;
     width: 90%;
@@ -206,6 +205,9 @@ button:hover {
 
 .cart-item .item-card{
     border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .cart-item:hover {
