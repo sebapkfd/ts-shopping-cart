@@ -1,12 +1,14 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const Item = (props) => {
     const { item } = props;
+    const display = useSelector(state => state.display.value);
 
     return (
         <Link to={`/shopping-cart/catalog/${item.id}`}>
-            <div className={"item-card"}>
+            <div className={`${display}__item-card`}>
                 <div className="item-card__img">
                     <img src={`${item.imgSrc}`} alt={`${item.name}`} />
                 </div>
