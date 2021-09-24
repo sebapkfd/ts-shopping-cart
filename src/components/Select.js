@@ -9,7 +9,9 @@ const Select = ({list, name}) => {
     return (
         <select defaultValue={defaultValue} onChange={e => dispatch(setNewFilter({key: name, value: parseInt(e.target.value)}))}>
             {list.map(item => {
-                return <option value={`${item[name]}`} key={`${item[name]}Option`}>{formatStorage(item[name])} ({item.amount})</option>
+                return <option value={`${item[name]}`} key={`${item[name]}Option`}>
+                    {formatStorage(item[name])} ({item.amount})
+                </option>
             })}
         </select>
     )
