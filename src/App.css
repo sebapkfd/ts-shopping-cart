@@ -148,7 +148,6 @@ button:hover {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    flex-wrap: wrap;
     width: 96%;
     border-radius: 15px;
     border: solid 2px var(--clear);
@@ -305,6 +304,10 @@ button:hover {
     .filter {
         position: initial;
     }
+    
+    .display {
+        display: none;
+    }
 
     .catalog-table,
     .catalog-list {
@@ -315,14 +318,22 @@ button:hover {
         padding: 0;
     }
 
-    .display {
-        display: none;
+    .catalog-list {
+        width: 100%;
     }
 
-    .list__item-card {
+    .catalog-list a {
+        width: 80%;
+    }
+
+    .list-card {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .list-cart__item .card__img {
+        width: 100%;
     }
 
     .list-cart__item {
