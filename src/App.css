@@ -110,6 +110,11 @@ button:hover {
     padding-top: var(--top-space);
 }
 
+.table-cart__items,
+.list-cart__items {
+    margin-top: 5vh;
+}
+
 .catalog-table,
 .catalog-list {
     padding-left: 20vw;
