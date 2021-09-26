@@ -29,6 +29,7 @@ h1 {
 
 h3 {
     text-align: center;
+    word-break: keep-all;
 }
 
 input {
@@ -147,6 +148,7 @@ button:hover {
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    flex-wrap: wrap;
     width: 96%;
     border-radius: 15px;
     border: solid 2px var(--clear);
@@ -166,8 +168,7 @@ button:hover {
 }
 
 .list-card .card__img {
-    height: 200px;
-    width: 40%;
+    width: 300px;
     margin-bottom: 5px;
 }
 
