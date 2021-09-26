@@ -12,7 +12,7 @@ const Item = (props) => {
                 <div className="card__img">
                     <img src={`${item.imgSrc}`} alt={`${item.name}`} />
                 </div>
-                <div className="item-card__info">
+                <div className="card__info">
                     <h3>{item.name}</h3>
                     <h3>US$ {item.price}</h3>
                 </div>
