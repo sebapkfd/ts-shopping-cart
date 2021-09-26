@@ -131,16 +131,7 @@ button:hover {
     flex-direction: column;
 }
 
-.item__img {
-    height: 90%;
-    width: 90%;
-    margin: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.table__item-card {
+.table-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,7 +142,7 @@ button:hover {
     border: solid 2px var(--clear);
 }
 
-.list__item-card {
+.list-card {
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -163,39 +154,25 @@ button:hover {
     padding-left: 3vw;
 }
 
-.table__item-card:hover,
-.list__item-card:hover {
+.table-card:hover,
+.list-card:hover {
     border-color: var(--gray);
 }
 
-.table__item-card .item-card__img {
+.table-card .card__img {
     height: 200px;
     width: 80%;
     margin-bottom: 5px;
 }
 
-.list__item-card .item-card__img {
+.list-card .card__img {
     height: 200px;
     width: 40%;
     margin-bottom: 5px;
 }
 
-.list__item-card .item-card__info {
+.list-card .card__info {
     padding-left: 3vw;
-}
-
-.item-page {
-    display: flex;
-    padding-top: var(--top-space);
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.item-page__img,
-.item-page__info {
-    width: 480px;
-    margin-bottom: 50px;
-    padding: 0 10px;
 }
 
 .cart {
@@ -243,7 +220,7 @@ button:hover {
     margin: 0;
 }
 
-.list-cart__item .list__item-card .item-card__img {
+.list-cart__item .list-card .card__img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -253,18 +230,32 @@ button:hover {
     width: 30%;
 }
 
-.list-cart__item .list__item-card .item-card__img img {
+.list-cart__item .list-card .card__img img {
     width: 100%;
 }
 
-.list-cart__item .list__item-card:hover,
-.table-cart__item .table__item-card:hover{
+.list-cart__item .list-card:hover,
+.table-cart__item .table-card:hover{
     border: solid 2px var(--clear);
 }
 
 .table-cart__item:hover,
 .list-cart__item:hover {
     border: solid 3px var(--gray);
+}
+
+.item-page {
+    display: flex;
+    padding-top: var(--top-space);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-page__img,
+.item-page__info {
+    width: 480px;
+    margin-bottom: 50px;
+    padding: 0 10px;
 }
 
 .item-page__info {
@@ -331,5 +322,11 @@ button:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .list-cart__item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

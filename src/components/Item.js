@@ -8,8 +8,8 @@ const Item = (props) => {
 
     return (
         <Link to={`/shopping-cart/catalog/${item.id}`}>
-            <div className={`${display}__item-card`}>
-                <div className="item-card__img">
+            <div className={`${display}-card`}>
+                <div className="card__img">
                     <img src={`${item.imgSrc}`} alt={`${item.name}`} />
                 </div>
                 <div className="item-card__info">
