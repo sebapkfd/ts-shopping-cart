@@ -6,6 +6,7 @@ const BrandFilter = () => {
     const checked = useSelector(state => state.filter.brands);
     const dispatch = useDispatch();
 
+
     return (
         <div>
             {itemsBrands.map(item => {

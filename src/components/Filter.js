@@ -5,15 +5,20 @@ import BrandFilter from "./BrandFilter";
 import Input from "./Input";
 import Select from "./Select";
 import ServiceFilter from "./ServiceFilter";
+import { useState } from "react";
 
 const Filter = () => {
     const dispatch = useDispatch();
     const state = useSelector(state => state.filter);
+    const [showBrands, setShowBrands] = useState(true);
 
     const handleClear = (e) => {
         e.preventDefault();
         dispatch(clearFilter());
     }
+
+    const expandLogo = <span class="material-icons">expand_more</span>
+    const hideLogo = <span class="material-icons">expand_less</span>
 
     return (
         <form className={'filter'}>
@@ -25,8 +30,10 @@ const Filter = () => {
             <Select list={itemsStorage} name={'storage'} />
             <label>RAM</label>
             <Select list={itemsRam} name={'ram'} />
-            <label>Brands</label>
-            <BrandFilter />
+            <div onClick={() => setShowBrands(!showBrands)}>
+                <label>Brands</label>{(showBrands) ? hideLogo : expandLogo}
+            </div>
+            {(showBrands) ? <BrandFilter /> : null}
             <ServiceFilter />
             <button onClick={(e)=> handleClear(e)}>Clear</button>
         </form>
