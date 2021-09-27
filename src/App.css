@@ -314,6 +314,20 @@ button:hover {
     margin-bottom: 14px;
 }
 
+.display button {
+    background-color: var(--clear);
+    color: var(--dark);
+    border: 1px solid var(--dark);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.display button:hover {
+    color: var(--gray);
+    border: 1px solid var(--gray);
+}
+
 @media screen and (max-width: 600px) {
     .catalog-page {
         display: flex;
