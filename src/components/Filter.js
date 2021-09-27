@@ -4,6 +4,7 @@ import { itemsStorage, itemsRam } from "../assets/itemsList";
 import BrandFilter from "./BrandFilter";
 import Input from "./Input";
 import Select from "./Select";
+import ServiceFilter from "./ServiceFilter";
 
 const Filter = () => {
     const dispatch = useDispatch();
@@ -26,6 +27,7 @@ const Filter = () => {
             <Select list={itemsRam} name={'ram'} />
             <label>Brands</label>
             <BrandFilter />
+            <ServiceFilter />
             <button onClick={(e)=> handleClear(e)}>Clear</button>
         </form>
     )

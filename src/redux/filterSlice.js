@@ -11,7 +11,9 @@ export const initialState = {
     minPrice: 0,
     maxPrice: 99999,
     ram: 8,
-    storage: 256
+    storage: 256,
+    pickUp: true,
+    shipping: true
 }
 
 const FilterSlice = createSlice({
