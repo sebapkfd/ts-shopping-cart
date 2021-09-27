@@ -278,6 +278,22 @@ button:hover {
     position: fixed;
 }
 
+.service-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-filter div {
+    display: flex;
+    align-items: center;
+}
+
+.service-filter label {
+    margin-left: 1vw;
+}
+
 .brand-option {
     display: flex;
     align-items: center;

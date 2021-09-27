@@ -7,19 +7,24 @@ const ServiceFilter = () => {
     const dispatch = useDispatch();
 
     return (
-        <div>
-            <input
-                type='checkbox'
-                checked={pickUpChecked}
-                onChange={() => dispatch(setNewFilter({ key: 'pickUp', value: !pickUpChecked }))}
-            />
-            <label>Pick Up</label>
-            <input
-                type='checkbox'
-                checked={shippingChecked}
-                onChange={() => dispatch(setNewFilter({ key: 'shipping', value: !shippingChecked }))}
-            />
-            <label>Shipping </label>
+        <div className={'service-filter'}>
+            <label>Service options</label>
+            <div>
+                <input
+                    type='checkbox'
+                    checked={pickUpChecked}
+                    onChange={() => dispatch(setNewFilter({ key: 'pickUp', value: !pickUpChecked }))}
+                />
+                <label>Pick Up</label>
+            </div>
+            <div>
+                <input
+                    type='checkbox'
+                    checked={shippingChecked}
+                    onChange={() => dispatch(setNewFilter({ key: 'shipping', value: !shippingChecked }))}
+                />
+                <label>Shipping </label>
+            </div>
         </div>
     )
 
