@@ -13,7 +13,7 @@ const BrandFilter = () => {
 
     return (
         <div>
-            <div onClick={() => setShowBrands(!showBrands)}>
+            <div onClick={() => setShowBrands(!showBrands)} id={'brands-label'}>
                 <label>Brands</label>
                 {(showBrands) ? hideLogo : expandLogo}
             </div>

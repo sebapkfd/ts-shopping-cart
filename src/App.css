@@ -308,6 +308,12 @@ button:hover {
     margin-right: 1vw;
 }
 
+#brands-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .item-page__form {
     display: flex;
 }
