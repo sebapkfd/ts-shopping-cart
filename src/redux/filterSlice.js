@@ -9,7 +9,7 @@ export const initialState = {
         MSI: true
     },
     minPrice: 0,
-    maxPrice: 99999,
+    maxPrice: 9999,
     ram: 8,
     storage: 256,
     pickUp: false,

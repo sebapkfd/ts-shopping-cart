@@ -6,13 +6,12 @@ import Input from "./Input";
 import Select from "./Select";
 import ServiceFilter from "./ServiceFilter";
 import { useState } from "react";
+import Drop from "./Drop";
 
 const Filter = () => {
-    const dispatch = useDispatch();
     const state = useSelector(state => state.filter);
     const [show, setShow] = useState(true);
-    const expandLogo = <span className="material-icons">expand_more</span>
-    const hideLogo = <span className="material-icons">expand_less</span>
+    const dispatch = useDispatch();
 
     const handleClear = (e) => {
         e.preventDefault();
@@ -21,19 +20,12 @@ const Filter = () => {
 
     return (
         <form className={'filter'}>
-            <div onClick={() => setShow(!show)}>
-                <p>Filter by</p>
-                {(show) ? hideLogo : expandLogo}
-            </div>
+            <Drop values={{ title: 'Filter by', show, setShow }}/>
             {(show) ? (
                 <div>
-                    <label>Min price</label>
                     <Input defaultVal={state.minPrice} name={'minPrice'} />
-                    <label>Max price</label>
                     <Input defaultVal={state.maxPrice} name={'maxPrice'} />
-                    <label>Storage</label>
                     <Select list={itemsStorage} name={'storage'} />
-                    <label>RAM</label>
                     <Select list={itemsRam} name={'ram'} />
                     <BrandFilter />
                     <ServiceFilter />
