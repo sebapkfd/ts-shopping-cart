@@ -1,6 +1,6 @@
 import AddButton from "./AddButton";
 
-const AddItemOptions = ({item}) => {
+const AddItemOptions = ({ item }) => {
 
     return (item.stock > 0) ? (
         <div className='add-items-options'>

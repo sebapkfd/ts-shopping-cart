@@ -3,8 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { itemRemoved } from "../redux/cartSlice";
 import { changeAmount } from "../redux/cartSlice";
 
-const CartItem = (props) => {
-    const { item } = props;
+const CartItem = ({ item }) => {
     const dispatch = useDispatch();
     const display = useSelector(state => state.display.value);
 

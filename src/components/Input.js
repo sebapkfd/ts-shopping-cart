@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { setNewFilter } from "../redux/filterSlice";
 
-const Input = ({defaultVal, name}) => {
+const Input = ({ defaultVal, name }) => {
     const dispatch = useDispatch();
 
     return (

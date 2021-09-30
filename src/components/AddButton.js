@@ -1,8 +1,7 @@
 import { useSelector } from "react-redux";
 import { selectItemById } from "../redux/cartSlice";
 
-const AddButton = (props) => {
-    const {id} = props;
+const AddButton = ({ id }) => {
     const isAdded = useSelector(state => selectItemById(state, id));
     const text = (isAdded) ? 'Item Added' : 'Add to cart';
 

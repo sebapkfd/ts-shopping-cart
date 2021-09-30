@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setNewFilter } from "../redux/filterSlice";
 import formatStorage from "../functions/storageFormat";
 
-const Select = ({list, name}) => {
+const Select = ({ list, name }) => {
     const dispatch = useDispatch();
     const defaultValue = useSelector(state => state.filter[name]);
     
