@@ -9,7 +9,7 @@ const Navbar = () =>{
         <div className="navbar">
             <div>
                 <Link to='/shopping-cart'>
-                    <h1>Home</h1>
+                    <p id='home-link'>Home</p>
                 </Link>
             </div>
             <div className="navbar__options">

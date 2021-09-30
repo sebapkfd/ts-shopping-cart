@@ -28,7 +28,7 @@ const ItemPage = () => {
                 <img src={`${item.imgSrc}`} alt={`${item.name}`} />
             </div>
             <div className="item-page__info">
-                <h3>{item.name}</h3>
+                <p className={'item-name'}>{item.name}</p>
                 <p>Processor: {item.cpu}</p>
                 <p>RAM: {item.ram}GB {item.ramType}</p>
                 <p>Storage: {formatStorage(item.storage)} {item.storageType}</p>

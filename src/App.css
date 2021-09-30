@@ -28,11 +28,6 @@ h1 {
     text-align: center;
 }
 
-h3 {
-    text-align: center;
-    word-break: keep-all;
-}
-
 input {
     height: 30px;
 }
@@ -60,6 +55,10 @@ input {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#home-link {
+    font-size: 1em;
 }
 
 #cart-amount {
@@ -255,6 +254,13 @@ button:hover {
     padding-top: var(--top-space);
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.item-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    word-break: keep-all;
 }
 
 .item-page__img,
