@@ -1,23 +1,18 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setNewFilter } from "../redux/filterSlice";
 import { useState } from "react";
+import Drop from "./Drop";
 
 const ServiceFilter = () => {
-    const [showServices, setShowServices] = useState(true)
+    const [show, setShow] = useState(true);
     const pickUpChecked = useSelector(state => state.filter.pickUp);
     const shippingChecked = useSelector(state => state.filter.shipping);
     const dispatch = useDispatch();
 
-    const expandLogo = <span className="material-icons">expand_more</span>
-    const hideLogo = <span className="material-icons">expand_less</span>
-
     return (
         <div className={'service-filter'}>
-            <div onClick={() => setShowServices(!showServices)}>
-                <label>Service options</label>
-                {(showServices) ? hideLogo : expandLogo}
-            </div>
-            {(showServices) ? (
+        <Drop values={{ title: 'Brands', show, setShow }}/>
+            {(show) ? (
                 <div className={'service-options'}>
                     <div>
                         <input
