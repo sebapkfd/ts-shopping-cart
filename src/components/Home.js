@@ -5,9 +5,7 @@ const Home = () => {
     return(
         <div className="home">
             <div className="home-info">
-                <h1>Find the right</h1>
-                <h1>Computer</h1>
-                <h1>for you!</h1>
+                <h1>Find the right Computer for you!</h1>
             </div>
             <div className="home__buttons">
                 <Link to='/shopping-cart/catalog'>

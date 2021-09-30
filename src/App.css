@@ -25,6 +25,7 @@ a {
 h1 {
     color: var(--clear);
     margin: 0;
+    text-align: center;
 }
 
 h3 {
