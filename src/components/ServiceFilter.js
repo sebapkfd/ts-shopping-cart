@@ -11,10 +11,10 @@ const ServiceFilter = () => {
 
     return (
         <div className={'service-filter'}>
-        <Drop values={{ title: 'Brands', show, setShow }}/>
+            <Drop values={{ title: 'Service options', show, setShow }}/>
             {(show) ? (
                 <div className={'service-options'}>
-                    <div>
+                    <div className={'option'}>
                         <input
                         type='checkbox'
                         checked={pickUpChecked}
@@ -22,7 +22,7 @@ const ServiceFilter = () => {
                         />
                         <label>Pick Up</label>
                     </div>
-                    <div>
+                    <div className={'option'}>
                         <input
                             type='checkbox'
                             checked={shippingChecked}

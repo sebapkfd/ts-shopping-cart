@@ -296,9 +296,14 @@ button:hover {
     align-items: center;
 }
 
-.service-filter div {
+.drop {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.drop p {
+    margin: 0;
 }
 
 .service-options {
@@ -306,23 +311,17 @@ button:hover {
     flex-direction: column;
 }
 
-.service-filter label {
-    margin-left: 1vw;
-}
-
-.brand-option {
+.option {
     display: flex;
     align-items: center;
+}
+
+.option label {
+    margin-left: 1vw;
 }
 
 .brand-option input {
     margin-right: 1vw;
-}
-
-#brands-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .item-page__form {

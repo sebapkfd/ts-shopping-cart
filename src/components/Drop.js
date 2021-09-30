@@ -3,7 +3,7 @@ const Drop = ({ values: { title, show, setShow } }) => {
     const hideLogo = <span className="material-icons">expand_less</span>
     
     return (
-        <div onClick={() => setShow(!show)}>
+        <div onClick={() => setShow(!show)} className={'drop'}>
             <p>{title}</p>
             {(show) ? hideLogo : expandLogo}
         </div>

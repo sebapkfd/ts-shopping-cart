@@ -14,7 +14,7 @@ const BrandFilter = () => {
             <Drop values={{ title: 'Brands', show, setShow }}/>
             {(show) ? (itemsBrands.map(item => {
                 return(
-                    <div key={`${item.brand}Opt`} className='brand-option'>
+                    <div key={`${item.brand}Opt`} className={'option'}>
                         <input
                             type='checkbox'
                             checked={checked[item.brand]}
