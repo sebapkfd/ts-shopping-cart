@@ -285,6 +285,10 @@ button:hover {
     position: fixed;
 }
 
+.filter p {
+    margin-bottom: 1vh;
+}
+
 .service-filter {
     display: flex;
     flex-direction: column;
