@@ -8,7 +8,7 @@ const Select = ({ list, name }) => {
     const defaultValue = useSelector(state => state.filter[name]);
     
     return (
-        <div>
+        <div className={'filter-input'}>
             <label>{startCase(name)}</label>
             <select 
                 defaultValue={defaultValue} 

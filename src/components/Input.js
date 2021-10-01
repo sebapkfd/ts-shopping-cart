@@ -6,7 +6,7 @@ const Input = ({ defaultVal, name }) => {
     const dispatch = useDispatch();
 
     return (
-        <div>
+        <div className={'filter-input'}>
             <label>{startCase(name)}</label>
             <input
                 type='number'    
