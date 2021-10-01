@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setNewFilter } from "../redux/filterSlice";
 import formatStorage from "../functions/storageFormat";
+import { startCase } from "lodash";
 
 const Select = ({ list, name }) => {
     const dispatch = useDispatch();
@@ -8,7 +9,7 @@ const Select = ({ list, name }) => {
     
     return (
         <div>
-            <label>{name}</label>
+            <label>{startCase(name)}</label>
             <select 
                 defaultValue={defaultValue} 
                 onChange={e => dispatch(setNewFilter({key: name, value: parseInt(e.target.value)}))}>
