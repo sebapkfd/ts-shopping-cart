@@ -1,6 +1,10 @@
 const Empty = () => {
+
     return (
-        <p>No results</p>
+        <div className='empty'>
+            <span class="material-icons">block</span>
+            <p>No results</p>
+        </div>
     )
 }
 

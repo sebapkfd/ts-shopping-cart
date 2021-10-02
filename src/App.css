@@ -356,6 +356,17 @@ button:hover {
     border: 1px solid var(--gray);
 }
 
+.empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.empty .material-icons{
+    font-size: 20vh;
+}
+
 @media screen and (max-width: 600px) {
     .catalog-page {
         display: flex;
