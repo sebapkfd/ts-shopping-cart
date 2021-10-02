@@ -5,6 +5,7 @@ import requeriments from '../functions/requirements';
 import Item from './Item';
 import Filter from './Filter';
 import Display from './Display';
+import Empty from './Empty';
 
 const Catalog = () => {
     const filter = useSelector(state => state.filter);
@@ -16,14 +17,14 @@ const Catalog = () => {
             <Filter />
             <Display />
             <div className={`catalog-${display}`}>
-                {filteredList.map(item =>{
+                { (filteredList.length > 0) ? filteredList.map(item =>{
                     return (
                         <Item 
                             item={item}
                             key={item.id}
                         />
                     )
-                })}
+                }) : <Empty /> }
             </div>
         </div>
     )
