@@ -10,6 +10,12 @@
     --clear: rgb(255, 255, 255);
     --gray: rgb(219, 219, 219);
     --top-space: 10vh;
+
+    --contrast-1: #071232;
+    --tone-1: #00A389;
+    --tone-2: #BFE8E1;
+    --gray-1: #777D6E;
+    --gray-2: #EDEFF4;
 }
 
 img {
@@ -33,19 +39,19 @@ input {
 }
 
 .navbar {
-    background-color: var(--dark);
     position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 30px;
+    background-color: var(--contrast-1);
 }
 
 .navbar p {
     float: right;
     display: block;
-    color: var(--clear);
+    color: var(--gray-2);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -62,7 +68,7 @@ input {
 }
 
 #cart-amount {
-    color: var(--clear);
+    color: var(--contrast-1);
     margin-left: 8px;
 }
 
@@ -93,8 +99,8 @@ input {
 }
 
 button {
-    background-color: var(--dark);
-    color: var(--clear);
+    background-color: var(--contrast-1);
+    color: var(--gray-2);
     border: none;
     padding: 10px 15px;
     margin: 5px;
@@ -103,11 +109,12 @@ button {
 
 button:hover {
     background-color: var(--clear);
-    color: var(--dark);
+    color: var(--contrast-1);
 }
 
 .catalog-page {
     padding-top: var(--top-space);
+    background-color: var(--gray-2);
 }
 
 .table-cart__items,
@@ -117,12 +124,14 @@ button:hover {
 
 .catalog-table,
 .catalog-list {
-    padding-left: 20vw;
+    margin-left: 20vw;
 }
 
 .table-cart__items,
 .catalog-table {
-    width: 100%;
+    width: 80%;
+    background-color: var(--clear);
+    border-radius: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     grid-auto-rows: minmax(200px, auto);
@@ -155,7 +164,8 @@ button:hover {
     align-items: center;
     width: 96%;
     border-radius: 15px;
-    border: solid 2px var(--clear);
+    border: solid 2px var(--gray-2);
+    background-color: var(--clear);
     margin-bottom: 2vh;
     padding-left: 3vw;
 }
@@ -283,6 +293,9 @@ button:hover {
     align-items: center;
     width: 200px;
     position: fixed;
+    background-color: var(--clear);
+    border: 1px solid var(--clear);
+    border-radius: 15px;
 }
 
 .filter p {
@@ -343,17 +356,16 @@ button:hover {
 }
 
 .display button {
-    background-color: var(--clear);
-    color: var(--dark);
-    border: 1px solid var(--dark);
+    background-color: var(--gray-2);
+    color: var(--gray-1);
     padding: 3px;
     display: flex;
     justify-content: center;
 }
 
 .display button:hover {
-    color: var(--gray);
-    border: 1px solid var(--gray);
+    color: var(--gray-2);
+    background-color: var(--gray-1);
 }
 
 .empty {
@@ -389,7 +401,7 @@ button:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        margin: 0;
     }
 
     .catalog-list {
