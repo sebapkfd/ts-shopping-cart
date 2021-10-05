@@ -10,17 +10,14 @@ html {
 }
 
 :root {
-    --dark: rgb(0, 0, 0);
-    --clear: rgb(255, 255, 255);
-    --gray: rgb(219, 219, 219);
+    --contrast-1: #000000;
+    --tone-1: #00c0b6;
+    --tone-2: #96e2d6;
+    --gray-1: #777D6E;
+    --gray-2: #f0efef;
+    --gray-3: rgb(255, 255, 255);
     --top-space: 10vh;
     --side-space: 5vw;
-
-    --contrast-1: #071232;
-    --tone-1: #00A389;
-    --tone-2: #BFE8E1;
-    --gray-1: #777D6E;
-    --gray-2: #EDEFF4;
 }
 
 img {
@@ -29,12 +26,12 @@ img {
 }
 
 a {
-    color: var(--dark);
+    color: var(--contrast-1);
     text-decoration: none;
 }
 
 h1 {
-    color: var(--clear);
+    color: var(--gray-3);
     margin: 0;
     text-align: center;
 }
@@ -100,11 +97,11 @@ input {
 }
 
 .home-info h1 {
-    color: var(--dark);
+    color: var(--contrast-1);
 }
 
 button {
-    background-color: var(--contrast-1);
+    background-color: var(--tone-1);
     color: var(--gray-2);
     border: none;
     padding: 10px 15px;
@@ -113,7 +110,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--clear);
+    background-color: var(--gray-3);
     color: var(--contrast-1);
 }
 
@@ -136,7 +133,7 @@ button:hover {
 .table-cart__items,
 .catalog-table {
     width: 80%;
-    background-color: var(--clear);
+    background-color: var(--gray-3);
     border-radius: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
@@ -157,10 +154,10 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--clear);
+    background-color: var(--gray-3);
     padding: 5px;
     border-radius: 15px;
-    border: solid 2px var(--clear);
+    border: solid 2px var(--gray-3);
 }
 
 .list-card {
@@ -171,7 +168,7 @@ button:hover {
     width: 96%;
     border-radius: 15px;
     border: solid 2px var(--gray-2);
-    background-color: var(--clear);
+    background-color: var(--gray-3);
     margin-bottom: 2vh;
     padding-left: 3vw;
 }
@@ -222,7 +219,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid 3px var(--clear);
+    border: solid 3px var(--gray-3);
     border-radius: 15px;
 }
 
@@ -233,7 +230,7 @@ button:hover {
     justify-content: left;
     align-items: center;
     border: solid 3px var(--gray-2);
-    background-color: var(--clear);
+    background-color: var(--gray-3);
     border-radius: 15px;
 }
 
@@ -244,7 +241,7 @@ button:hover {
 .list-cart__item .list-card {
     width: 100%;
     margin: 0;
-    border-color: var(--clear);
+    border-color: var(--gray-3);
 }
 
 .list-cart__item .list-card .card__img {
@@ -267,7 +264,7 @@ button:hover {
 }
 
 .table-cart__item .table-card:hover {
-    border-color: var(--clear);
+    border-color: var(--gray-3);
 }
 
 .item-page {
@@ -275,7 +272,8 @@ button:hover {
     padding-top: var(--top-space);
     justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--clear);
+    background-color: var(--gray-3);
+    height: 100vh;
 }
 
 .item-name {
@@ -290,9 +288,6 @@ button:hover {
     width: 480px;
     margin-bottom: 50px;
     padding: 0 10px;
-}
-
-.item-page__info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -305,8 +300,8 @@ button:hover {
     align-items: center;
     width: 200px;
     position: fixed;
-    background-color: var(--clear);
-    border: 1px solid var(--clear);
+    background-color: var(--gray-3);
+    border: 1px solid var(--gray-3);
     border-radius: 15px;
 }
 
