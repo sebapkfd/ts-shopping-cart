@@ -10,6 +10,7 @@
     --clear: rgb(255, 255, 255);
     --gray: rgb(219, 219, 219);
     --top-space: 10vh;
+    --side-space: 5vh;
 
     --contrast-1: #071232;
     --tone-1: #00A389;
@@ -114,6 +115,7 @@ button:hover {
 
 .catalog-page {
     padding-top: var(--top-space);
+    padding: var(--top-space) var(--side-space);
     background-color: var(--gray-2);
 }
 
