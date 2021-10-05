@@ -149,7 +149,7 @@ button:hover {
     justify-content: space-around;
     column-gap: 10px;
     row-gap: 55px;
-    padding-top: 3vh;
+    padding: 3vh 0;
 }
 
 .list-cart__items,
@@ -160,6 +160,10 @@ button:hover {
     background-color: var(--gray-3);
     border-radius: 15px;
     padding: 3vh 2%;
+}
+
+.list-cart__items {
+    background-color: var(--gray-2);
 }
 
 .table-card {
