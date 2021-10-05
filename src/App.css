@@ -59,6 +59,10 @@ input {
     text-decoration: none;
 }
 
+.navbar p:hover {
+    color: var(--tone-1);
+}
+
 .navbar__options {
     display: flex;
     flex-direction: row;
