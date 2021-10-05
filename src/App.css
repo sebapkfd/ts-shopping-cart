@@ -5,12 +5,16 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: var(--gray-2);
+}
+
 :root {
     --dark: rgb(0, 0, 0);
     --clear: rgb(255, 255, 255);
     --gray: rgb(219, 219, 219);
     --top-space: 10vh;
-    --side-space: 5vh;
+    --side-space: 5vw;
 
     --contrast-1: #071232;
     --tone-1: #00A389;
@@ -196,6 +200,11 @@ button:hover {
     padding-top: var(--top-space);
 }
 
+.table-cart__items {
+    width: 90%;
+    margin-left: var(--side-space);
+}
+
 .cart__options {
     display: flex;
     align-items: center;
@@ -219,11 +228,12 @@ button:hover {
 
 .list-cart__item {
     width: 80%;
-    margin-left: 10vw;
+    margin: 0 0 2vh 10vw;
     display: flex;
     justify-content: left;
     align-items: center;
-    border: solid 3px var(--clear);
+    border: solid 3px var(--gray-2);
+    background-color: var(--clear);
     border-radius: 15px;
 }
 
@@ -231,10 +241,10 @@ button:hover {
     width: 70%;
 }
 
-.list-cart__item .list__item-card {
+.list-cart__item .list-card {
     width: 100%;
-    margin: 0 0 0 20px;
     margin: 0;
+    border-color: var(--clear);
 }
 
 .list-cart__item .list-card .card__img {
@@ -251,14 +261,13 @@ button:hover {
     width: 100%;
 }
 
-.list-cart__item .list-card:hover,
-.table-cart__item .table-card:hover{
-    border: solid 2px var(--clear);
-}
-
 .table-cart__item:hover,
 .list-cart__item:hover {
-    border: solid 3px var(--gray);
+    border: solid 3px var(--gray-1);
+}
+
+.table-cart__item .table-card:hover {
+    border-color: var(--clear);
 }
 
 .item-page {
@@ -266,6 +275,7 @@ button:hover {
     padding-top: var(--top-space);
     justify-content: center;
     flex-wrap: wrap;
+    background-color: var(--clear);
 }
 
 .item-name {
