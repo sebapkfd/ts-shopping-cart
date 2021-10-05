@@ -27,8 +27,8 @@ const Cart = () => {
         <div className="cart">
             <div className="cart__options">
                 <h3>Total to pay: US$ {totalToPay}</h3>
-                <button onClick={payItems}>Pay</button>
-                <button onClick={cleanItems}>Clean</button>
+                <button onClick={payItems} className='cart-button'>Pay</button>
+                <button onClick={cleanItems} className='cart-button'>Clean</button>
             </div>
             <Display />
             <div className={`${display}-cart__items`}>

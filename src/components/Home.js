@@ -9,10 +9,10 @@ const Home = () => {
             </div>
             <div className="home__buttons">
                 <Link to='/shopping-cart/catalog'>
-                    <button className="HomeButton">Start Shopping</button>
+                    <button className="home-button">Start Shopping</button>
                 </Link>
                 <a href="https://github.com/sebapkfd/shopping-cart" target="_blank" rel="noreferrer">
-                    <button className="HomeButton">Repository</button>
+                    <button className="home-button">Repository</button>
                 </a>
             </div>
         </div>

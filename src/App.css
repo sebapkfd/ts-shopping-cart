@@ -118,6 +118,10 @@ button:hover {
     color: var(--contrast-1);
 }
 
+.home-button:hover {
+    background-color: var(--gray-2);
+}
+
 .catalog-page {
     padding-top: var(--top-space);
     padding: var(--top-space) var(--side-space);
@@ -217,6 +221,10 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.cart-button:hover {
+    background-color: var(--gray-2);
 }
 
 .table-cart__item {
