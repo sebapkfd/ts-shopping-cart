@@ -51,35 +51,6 @@ input {
     height: 30px;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
-    background-color: var(--contrast-1);
-}
-
-.navbar p {
-    float: right;
-    display: block;
-    color: var(--gray-2);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navbar p:hover {
-    color: var(--tone-1);
-}
-
-.navbar__options {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 #home-link {
     font-size: 1em;
 }

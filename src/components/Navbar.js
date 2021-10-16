@@ -2,17 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CartIcon from "../assets/cart-icon.png";
 import CartAmount from "./CartAmount";
+import styles from '../styles/navbar.module.css';
 
 const Navbar = () =>{
 
     return (
-        <div className="navbar">
+        <div className={styles.navbar}>
             <div>
                 <Link to='/shopping-cart'>
                     <p id='home-link'>Home</p>
                 </Link>
             </div>
-            <div className="navbar__options">
+            <div className={styles.navbarOptions}>
                 <Link to='/shopping-cart/catalog'>
                     <p>Catalog</p>
                 </Link>
