@@ -7,6 +7,7 @@ import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import formatStorage from '../functions/storageFormat';
 import AddItemOptions from './AddItemOptions';
+import styles from '../styles/itemPage.module.css';
 
 const ItemPage = () => {
     const {id} = useParams();
@@ -39,7 +40,7 @@ const ItemPage = () => {
                 <form className='item-page__form' onSubmit={(e) => clickItem(e)}>
                     <AddItemOptions item={item} />
                     <Link to='/shopping-cart/catalog'>
-                        <button className={'back-button'}>
+                        <button className={styles.backButton}>
                             Back to catalog
                         </button>
                     </Link>

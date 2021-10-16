@@ -1,0 +1,10 @@
+@import './vars.css';
+
+.backButton {
+    background: var(--gray-3);
+    color: var(--contrast-1);
+}
+
+.backButton:hover {
+    color: var(--tone-1);
+}

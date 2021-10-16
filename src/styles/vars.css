@@ -1,0 +1,21 @@
+:root {
+    --contrast-1: #000000;
+    --tone-1: #00c0b6;
+    --tone-2: #96e2d6;
+    --gray-1: #777D6E;
+    --gray-2: #f0efef;
+    --gray-3: rgb(255, 255, 255);
+    --top-space: 10vh;
+    --side-space: 5vw;
+
+    --blue-1: #2596be;
+    --blue-2: #58677c;
+    --blue-3: #627998;
+    --blue-4: #6480fb;
+    --blue-5: #6480fb;
+    --blue-6: #6480fb;
+    --blue-7: #3a4756;
+    --blue-8: #7887a1;
+    --gray-1: #dde0e9;
+    --gray-2: #f3f6fb;
+}
