@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { itemAdded } from '../redux/cartSlice';
 import { useDispatch } from 'react-redux';
-import {itemsList} from '../assets/itemsList';
+import { itemsList } from '../assets/itemsList';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import formatStorage from '../functions/storageFormat';
@@ -24,12 +24,12 @@ const ItemPage = () => {
     }
 
     return (
-        <div className='item-page'>
-            <div className="item-page__img">
+        <div className={styles.itemPage}>
+            <div className={styles.itemPageImg}>
                 <img src={`${item.imgSrc}`} alt={`${item.name}`} />
             </div>
-            <div className="item-page__info">
-                <p className={'item-name'}>{item.name}</p>
+            <div className={styles.itemPageInfo}>
+                <p className={styles.itemName}>{item.name}</p>
                 <p>Processor: {item.cpu}</p>
                 <p>RAM: {item.ram}GB {item.ramType}</p>
                 <p>Storage: {formatStorage(item.storage)} {item.storageType}</p>
@@ -37,7 +37,7 @@ const ItemPage = () => {
                 <p>Stock: {item.stock}</p>
                 <p>Shipment available: {(item.shipping) ? 'Yes' : 'No'}</p>
                 <p>Store pickup: {(item.pickUp) ? 'Yes' : 'No'}</p>
-                <form className='item-page__form' onSubmit={(e) => clickItem(e)}>
+                <form className={styles.itemPageForm} onSubmit={(e) => clickItem(e)}>
                     <AddItemOptions item={item} />
                     <Link to='/shopping-cart/catalog'>
                         <button className={styles.backButton}>

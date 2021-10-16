@@ -299,33 +299,6 @@ button:hover {
     border-color: var(--gray-3);
 }
 
-.item-page {
-    display: flex;
-    padding-top: var(--top-space);
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: var(--gray-3);
-    height: 100vh;
-}
-
-.item-name {
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: center;
-    word-break: keep-all;
-}
-
-.item-page__img,
-.item-page__info {
-    width: 480px;
-    margin-bottom: 50px;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .filter {
     display: flex;
     flex-direction: column;
@@ -384,9 +357,9 @@ button:hover {
     margin-right: 1vw;
 }
 
-.item-page__form {
+/* .item-page__form {
     display: flex;
-}
+} */
 
 .display {
     display: flex;
@@ -417,15 +390,6 @@ button:hover {
 
 .empty .material-icons{
     font-size: 20vh;
-}
-
-.back-button {
-    background-color: var(--gray-3);
-    color: var(--contrast-1);
-}
-
-.back-button:hover {
-    color: var(--tone-1);
 }
 
 @media screen and (max-width: 600px) {

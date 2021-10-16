@@ -1,5 +1,32 @@
 @import './vars.css';
 
+.itemPage {
+    display: flex;
+    padding-top: var(--top-space);
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--gray-3);
+    height: 100vh;
+}
+
+.itemName {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.itemPageImg,
+.itemPageInfo {
+    width: 480px;
+    margin-bottom: 50px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .backButton {
     background: var(--gray-3);
     color: var(--contrast-1);
@@ -7,4 +34,9 @@
 
 .backButton:hover {
     color: var(--tone-1);
+}
+
+.item-page__form,
+.itemPageForm {
+    display: flex;
 }
