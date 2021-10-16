@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setNewFilter } from "../redux/filterSlice";
 import { useState } from "react";
 import Drop from "./Drop";
+import styles from '../styles/serviceFilter.module.css';
 
 const ServiceFilter = () => {
     const [show, setShow] = useState(true);
@@ -10,11 +11,11 @@ const ServiceFilter = () => {
     const dispatch = useDispatch();
 
     return (
-        <div className={'service-filter'}>
+        <div className={styles.serviceFilter}>
             <Drop values={{ title: 'Service options', show, setShow }}/>
             {(show) ? (
-                <div className={'service-options'}>
-                    <div className={'option'}>
+                <div className={styles.serviceOptions}>
+                    <div className={styles.option}>
                         <input
                         type='checkbox'
                         checked={pickUpChecked}
@@ -22,7 +23,7 @@ const ServiceFilter = () => {
                         />
                         <label>Pick Up</label>
                     </div>
-                    <div className={'option'}>
+                    <div className={styles.option}>
                         <input
                             type='checkbox'
                             checked={shippingChecked}

@@ -322,37 +322,6 @@ button:hover {
     margin-bottom: 1vh;
 }
 
-.service-filter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.drop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.drop p {
-    margin: 0;
-}
-
-.service-options {
-    display: flex;
-    flex-direction: column;
-}
-
-.option {
-    display: flex;
-    align-items: center;
-}
-
-.option label {
-    margin-left: 1vw;
-}
-
 .brand-option input {
     margin-right: 1vw;
 }
@@ -378,10 +347,6 @@ button:hover {
 
     .filter {
         position: initial;
-    }
-    
-    .display {
-        display: none;
     }
 
     .catalog-table,
