@@ -39,7 +39,7 @@ const ItemPage = () => {
                 <form className='item-page__form' onSubmit={(e) => clickItem(e)}>
                     <AddItemOptions item={item} />
                     <Link to='/shopping-cart/catalog'>
-                        <button>
+                        <button className={'back-button'}>
                             Back to catalog
                         </button>
                     </Link>

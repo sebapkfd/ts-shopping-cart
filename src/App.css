@@ -419,6 +419,15 @@ button:hover {
     font-size: 20vh;
 }
 
+.back-button {
+    background-color: var(--gray-3);
+    color: var(--contrast-1);
+}
+
+.back-button:hover {
+    color: var(--tone-1);
+}
+
 @media screen and (max-width: 600px) {
     .catalog-page {
         display: flex;
