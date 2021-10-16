@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { setDisplay } from "../redux/displaySlice";
+import styles from '../styles/display.module.css';
 
 const Display = () => {
     const dispatch = useDispatch();
@@ -7,7 +8,7 @@ const Display = () => {
     const listIcon = <span className="material-icons">view_list</span>
 
     return(
-        <div className='display'>
+        <div className={styles.display}>
             <button onClick={() => dispatch(setDisplay({newDisplay: 'table'}))}>{tableIcon}</button>
             <button onClick={() => dispatch(setDisplay({newDisplay: 'list'}))}>{listIcon}</button>
         </div>

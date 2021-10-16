@@ -357,30 +357,6 @@ button:hover {
     margin-right: 1vw;
 }
 
-/* .item-page__form {
-    display: flex;
-} */
-
-.display {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 30px;
-    margin-bottom: 14px;
-}
-
-.display button {
-    background-color: var(--gray-2);
-    color: var(--gray-1);
-    padding: 3px;
-    display: flex;
-    justify-content: center;
-}
-
-.display button:hover {
-    color: var(--gray-2);
-    background-color: var(--gray-1);
-}
-
 .empty {
     display: flex;
     flex-direction: column;
