@@ -11,9 +11,6 @@ const Home = () => {
                 <Link to='/shopping-cart/catalog'>
                     <button className="home-button">Start Shopping</button>
                 </Link>
-                <a href="https://github.com/sebapkfd/shopping-cart" target="_blank" rel="noreferrer">
-                    <button className="home-button">Repository</button>
-                </a>
             </div>
         </div>
     )
