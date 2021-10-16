@@ -18,6 +18,17 @@ html {
     --gray-3: rgb(255, 255, 255);
     --top-space: 10vh;
     --side-space: 5vw;
+
+    --blue-1: #2596be;
+    --blue-2: #58677c;
+    --blue-3: #627998;
+    --blue-4: #6480fb;
+    --blue-5: #6480fb;
+    --blue-6: #6480fb;
+    --blue-7: #3a4756;
+    --blue-8: #7887a1;
+    --gray-1: #dde0e9;
+    --gray-2: #f3f6fb;
 }
 
 img {
