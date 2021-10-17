@@ -268,7 +268,7 @@ button:hover {
 }
 
 .filter p {
-    margin-bottom: 1vh;
+    /* margin-bottom: 1vh; */
 }
 
 .filter-input {
@@ -276,10 +276,6 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1vh;
-}
-
-.brand-option input {
-    margin-right: 1vw;
 }
 
 .empty {

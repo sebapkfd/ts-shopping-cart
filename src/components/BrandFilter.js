@@ -3,6 +3,7 @@ import { setBrands } from "../redux/filterSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import Drop from "./Drop";
+import styles from '../styles/serviceFilter.module.css'
 
 const BrandFilter = () => {
     const [show, setShow] = useState(true);
@@ -14,7 +15,7 @@ const BrandFilter = () => {
             <Drop values={{ title: 'Brands', show, setShow }}/>
             {(show) ? (itemsBrands.map(item => {
                 return(
-                    <div key={`${item.brand}Opt`} className={'option'}>
+                    <div key={`${item.brand}Opt`} className={styles.option}>
                         <input
                             type='checkbox'
                             checked={checked[item.brand]}
