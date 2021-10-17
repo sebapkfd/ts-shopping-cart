@@ -267,10 +267,6 @@ button:hover {
     margin-bottom: 3vh;
 }
 
-.filter p {
-    /* margin-bottom: 1vh; */
-}
-
 .filter-input {
     display: flex;
     justify-content: space-between;

@@ -2,13 +2,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { setNewFilter } from "../redux/filterSlice";
 import formatStorage from "../functions/storageFormat";
 import { startCase } from "lodash";
+import styles from '../styles/filter.module.css';
 
 const Select = ({ list, name }) => {
     const dispatch = useDispatch();
     const defaultValue = useSelector(state => state.filter[name]);
     
     return (
-        <div className={'filter-input'}>
+        <div className={styles.filterInput}>
             <label>{startCase(name)}</label>
             <select 
                 defaultValue={defaultValue} 

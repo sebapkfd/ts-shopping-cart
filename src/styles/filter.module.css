@@ -1,0 +1,26 @@
+@import './vars.css';
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    position: fixed;
+    background-color: var(--gray-3);
+    border: 1px solid var(--gray-3);
+    border-radius: 15px;
+    margin-bottom: 3vh;
+}
+
+.filterInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1vh;
+}
+
+@media screen and (max-width: 600px) {
+    .filter {
+        position: initial;
+    }
+}

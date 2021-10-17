@@ -7,6 +7,7 @@ import Select from "./Select";
 import ServiceFilter from "./ServiceFilter";
 import { useState } from "react";
 import Drop from "./Drop";
+import styles from '../styles/filter.module.css';
 
 const Filter = () => {
     const state = useSelector(state => state.filter);
@@ -19,7 +20,7 @@ const Filter = () => {
     }
 
     return (
-        <form className={'filter'}>
+        <form className={styles.filter}>
             <Drop values={{ title: 'Filter by', show, setShow }}/>
             {(show) ? (
                 <div>
