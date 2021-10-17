@@ -51,21 +51,6 @@ input {
     height: 30px;
 }
 
-#home-link {
-    font-size: 1em;
-}
-
-#cart-amount {
-    color: var(--contrast-1);
-    margin-left: 8px;
-}
-
-#cart-icon {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
 .home {
     display: flex;
     justify-content: center;

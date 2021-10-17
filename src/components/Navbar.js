@@ -5,12 +5,11 @@ import CartAmount from "./CartAmount";
 import styles from '../styles/navbar.module.css';
 
 const Navbar = () =>{
-
     return (
         <div className={styles.navbar}>
             <div>
                 <Link to='/shopping-cart'>
-                    <p id='home-link'>Home</p>
+                    <p className={styles.homeLink}>Home</p>
                 </Link>
             </div>
             <div className={styles.navbarOptions}>
@@ -20,7 +19,7 @@ const Navbar = () =>{
                 <Link to='/shopping-cart/cart'>
                     <p>Cart</p>
                 </Link>
-                <div id="cart-icon">
+                <div className={styles.cartIcon}>
                     <img src={CartIcon} alt="Cart"/>
                     <CartAmount />
                 </div>
