@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styles from '../styles/home.module.css';
 
 const Home = () => {
     return(
-        <div className="home">
-            <div className="home-info">
+        <div className={styles.home}>
+            <div className={styles.homeInfo}>
                 <h1>Find the right Computer for you!</h1>
             </div>
-            <div className="home__buttons">
+            <div>
                 <Link to='/shopping-cart/catalog'>
-                    <button className="home-button">Start Shopping</button>
+                    <button className={styles.homeButton}>Start Shopping</button>
                 </Link>
             </div>
         </div>
