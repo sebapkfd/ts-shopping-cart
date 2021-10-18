@@ -98,7 +98,7 @@ export const itemsList = [
         storageType: 'SSD',
         rating: 8,
         sold: 3,
-        stock: 0,
+        stock: 3,
         shipping: false,
         pickUp: false
     },
