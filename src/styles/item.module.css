@@ -44,7 +44,6 @@
     padding-left: 3vw;
 }
 
-
 @media screen and (max-width: 600px) {
     .listCard {
         flex-direction: column;

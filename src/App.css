@@ -64,18 +64,18 @@ button:hover {
     background-color: var(--gray-3);
     color: var(--contrast-1);
 }
-
+/* 
 .catalog-page {
     padding-top: var(--top-space);
     padding: var(--top-space) var(--side-space);
     background-color: var(--gray-2);
-}
+} */
 
 .table-cart__items,
 .list-cart__items {
     margin-top: 5vh;
 }
-
+/* 
 .catalog-table,
 .catalog-list {
     margin-left: 20vw;
@@ -103,7 +103,7 @@ button:hover {
     background-color: var(--gray-3);
     border-radius: 15px;
     padding: 3vh 2%;
-}
+} */
 
 .list-cart__items {
     background-color: var(--gray-2);
@@ -185,17 +185,6 @@ button:hover {
 
 .table-cart__item .table-card:hover {
     border-color: var(--gray-3);
-}
-
-.empty {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.empty .material-icons{
-    font-size: 20vh;
 }
 
 @media screen and (max-width: 600px) {
