@@ -10,8 +10,8 @@ import Drop from "./Drop";
 import styles from '../styles/filter.module.css';
 
 const Filter = () => {
-    const state = useSelector(state => state.filter);
     const [show, setShow] = useState(window.innerWidth > 600);
+    const state = useSelector(state => state.filter);
     const dispatch = useDispatch();
 
     const handleClear = (e) => {

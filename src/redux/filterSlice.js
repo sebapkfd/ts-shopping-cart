@@ -24,7 +24,7 @@ const FilterSlice = createSlice({
             const {key, value} = action.payload
             state[key] = value
         },
-        clearFilter: (state, action) => {
+        clearFilter: (state) => {
             for (const key in state) {
                 state[key] = initialState[key]
             }
