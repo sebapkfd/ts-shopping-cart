@@ -2,6 +2,7 @@ import Item from "./Item";
 import { useDispatch, useSelector } from "react-redux";
 import { itemRemoved } from "../redux/cartSlice";
 import { changeAmount } from "../redux/cartSlice";
+import styles from '../styles/cartItem.module.css';
 
 const CartItem = ({ item }) => {
     const dispatch = useDispatch();
@@ -16,9 +17,9 @@ const CartItem = ({ item }) => {
     }
 
     return (
-        <div className={`${display}-cart__item`}>
+        <div className={styles[`${display}CartItem`]}>
             <Item item={item}/>
-            <div className={'cart-item__options'}>
+            <div className={styles.cartItemOptions}>
                 <p>Amount</p>
                 <input 
                     type="number" 

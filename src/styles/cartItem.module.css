@@ -1,0 +1,72 @@
+@import './vars.css';
+
+.cartItemOptions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableCartItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px var(--gray-3);
+    border-radius: 15px;
+}
+
+.listCartItem {
+    width: 80%;
+    margin: 0 0 2vh 10vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: solid 3px var(--gray-2);
+    background-color: var(--gray-3);
+    border-radius: 15px;
+}
+
+.listCartItem a {
+    width: 70%;
+}
+
+.listCartItem div {
+    margin: 0;
+    width: 100%;
+}
+
+.listCartItem .cartItemOptions {
+    width: 30%;
+}
+
+.listCartItem img{
+    width: 100%;
+}
+
+.tableCartItem:hover,
+.listCartItem:hover {
+    border: solid 3px var(--gray-1);
+}
+
+.listCartItem div:hover,
+.tableCartItem div:hover {
+    border-color: var(--gray-3);
+}
+
+@media screen and (max-width: 600px) {
+    .listCartItem img {
+        width: 100%;
+    }
+    
+    .listCartItem,
+    .listCartItem div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+
+    .listCartItem div:hover {
+        border-color: var(--gray-3);
+    }
+}
