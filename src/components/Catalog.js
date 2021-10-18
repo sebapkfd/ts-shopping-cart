@@ -5,7 +5,6 @@ import requeriments from '../functions/requirements';
 import Item from './Item';
 import Filter from './Filter';
 import Display from './Display';
-import Empty from './Empty';
 import styles from '../styles/catalog.module.css';
 
 const Catalog = () => {
@@ -18,14 +17,14 @@ const Catalog = () => {
             <Filter />
             <Display />
             <div className={styles[display]}>
-                { (filteredList.length > 0) ? filteredList.map(item =>{
+                {filteredList.map(item => {
                     return (
                         <Item 
                             item={item}
                             key={item.id}
                         />
                     )
-                }) : <Empty /> }
+                })}
             </div>
         </div>
     )
