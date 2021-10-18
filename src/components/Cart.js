@@ -3,6 +3,7 @@ import { clearCart } from '../redux/cartSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import CartItem from './CartItem';
 import Display from './Display';
+import styles from '../styles/cart.module.css';
 
 const Cart = () => {
     const selectedItems = useSelector(state => state.cart)
@@ -24,14 +25,14 @@ const Cart = () => {
     }
 
     return (
-        <div className="cart">
-            <div className="cart__options">
+        <div className={styles.page}>
+            <div className={styles.options}>
                 <h3>Total to pay: US$ {totalToPay}</h3>
-                <button onClick={payItems} className='cart-button'>Pay</button>
-                <button onClick={cleanItems} className='cart-button'>Clean</button>
+                <button onClick={payItems} className={styles.button}>Pay</button>
+                <button onClick={cleanItems} className={styles.button}>Clean</button>
             </div>
             <Display />
-            <div className={`${display}-cart__items`}>
+            <div className={styles[`${display}Items`]}>
                 {selectedItems.map(item =>{
                     return <CartItem item={item} key={item.id} />
                 })}
