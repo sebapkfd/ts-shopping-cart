@@ -1,23 +1,13 @@
 @import './vars.css';
 
-.serviceFilter {
+.menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.drop {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.drop p {
-    margin: 0;
-}
-
-.serviceOptions {
+.options {
     display: flex;
     flex-direction: column;
     align-self: flex-start;

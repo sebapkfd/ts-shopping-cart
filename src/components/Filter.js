@@ -20,7 +20,7 @@ const Filter = () => {
     }
 
     return (
-        <form className={styles.filter}>
+        <form className={styles.container}>
             <Drop values={{ title: 'Filter by', show, setShow }}/>
             {(show) ? (
                 <div>

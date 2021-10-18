@@ -1,13 +1,13 @@
 @import './vars.css';
 
-.cartItemOptions {
+.options {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tableCartItem {
+.table {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
     border-radius: 15px;
 }
 
-.listCartItem {
+.list {
     width: 80%;
     margin: 0 0 2vh 10vw;
     display: flex;
@@ -26,48 +26,47 @@
     border-radius: 15px;
 }
 
-.listCartItem a {
+.list a {
     width: 70%;
 }
 
-.listCartItem div {
+.list div {
     margin: 0;
     width: 100%;
 }
 
-.listCartItem .cartItemOptions {
+.list .options {
     width: 30%;
 }
 
-.listCartItem img{
+.list img{
     width: 80%;
-    background-color: red;
 }
 
-.tableCartItem:hover,
-.listCartItem:hover {
+.table:hover,
+.list:hover {
     border: solid 3px var(--gray-1);
 }
 
-.listCartItem div:hover,
-.tableCartItem div:hover {
+.list div:hover,
+.table div:hover {
     border-color: var(--gray-3);
 }
 
 @media screen and (max-width: 600px) {
-    .listCartItem img {
+    .list img {
         width: 100%;
     }
     
-    .listCartItem,
-    .listCartItem div{
+    .list,
+    .list div{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;    
     }
 
-    .listCartItem div:hover {
+    .list div:hover {
         border-color: var(--gray-3);
     }
 }

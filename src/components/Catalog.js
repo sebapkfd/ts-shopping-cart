@@ -13,7 +13,7 @@ const Catalog = () => {
     const filteredList = itemsList.filter(element => requeriments(element, filter));
 
     return(
-        <div className={styles.catalogPage}>
+        <div className={styles.page}>
             <Filter />
             <Display />
             <div className={styles[display]}>

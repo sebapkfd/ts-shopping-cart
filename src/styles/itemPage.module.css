@@ -1,6 +1,6 @@
 @import './vars.css';
 
-.itemPage {
+.page {
     display: flex;
     padding-top: var(--top-space);
     justify-content: center;
@@ -9,15 +9,15 @@
     height: 100vh;
 }
 
-.itemName {
+.name {
     font-size: 1.1em;
     font-weight: bold;
     text-align: center;
     word-break: keep-all;
 }
 
-.itemPageImg,
-.itemPageInfo {
+.imgSection,
+.infoSection {
     width: 480px;
     margin-bottom: 50px;
     padding: 0 10px;
@@ -36,7 +36,6 @@
     color: var(--tone-1);
 }
 
-.item-page__form,
-.itemPageForm {
+.form {
     display: flex;
 }

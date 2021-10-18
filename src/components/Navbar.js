@@ -12,7 +12,7 @@ const Navbar = () =>{
                     <p className={styles.homeLink}>Home</p>
                 </Link>
             </div>
-            <div className={styles.navbarOptions}>
+            <div className={styles.options}>
                 <Link to='/shopping-cart/catalog'>
                     <p>Catalog</p>
                 </Link>

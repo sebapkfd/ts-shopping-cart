@@ -7,7 +7,7 @@ const Input = ({ defaultVal, name }) => {
     const dispatch = useDispatch();
 
     return (
-        <div className={styles.filterInput}>
+        <div className={styles.input}>
             <label>{startCase(name)}</label>
             <input
                 type='number'    

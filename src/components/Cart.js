@@ -32,7 +32,7 @@ const Cart = () => {
                 <button onClick={cleanItems} className={styles.button}>Clean</button>
             </div>
             <Display />
-            <div className={styles[`${display}Items`]}>
+            <div className={styles[display]}>
                 {selectedItems.map(item =>{
                     return <CartItem item={item} key={item.id} />
                 })}

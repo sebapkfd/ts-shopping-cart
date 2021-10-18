@@ -11,10 +11,10 @@ const ServiceFilter = () => {
     const dispatch = useDispatch();
 
     return (
-        <div className={styles.serviceFilter}>
+        <div className={styles.menu}>
             <Drop values={{ title: 'Service options', show, setShow }}/>
             {(show) ? (
-                <div className={styles.serviceOptions}>
+                <div className={styles.options}>
                     <div className={styles.option}>
                         <input
                         type='checkbox'

@@ -8,7 +8,7 @@ const Display = () => {
     const listIcon = <span className="material-icons">view_list</span>
 
     return(
-        <div className={styles.display}>
+        <div className={styles.container}>
             <button onClick={() => dispatch(setDisplay({newDisplay: 'table'}))}>{tableIcon}</button>
             <button onClick={() => dispatch(setDisplay({newDisplay: 'list'}))}>{listIcon}</button>
         </div>

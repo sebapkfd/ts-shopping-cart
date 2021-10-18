@@ -1,6 +1,6 @@
 @import './vars.css';
 
-.catalogPage {
+.page {
     padding-top: var(--top-space);
     padding: var(--top-space) var(--side-space);
     background-color: var(--gray-2);
@@ -34,7 +34,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .catalogPage {
+    .page {
         display: flex;
         flex-direction: column;
         justify-content: center;

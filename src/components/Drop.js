@@ -1,4 +1,4 @@
-import styles from '../styles/serviceFilter.module.css';
+import styles from '../styles/filter.module.css';
 
 const Drop = ({ values: { title, show, setShow } }) => {
     const expandLogo = <span className="material-icons">expand_more</span>

@@ -17,9 +17,9 @@ const CartItem = ({ item }) => {
     }
 
     return (
-        <div className={styles[`${display}CartItem`]}>
+        <div className={styles[display]}>
             <Item item={item}/>
-            <div className={styles.cartItemOptions}>
+            <div className={styles.options}>
                 <p>Amount</p>
                 <input 
                     type="number" 

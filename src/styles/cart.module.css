@@ -4,12 +4,12 @@
     padding-top: var(--top-space);
 }
 
-.listItems, 
-.tableItems {
+.list, 
+.table {
     margin-top: 5vh;
 }
 
-.tableItems {
+.table {
     width: 80%;
     background-color: var(--gray-3);
     border-radius: 15px;
@@ -24,7 +24,7 @@
     margin-left: var(--side-space);
 }
 
-.listItems {
+.list {
     display: flex;
     flex-direction: column;
     justify-content: center;

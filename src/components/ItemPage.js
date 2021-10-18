@@ -24,12 +24,12 @@ const ItemPage = () => {
     }
 
     return (
-        <div className={styles.itemPage}>
-            <div className={styles.itemPageImg}>
+        <div className={styles.page}>
+            <div className={styles.imgSection}>
                 <img src={`${item.imgSrc}`} alt={`${item.name}`} />
             </div>
-            <div className={styles.itemPageInfo}>
-                <p className={styles.itemName}>{item.name}</p>
+            <div className={styles.infoSection}>
+                <p className={styles.name}>{item.name}</p>
                 <p>Processor: {item.cpu}</p>
                 <p>RAM: {item.ram}GB {item.ramType}</p>
                 <p>Storage: {formatStorage(item.storage)} {item.storageType}</p>
@@ -37,7 +37,7 @@ const ItemPage = () => {
                 <p>Stock: {item.stock}</p>
                 <p>Shipment available: {(item.shipping) ? 'Yes' : 'No'}</p>
                 <p>Store pickup: {(item.pickUp) ? 'Yes' : 'No'}</p>
-                <form className={styles.itemPageForm} onSubmit={(e) => clickItem(e)}>
+                <form className={styles.form} onSubmit={(e) => clickItem(e)}>
                     <AddItemOptions item={item} />
                     <Link to='/shopping-cart/catalog'>
                         <button className={styles.backButton}>
