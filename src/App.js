@@ -5,10 +5,8 @@ import Home from "./components/Home";
 import Catalog from "./components/Catalog";
 import Cart from "./components/Cart";
 import ItemPage from "./components/ItemPage";
-import "./App.css"
 
 const App = () => {
-
   return (
     <BrowserRouter>
       <Navbar />
