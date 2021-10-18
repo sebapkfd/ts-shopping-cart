@@ -223,12 +223,6 @@ button:hover {
         width: 80%;
     }
 
-    .list-card {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     .list-cart__item .card__img {
         width: 100%;
     }
