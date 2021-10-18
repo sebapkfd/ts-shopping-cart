@@ -32,3 +32,29 @@
     border-radius: 15px;
     padding: 3vh 2%;
 }
+
+@media screen and (max-width: 600px) {
+    .catalogPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table,
+    .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .list {
+        width: 100%;
+    }
+
+    .list a{
+        width: 80%;
+    }
+}
