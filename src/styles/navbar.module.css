@@ -1,6 +1,6 @@
 @import './vars.css';
 
-.navbar {
+.container {
     position: fixed;
     width: 100%;
     display: flex;
@@ -10,7 +10,7 @@
     background-color: var(--contrast-1);
 }
 
-.navbar p {
+.container p {
     float: right;
     display: block;
     color: var(--gray-2);
@@ -19,7 +19,7 @@
     text-decoration: none;
 }
 
-.navbar p:hover {
+.container p:hover {
     color: var(--tone-1);
 }
 
