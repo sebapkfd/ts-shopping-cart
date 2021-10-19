@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CartIcon from "../assets/cart-icon.png";
+import CartIcon from "../assets/icons/cart.png";
 import CartAmount from "./CartAmount";
 import styles from '../styles/navbar.module.css';
 
