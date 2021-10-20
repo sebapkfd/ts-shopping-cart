@@ -30,24 +30,26 @@
 .infoSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
     padding-left: 3vw;
 }
 
 .name {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: bold;
     word-break: keep-all;
 }
 
 .price {
     font-size: 1.3rem;
+    margin-bottom: 1rem;
     word-break: keep-all;
 }
 
 .property {
     display: flex;
-    margin: 1px;
+    margin-bottom: 1em;
 }
 
 .property img {
@@ -68,6 +70,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin: auto 0 1rem 0;
 }
 
 .form input {

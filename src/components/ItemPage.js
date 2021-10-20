@@ -5,9 +5,10 @@ import { Redirect } from 'react-router';
 import formatStorage from '../functions/storageFormat';
 import ItemPageForm from './ItemPageForm';
 import processor from '../assets/icons/processor.png';
-import ram from '../assets/icons/ram.png';
+import ram from '../assets/icons/ramB.png';
 import storage from '../assets/icons/storage.png';
 import styles from '../styles/itemPage.module.css';
+import shipment from '../assets/icons/shipment.png';
 
 const ItemPage = () => {
     const { id } = useParams();
@@ -25,17 +26,23 @@ const ItemPage = () => {
             <div className={styles.infoSection}>
                 <p className={styles.name}>{item.name}</p>
                 <p className={styles.price}>US$ {item.price}</p>
-                <div className={styles.property}>
-                    <img src={processor} alt="cpu"/>
-                    <p>{item.cpu}</p>
-                </div>
-                <div className={styles.property}>
-                    <img src={ram} alt="cpu"/>
-                    <p>{item.ram}GB {item.ramType}</p>
-                </div>
-                <div className={styles.property}>
-                    <img src={storage} alt="cpu"/>
-                    <p>{formatStorage(item.storage)} {item.storageType}</p>
+                <div>
+                    <div className={styles.property}>
+                        <img src={processor} alt="cpu"/>
+                        <p>{item.cpu}</p>
+                    </div>
+                    <div className={styles.property}>
+                        <img src={ram} alt="ram"/>
+                        <p>{item.ram}GB {item.ramType}</p>
+                    </div>
+                    <div className={styles.property}>
+                        <img src={storage} alt="storage"/>
+                        <p>{formatStorage(item.storage)} {item.storageType}</p>
+                    </div>
+                    <div className={styles.property}>
+                        <img src={shipment} alt="shipment"/>
+                        <p>{(item.shipping) ? 'Shipment available' : 'Shipment not available'}</p>
+                    </div>
                 </div>
                 {/* <p>Stock: {item.stock}</p>
                 <p>Shipment available: {(item.shipping) ? 'Yes' : 'No'}</p>
