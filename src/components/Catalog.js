@@ -14,17 +14,21 @@ const Catalog = () => {
 
     return(
         <div className={styles.page}>
-            <Filter />
-            <Display />
-            <div className={styles[display]}>
-                {filteredList.map(item => {
-                    return (
-                        <Item 
-                            item={item}
-                            key={item.id}
-                        />
-                    )
-                })}
+            <div className={styles.filterSection}>
+                <Filter />
+            </div>
+            <div className={styles.itemsSection}>
+                <Display />
+                <div className={styles[display]}>
+                    {filteredList.map(item => {
+                        return (
+                            <Item 
+                                item={item}
+                                key={item.id}
+                            />
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )

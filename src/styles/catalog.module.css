@@ -1,18 +1,21 @@
 @import './vars.css';
 
 .page {
-    padding-top: var(--top-space);
     padding: var(--top-space) var(--side-space);
     background-color: var(--gray-2);
+    display: flex;
+    justify-content: space-between;
 }
 
-.table,
-.list {
-    margin-left: 20vw;
+.itemsSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .table {
-    width: 80%;
+    width: 90%;
     background-color: var(--gray-3);
     border-radius: 15px;
     display: grid;
@@ -31,6 +34,7 @@
     background-color: var(--gray-3);
     border-radius: 15px;
     padding: 3vh 2%;
+    width: 90%;
 }
 
 @media screen and (max-width: 600px) {
