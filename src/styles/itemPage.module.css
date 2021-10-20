@@ -67,9 +67,23 @@
 
 .form {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.addOption {
+    min-width: 50%;
+}
+
+.addOption input {
+    width: 100px;
 }
 
 @media screen and (max-width: 600px) {
+    .imgSection,
+    .infoSection {
+        width: 98%;
+    }
+
     .imgSection img {
         width: 80%;
     }
