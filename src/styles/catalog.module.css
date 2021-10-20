@@ -7,6 +7,10 @@
     justify-content: space-between;
 }
 
+.filterSection {
+    min-width: 200px;
+}
+
 .itemsSection {
     width: 100%;
     display: flex;
