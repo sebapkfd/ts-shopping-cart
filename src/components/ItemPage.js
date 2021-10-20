@@ -5,7 +5,7 @@ import { Redirect } from 'react-router';
 import formatStorage from '../functions/storageFormat';
 import ItemPageForm from './ItemPageForm';
 import processor from '../assets/icons/processor.png';
-import ram from '../assets/icons/ramB.png';
+import ram from '../assets/icons/ram.png';
 import storage from '../assets/icons/storage.png';
 import styles from '../styles/itemPage.module.css';
 import shipment from '../assets/icons/shipment.png';
