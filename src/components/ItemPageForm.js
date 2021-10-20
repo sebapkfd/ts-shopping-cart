@@ -1,4 +1,4 @@
-import AddItemOptions from './AddItemOptions';
+import AddButton from "./AddButton";
 import { useDispatch } from 'react-redux';
 import { itemAdded } from '../redux/cartSlice';
 import styles from '../styles/itemPage.module.css';
@@ -13,9 +13,10 @@ const ItemPageForm = ({ item }) => {
 
     return (
         <form className={styles.form} onSubmit={(e) => clickItem(e)}>
-            <AddItemOptions item={item} />
+            <input type="number" name="amount" defaultValue={1} min="1" max={item.stock}/>
+            <AddButton id={item.id} />
         </form>
-    )
+    );
 }
 
 export default ItemPageForm;

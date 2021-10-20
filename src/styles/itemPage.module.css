@@ -14,7 +14,6 @@
     width: 480px;
     height: 50vh;
     margin-bottom: 50px;
-    /* border: 1px solid var(--gray-1); */
 }
 
 .imgSection {
@@ -68,13 +67,10 @@
 .form {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
-.addOption {
-    min-width: 50%;
-}
-
-.addOption input {
+.form input {
     width: 100px;
 }
 
