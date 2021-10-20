@@ -2,38 +2,58 @@
 
 .page {
     display: flex;
-    padding-top: var(--top-space);
+    padding-top: 15vh;
     justify-content: center;
     flex-wrap: wrap;
     background-color: var(--gray-3);
     height: 100vh;
 }
 
-.name {
-    font-size: 1.1em;
-    font-weight: bold;
-    text-align: center;
-    word-break: keep-all;
-}
-
 .imgSection,
 .infoSection {
     width: 480px;
+    height: 50vh;
     margin-bottom: 50px;
-    padding: 0 10px;
+    /* border: 1px solid var(--gray-1); */
+}
+
+.imgSection {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.infoSection img {
-    width: 20px;
+.imgSection img {
+    width: 100%;
+}
+
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 3vw;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    word-break: keep-all;
+}
+
+.price {
+    font-size: 1.3rem;
+    word-break: keep-all;
 }
 
 .property {
     display: flex;
     margin: 1px;
+}
+
+.property img {
+    width: 20px;
+    margin-right: 1vw;
 }
 
 .backButton {
@@ -47,4 +67,14 @@
 
 .form {
     display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .imgSection img {
+        width: 80%;
+    }
+
+    .infoSection {
+        padding-left: 10vw;
+    }
 }
