@@ -4,11 +4,12 @@ import { itemsList } from '../assets/itemsList';
 import { Redirect } from 'react-router';
 import formatStorage from '../functions/storageFormat';
 import ItemPageForm from './ItemPageForm';
+import ItemAdded from './ItemAdded';
 import processor from '../assets/icons/processor.png';
 import ram from '../assets/icons/ram.png';
 import storage from '../assets/icons/storage.png';
-import styles from '../styles/itemPage.module.css';
 import shipment from '../assets/icons/shipment.png';
+import styles from '../styles/itemPage.module.css';
 
 const ItemPage = () => {
     const { id } = useParams();
@@ -43,6 +44,7 @@ const ItemPage = () => {
                         <img src={shipment} alt="shipment"/>
                         <p>{(item.shipping) ? 'Shipment available' : 'Shipment not available'}</p>
                     </div>
+                    <ItemAdded id={item.id}/>
                 </div>
                 {/* <p>Stock: {item.stock}</p>
                 <p>Shipment available: {(item.shipping) ? 'Yes' : 'No'}</p>
