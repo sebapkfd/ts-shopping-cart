@@ -25,12 +25,18 @@ const ItemPage = () => {
             <div className={styles.infoSection}>
                 <p className={styles.name}>{item.name}</p>
                 <p>US$ {item.price}</p>
-                <img src={processor} alt="cpu"/>
-                <p>{item.cpu}</p>
-                <img src={ram} alt="cpu"/>
-                <p>{item.ram}GB {item.ramType}</p>
-                <img src={storage} alt="cpu"/>
-                <p>{formatStorage(item.storage)} {item.storageType}</p>
+                <div className={styles.property}>
+                    <img src={processor} alt="cpu"/>
+                    <p>{item.cpu}</p>
+                </div>
+                <div className={styles.property}>
+                    <img src={ram} alt="cpu"/>
+                    <p>{item.ram}GB {item.ramType}</p>
+                </div>
+                <div className={styles.property}>
+                    <img src={storage} alt="cpu"/>
+                    <p>{formatStorage(item.storage)} {item.storageType}</p>
+                </div>
                 <p>Stock: {item.stock}</p>
                 <p>Shipment available: {(item.shipping) ? 'Yes' : 'No'}</p>
                 <p>Store pickup: {(item.pickUp) ? 'Yes' : 'No'}</p>
