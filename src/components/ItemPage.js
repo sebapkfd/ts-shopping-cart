@@ -46,9 +46,6 @@ const ItemPage = () => {
                     </div>
                     <ItemAdded id={item.id}/>
                 </div>
-                {/* <p>Stock: {item.stock}</p>
-                <p>Shipment available: {(item.shipping) ? 'Yes' : 'No'}</p>
-                <p>Store pickup: {(item.pickUp) ? 'Yes' : 'No'}</p> */}
                 <ItemPageForm item={item}/>
             </div>
         </div>
