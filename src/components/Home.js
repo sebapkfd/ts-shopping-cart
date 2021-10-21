@@ -7,6 +7,8 @@ import asus from '../assets/icons/asus.png';
 import msi from '../assets/icons/msi.png';
 import razer from '../assets/icons/razer.png';
 import lg from '../assets/icons/lg.png';
+import github from '../assets/icons/github.png';
+import linkedin from '../assets/icons/linkedin.png';
 
 const Home = () => {
     return(
@@ -33,9 +35,17 @@ const Home = () => {
                     <img src={lg} alt='lg'/>
                 </div>
             </div>
-            {/* <div className={styles.aboutUs}>
-                <h1>About Us</h1>
-            </div> */}
+            <div className={styles.aboutUs}>
+                <div className={styles.links}>
+                    <a href='https://github.com/sebapkfd' target='_blank' rel="noopener noreferrer">
+                        <img src={github} alt='github'/>
+                    </a>
+                    <a href='https://www.linkedin.com/in/sebasti%C3%A1n-soto-59b493207/' target='_blank' rel="noopener noreferrer">
+                        <img src={linkedin} alt='linkedin'/>
+                    </a>
+                </div>
+                <h1>1600 Amphitheatre Parkway, Mountain View, California</h1>
+            </div>
         </div>
     )
 }
