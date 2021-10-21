@@ -9,9 +9,7 @@
     background-color: var(--gray-3);
 }
 
-.info,
-.brands, 
-.aboutUs {
+.info {
     height: 100vh;
     width: 100%;
 }
@@ -23,17 +21,17 @@
     background-color: var(--gray-3);
 }
 
-.thumbnail,
-.intro {
+.intro ,
+.thumbnail {
     width: 40vw;
     height: 70vh;
-}
-
-.intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+}
+
+.intro {
     padding-left: 2vw;
 }
 
@@ -45,31 +43,15 @@
     color: var(--contrast-1);
 }
 
-.brands {
-    background-color: var(--contrast-1);
-    padding-top: 4rem;
+.contact {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-}
-
-.brands div {
-    display: flex;
-    width: 70%;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3rem;
-}
-
-.brands img {
-    max-width: 20vw;
-    height: 40px;
-    margin: 10vh 5vw;
-}
-
-.aboutUs {
-    background-color: royalblue;
+    justify-content: start;
+    background-color: var(--contrast-1);
+    color: var(--gray-3);
+    font-size: 1.3rem;
 }
 
 .links {
@@ -77,7 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    margin: 1rem;
 }
 
 .links a {
@@ -89,7 +71,7 @@
     justify-content: center;
 }
 
-.links img{
+.links img {
     width: 60px;
     transition: 0.2s;
 }
