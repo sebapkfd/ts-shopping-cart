@@ -7,7 +7,6 @@
     align-items: center;
     padding-top: var(--top-space);
     background-color: var(--gray-3);
-    /* height: calc(100vh - 46px); */
 }
 
 .info,
@@ -47,13 +46,31 @@
 }
 
 .brands {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--contrast-1);
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.brands div {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.brands img {
+    max-width: 20vw;
+    height: 40px;
+    margin: 10vh 5vw;
 }
 
 .aboutUs {
     background-color: royalblue;
 }
-
 
 button:hover {
     background-color: var(--gray-2);
