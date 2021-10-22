@@ -6,17 +6,15 @@ import home from '../assets/thumbnails/home.png';
 const Home = () => {
     return(
         <div className={styles.page}>
-            <div className={styles.info}>
-                <div className={styles.thumbnail}>
-                    <img src={home} alt={'homeImg'}/>
-                </div>
-                <div className={styles.intro}>
-                    <h1>The best technology for you</h1>
-                    <p>We are devoted to provide the best services and technology options to satisfy our customer’s needs</p>
-                    <Link to='/shopping-cart/catalog'>
-                        <button>Start Shopping</button>
-                    </Link>
-                </div>
+            <div className={styles.thumbnail}>
+                <img src={home} alt={'homeImg'}/>
+            </div>
+            <div className={styles.intro}>
+                <h1>The best technology for you</h1>
+                <p>We are devoted to provide the best services and technology options to satisfy our customer’s needs</p>
+                <Link to='/shopping-cart/catalog'>
+                    <button>Start Shopping</button>
+                </Link>
             </div>
         </div>
     )
