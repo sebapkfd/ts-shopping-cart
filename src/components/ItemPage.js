@@ -48,7 +48,7 @@ const ItemPage = () => {
                     ): null}
                     {(item.pickUp) ? (
                         <div className={styles.property}>
-                            <span class="material-icons">storefront</span>
+                            <span className="material-icons">storefront</span>
                             <p>Available in store</p>
                         </div>
                     ): null}

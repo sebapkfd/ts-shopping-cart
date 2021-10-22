@@ -19,7 +19,7 @@ const ItemPageForm = ({ item }) => {
                     Add to cart
                 </button>
                 <button type="button" className={styles.backButton} onClick={() =>history.goBack()}>
-                    <span class="material-icons">chevron_left</span>
+                    <span className="material-icons">chevron_left</span>
                     Back
                 </button>
         </form>
