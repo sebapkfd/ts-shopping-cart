@@ -13,7 +13,7 @@ const Input = ({ defaultVal, name }) => {
                 type='number'    
                 name={name}
                 min='0'
-                max='10000'
+                max='3000'
                 defaultValue={defaultVal}
                 onChange={(e) => dispatch(setNewFilter({key: name, value: parseInt(e.target.value)}))}
             />

@@ -26,7 +26,7 @@ const CartItem = ({ item }) => {
                     name="amount" 
                     defaultValue={item.amount} 
                     min="1"
-                    max={item.stock}
+                    max="5"
                     onChange={e => handleChange(e)}
                     />
                 <p>Total price: US$ {item.price*item.amount}</p>

@@ -1,4 +1,3 @@
-import AddButton from "./AddButton";
 import { useDispatch } from 'react-redux';
 import { itemAdded } from '../redux/cartSlice';
 import { useHistory } from "react-router";
@@ -15,9 +14,11 @@ const ItemPageForm = ({ item }) => {
 
     return (
         <form className={styles.form} onSubmit={(e) => clickItem(e)}>
-            <input type="number" name="amount" defaultValue={1} min="1" max={item.stock}/>
-            <AddButton id={item.id} />
-                <button className={styles.backButton} onClick={() =>history.goBack()}>
+            <input type="number" name="amount" defaultValue={1} min="1" max="5"/>
+                <button type="submit">
+                    Add to cart
+                </button>
+                <button type="button" className={styles.backButton} onClick={() =>history.goBack()}>
                     <span class="material-icons">chevron_left</span>
                     Back
                 </button>
