@@ -52,9 +52,14 @@
     margin-bottom: 1em;
 }
 
-.property img {
+.property img,
+.property span {
     width: 20px;
-    margin-right: 1vw;
+    font-size: 20px;
+}
+
+.property p {
+    margin-left: 1vw;
 }
 
 .backButton {

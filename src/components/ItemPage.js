@@ -40,10 +40,18 @@ const ItemPage = () => {
                         <img src={storage} alt="storage"/>
                         <p>{formatStorage(item.storage)} {item.storageType}</p>
                     </div>
-                    <div className={styles.property}>
-                        <img src={shipment} alt="shipment"/>
-                        <p>{(item.shipping) ? 'Shipment available' : 'Shipment not available'}</p>
-                    </div>
+                    {(item.shipping) ? (
+                        <div className={styles.property}>
+                            <img src={shipment} alt="shipment"/>
+                            <p>Shipment available</p>
+                        </div>
+                    ): null}
+                    {(item.pickUp) ? (
+                        <div className={styles.property}>
+                            <span class="material-icons">storefront</span>
+                            <p>Available in store</p>
+                        </div>
+                    ): null}
                     <ItemAdded id={item.id}/>
                 </div>
                 <ItemPageForm item={item}/>
