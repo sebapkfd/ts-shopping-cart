@@ -73,6 +73,7 @@
 
 .backButton:hover {
     color: var(--tone-1);
+    background-color: var(--gray-3);
 }
 
 .form {
