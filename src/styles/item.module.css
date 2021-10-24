@@ -44,6 +44,10 @@
     padding-left: 3vw;
 }
 
+.price {
+    text-align: center;
+}
+
 @media screen and (max-width: 600px) {
     .listCard {
         flex-direction: column;

@@ -14,7 +14,7 @@ const Item = ({ item }) => {
                 </div>
                 <div className={styles[`${display}CardInfo`]}>
                     <h3>{item.name}</h3>
-                    <p>US$ {item.price}</p>
+                    <p className={styles.price}>US$ {item.price}</p>
                 </div>
             </div>
         </Link>
