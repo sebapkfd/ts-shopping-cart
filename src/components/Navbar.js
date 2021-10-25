@@ -20,7 +20,7 @@ const Navbar = () =>{
                     <p>Cart</p>
                 </Link>
                 <div className={styles.cartIcon}>
-                    <img src={CartIcon} alt="Cart"/>
+                    <span class="material-icons">shopping_bag</span>
                     <CartAmount />
                 </div>
             </div>
