@@ -40,35 +40,6 @@
     color: var(--gray-3);
 }
 
-.links {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.links a {
-    height: 70px;
-    width: 70px;
-    margin: 0 2vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.links img {
-    width: 40px;
-    transition: 0.2s;
-}
-
-.links img:hover {
-    width: 45px;
-}
-
-button:hover {
-    background-color: var(--gray-2);
-}
-
 @media screen and (max-width: 600px) {
     .page {
         padding-top: 12vh;

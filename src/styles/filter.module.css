@@ -29,6 +29,16 @@
     margin: 0;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content button {
+    align-self: center;
+}
+
 @media screen and (max-width: 600px) {
     .container {
         position: initial;

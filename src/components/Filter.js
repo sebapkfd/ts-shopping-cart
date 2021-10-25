@@ -23,7 +23,7 @@ const Filter = () => {
         <form className={styles.container}>
             <Drop values={{ title: 'Filter by', show, setShow }}/>
             {(show) ? (
-                <div>
+                <div className={styles.content}>
                     <Input defaultVal={state.minPrice} name={'minPrice'} />
                     <Input defaultVal={state.maxPrice} name={'maxPrice'} />
                     <Select list={itemsStorage} name={'storage'} />
