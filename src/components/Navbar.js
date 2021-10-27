@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import CartAmount from "./CartAmount";
+import { useLocation } from 'react-router-dom';
 import styles from '../styles/navbar.module.css';
 
 const Navbar = () =>{
+    const location = useLocation();
+    const [style, setStyle] = useState('container');
+
+    useEffect(() => {
+        let newStyle = (location.pathname === '/shopping-cart') ? 'unset' : '#f3f6fb';
+        setStyle(newStyle);
+    }, [location])
+
     return (
-        <div className={styles.container}>
+        <div className={styles.container} style={{backgroundColor: [style]}}>
             <div>
                 <Link to='/shopping-cart'>
                     <p className={styles.homeLink}>Home</p>
@@ -19,7 +28,7 @@ const Navbar = () =>{
                     <p>Cart</p>
                 </Link>
                 <div className={styles.cartIcon}>
-                    <span class="material-icons">shopping_bag</span>
+                    <span className="material-icons">shopping_bag</span>
                     <CartAmount />
                 </div>
             </div>

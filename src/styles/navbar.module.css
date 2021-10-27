@@ -6,9 +6,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 5vw;
-    background-color: var(--blue-7);
-    height: 7vh;
+    padding: 0 8vw;
+    color: var(--contrast-1);
+    min-height: 10vh;
+    font-size: 20px;
+    transition: 0.3s;
+    opacity: 1;
 }
 
 .container div {
@@ -21,7 +24,6 @@
 .container p {
     float: right;
     display: block;
-    color: var(--gray-2);
     text-align: center;
     text-decoration: none;
 }
@@ -43,7 +45,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: var(--gray-3);
+}
+
+.cartIcon span {
+    margin-right: 5px;
 }
 
 .cartIcon:hover {
