@@ -9,8 +9,12 @@ const Navbar = () =>{
     const [style, setStyle] = useState('container');
 
     useEffect(() => {
-        let newStyle = (location.pathname === '/shopping-cart') ? 'unset' : '#f3f6fb';
-        setStyle(newStyle);
+        if (location.pathname === '/shopping-cart/catalog' || location.pathname === '/shopping-cart/cart') {
+            setStyle('#f3f6fb');
+        }
+        else {
+            setStyle('#fff');
+        }
     }, [location])
 
     return (
