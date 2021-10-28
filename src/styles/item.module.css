@@ -48,6 +48,10 @@
     text-align: center;
 }
 
+.listCard .price {
+    text-align: left;
+}
+
 @media screen and (max-width: 600px) {
     .listCard {
         flex-direction: column;

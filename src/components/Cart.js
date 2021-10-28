@@ -27,7 +27,7 @@ const Cart = () => {
     return (
         <div className={styles.page}>
             <div className={styles.options}>
-                <h3>Total to pay: US$ {totalToPay}</h3>
+                <p>Total to pay: US$ {totalToPay}</p>
                 <button onClick={payItems} className={styles.button}>Pay</button>
                 <button onClick={cleanItems} className={styles.button}>Clean</button>
             </div>

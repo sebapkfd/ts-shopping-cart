@@ -37,7 +37,11 @@
 .options {
     display: flex;
     align-items: center;
-    padding-left: 5%;
+    padding-left: 8vw;
+}
+
+.options p {
+    font-size: 17px;
 }
 
 .button:hover {
