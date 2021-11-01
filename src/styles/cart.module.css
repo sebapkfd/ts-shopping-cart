@@ -2,6 +2,7 @@
 
 .page {
     padding-top: var(--top-space);
+    padding: var(--top-space) 8vw 0 8vw;
 }
 
 .list, 
@@ -37,7 +38,6 @@
 .options {
     display: flex;
     align-items: center;
-    padding-left: 8vw;
 }
 
 .options p {

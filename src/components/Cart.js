@@ -31,7 +31,7 @@ const Cart = () => {
                 <button onClick={payItems} className={styles.button}>Pay</button>
                 <button onClick={cleanItems} className={styles.button}>Clean</button>
             </div>
-            <Display />
+            {(selectedItems.length > 0) ? <Display /> : null}
             {(selectedItems.length > 0) ? (
                 <div className={styles[display]}>
                     {selectedItems.map(item =>{
