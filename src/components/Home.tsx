@@ -12,7 +12,7 @@ const Home = () => {
             <div className={styles.intro}>
                 <h1>The best technology for you</h1>
                 <p>We are devoted to provide the best services and technology options to satisfy our customer’s needs</p>
-                <Link to='/shopping-cart/catalog'>
+                <Link to='/ts-shopping-cart/catalog'>
                     <button>Start Shopping</button>
                 </Link>
             </div>

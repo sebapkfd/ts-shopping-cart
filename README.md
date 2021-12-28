@@ -2,7 +2,7 @@
 
 Small project, built for assignment as part of the curriculum for [The Odin Project](https://www.theodinproject.com/).
 
-## [Live demo of the project](https://sebapkfd.github.io/shopping-cart/)
+## [Live demo of the project](https://sebapkfd.github.io/ts-shopping-cart/)
 
 ### Built with: 
 * JavaScript
