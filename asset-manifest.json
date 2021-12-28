@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/ts-shopping-cart/static/css/main.3e0ed6e6.chunk.css",
+    "main.js": "/ts-shopping-cart/static/js/main.4c7f07e1.chunk.js",
+    "main.js.map": "/ts-shopping-cart/static/js/main.4c7f07e1.chunk.js.map",
+    "runtime-main.js": "/ts-shopping-cart/static/js/runtime-main.12b411aa.js",
+    "runtime-main.js.map": "/ts-shopping-cart/static/js/runtime-main.12b411aa.js.map",
+    "static/js/2.89421947.chunk.js": "/ts-shopping-cart/static/js/2.89421947.chunk.js",
+    "static/js/2.89421947.chunk.js.map": "/ts-shopping-cart/static/js/2.89421947.chunk.js.map",
+    "index.html": "/ts-shopping-cart/index.html",
+    "static/css/main.3e0ed6e6.chunk.css.map": "/ts-shopping-cart/static/css/main.3e0ed6e6.chunk.css.map",
+    "static/js/2.89421947.chunk.js.LICENSE.txt": "/ts-shopping-cart/static/js/2.89421947.chunk.js.LICENSE.txt",
+    "static/media/Acer-Aspire5.114e93f5.jpg": "/ts-shopping-cart/static/media/Acer-Aspire5.114e93f5.jpg",
+    "static/media/Acer-Nitro.c9c634d0.jpg": "/ts-shopping-cart/static/media/Acer-Nitro.c9c634d0.jpg",
+    "static/media/Acer-Predator.aebe61ae.jpg": "/ts-shopping-cart/static/media/Acer-Predator.aebe61ae.jpg",
+    "static/media/Asus-ROG.2df933b0.jpg": "/ts-shopping-cart/static/media/Asus-ROG.2df933b0.jpg",
+    "static/media/Asus-TUF.2ed36409.jpg": "/ts-shopping-cart/static/media/Asus-TUF.2ed36409.jpg",
+    "static/media/Asus-VivoBook.3f88b06b.jpg": "/ts-shopping-cart/static/media/Asus-VivoBook.3f88b06b.jpg",
+    "static/media/Asus-ZenBook.d019107e.jpg": "/ts-shopping-cart/static/media/Asus-ZenBook.d019107e.jpg",
+    "static/media/LG-Ultra.8028a31d.jpg": "/ts-shopping-cart/static/media/LG-Ultra.8028a31d.jpg",
+    "static/media/MSI-Creator15.dc9df2ca.jpg": "/ts-shopping-cart/static/media/MSI-Creator15.dc9df2ca.jpg",
+    "static/media/MSI-GE66.22262f70.jpg": "/ts-shopping-cart/static/media/MSI-GE66.22262f70.jpg",
+    "static/media/MSI-GL65.3b650193.jpg": "/ts-shopping-cart/static/media/MSI-GL65.3b650193.jpg",
+    "static/media/Razer-Blade.eeeb8253.jpg": "/ts-shopping-cart/static/media/Razer-Blade.eeeb8253.jpg",
+    "static/media/home.41f78fe9.png": "/ts-shopping-cart/static/media/home.41f78fe9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.12b411aa.js",
+    "static/js/2.89421947.chunk.js",
+    "static/css/main.3e0ed6e6.chunk.css",
+    "static/js/main.4c7f07e1.chunk.js"
+  ]
+}
