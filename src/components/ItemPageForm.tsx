@@ -1,13 +1,14 @@
+import React from "react";
 import { useDispatch } from 'react-redux';
 import { itemAdded } from '../redux/cartSlice';
 import { useHistory } from "react-router";
 import styles from '../styles/itemPage.module.css';
 
-const ItemPageForm = ({ item }) => {
+const ItemPageForm = ({ item }: any) => {
     const dispatch = useDispatch();
     const history = useHistory();
 
-    const clickItem = (e) => {
+    const clickItem = (e: any) => {
         e.preventDefault();
         dispatch(itemAdded({...item, amount: parseInt(e.target.amount.value)}));
     }

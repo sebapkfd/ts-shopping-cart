@@ -1,3 +1,4 @@
+import React from "react";
 import { itemsBrands } from "../assets/itemsList";
 import { setBrands } from "../redux/filterSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,12 +8,12 @@ import styles from '../styles/serviceFilter.module.css'
 
 const BrandFilter = () => {
     const [show, setShow] = useState(true);
-    const checked = useSelector(state => state.filter.brands);
+    const checked = useSelector((state: any) => state.filter.brands);
     const dispatch = useDispatch();
 
     return (
         <div>
-            <Drop values={{ title: 'Brands', show, setShow }}/>
+            <Drop {...{title: 'Brands', show, setShow}}/>
             {(show) ? (itemsBrands.map(item => {
                 return(
                     <div key={`${item.brand}Opt`} className={styles.option}>

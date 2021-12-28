@@ -1,3 +1,4 @@
+import React from "react";
 import { useDispatch } from "react-redux";
 import { setDisplay } from "../redux/displaySlice";
 import styles from '../styles/display.module.css';

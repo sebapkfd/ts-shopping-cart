@@ -9,7 +9,7 @@ const Navbar = () =>{
     const [style, setStyle] = useState('container');
 
     useEffect(() => {
-        if (location.pathname === '/shopping-cart/catalog' || location.pathname === '/shopping-cart/cart') {
+        if (location.pathname === '/ts-shopping-cart/catalog' || location.pathname === '/ts-shopping-cart/cart') {
             setStyle('#f3f6fb');
         }
         else {
@@ -18,17 +18,17 @@ const Navbar = () =>{
     }, [location])
 
     return (
-        <div className={styles.container} style={{backgroundColor: [style]}}>
+        <div className={styles.container} style={{backgroundColor: style}}>
             <div>
-                <Link to='/shopping-cart'>
+                <Link to='/ts-shopping-cart'>
                     <p className={styles.homeLink}>Home</p>
                 </Link>
             </div>
             <div className={styles.options}>
-                <Link to='/shopping-cart/catalog'>
+                <Link to='/ts-shopping-cart/catalog'>
                     <p>Catalog</p>
                 </Link>
-                <Link to='/shopping-cart/cart'>
+                <Link to='/ts-shopping-cart/cart'>
                     <p>Cart</p>
                 </Link>
                 <div className={styles.cartIcon}>

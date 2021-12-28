@@ -230,19 +230,19 @@ export const itemsList = [
     }
 ];
 
-export const itemsBrands = [...new Set(itemsList.map(item => item.brand))].map(brand => {
+export const itemsBrands = Array.from(new Set(itemsList.map(item => item.brand))).map(brand => {
     return {
         brand, amount: itemsList.reduce((acc, cv) => (cv.brand === brand) ? acc + 1 : acc, 0)
     }
 })
 
-export const itemsRam = [...new Set(itemsList.map(item => item.ram))].sort((a,b) => a - b).map(ram => {
+export const itemsRam = Array.from(new Set(itemsList.map(item => item.ram))).sort((a,b) => a - b).map(ram => {
     return {
         ram, amount: itemsList.reduce((acc, cv) => (cv.ram >= ram) ? acc + 1 : acc, 0)
     }
 })
 
-export const itemsStorage = [...new Set(itemsList.map(item => item.storage))].sort((a,b) => a - b).map(storage => {
+export const itemsStorage = Array.from(new Set(itemsList.map(item => item.storage))).sort((a,b) => a - b).map(storage => {
     return {
         storage, amount: itemsList.reduce((acc, cv) => (cv.storage >= storage) ? acc + 1 : acc, 0)
     }

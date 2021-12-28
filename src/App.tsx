@@ -11,10 +11,10 @@ const App = () => {
     <BrowserRouter>
       <Navbar />
       <Switch>
-        <Route exact path="/shopping-cart/catalog" component={Catalog} />
-        <Route exact path="/shopping-cart/cart" component={Cart} />
-        <Route exact path="/shopping-cart/catalog/:id" component={ItemPage} />
-        <Route path="/shopping-cart/" component={Home} />
+        <Route exact path="/ts-shopping-cart/catalog" component={Catalog} />
+        <Route exact path="/ts-shopping-cart/cart" component={Cart} />
+        <Route exact path="/ts-shopping-cart/catalog/:id" component={ItemPage} />
+        <Route path="/ts-shopping-cart/" component={Home} />
       </Switch>
     </BrowserRouter>
   );

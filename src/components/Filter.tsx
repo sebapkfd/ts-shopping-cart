@@ -1,3 +1,4 @@
+import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { clearFilter } from "../redux/filterSlice";
 import { itemsStorage, itemsRam } from "../assets/itemsList";
@@ -11,17 +12,17 @@ import styles from '../styles/filter.module.css';
 
 const Filter = () => {
     const [show, setShow] = useState(window.innerWidth > 600);
-    const state = useSelector(state => state.filter);
+    const state = useSelector((state: any )=> state.filter);
     const dispatch = useDispatch();
 
-    const handleClear = (e) => {
+    const handleClear = (e: any) => {
         e.preventDefault();
         dispatch(clearFilter());
     }
 
     return (
         <form className={styles.container}>
-            <Drop values={{ title: 'Filter by', show, setShow }}/>
+            <Drop {...{ title: 'Filter by', show, setShow }}/>
             {(show) ? (
                 <div className={styles.content}>
                     <Input defaultVal={state.minPrice} name={'minPrice'} />

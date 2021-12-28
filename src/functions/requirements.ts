@@ -1,4 +1,4 @@
-const requeriments = (element, filter) => {
+const requeriments = (element: any, filter: any) => {
     return (
         element.price >= filter.minPrice && 
         element.price <= filter.maxPrice && 

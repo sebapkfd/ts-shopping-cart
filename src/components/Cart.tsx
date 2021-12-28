@@ -6,18 +6,18 @@ import Display from './Display';
 import styles from '../styles/cart.module.css';
 
 const Cart = () => {
-    const selectedItems = useSelector(state => state.cart)
-    const prices = selectedItems.map(item => item.price*item.amount);
-    const totalToPay = (prices.length > 0) ? prices.reduce((acc, cv) => acc + cv) : 0;
+    const selectedItems = useSelector((state: any) => state.cart)
+    const prices = selectedItems.map((item: any) => item.price*item.amount);
+    const totalToPay = (prices.length > 0) ? prices.reduce((acc: number, cv: number) => acc + cv) : 0;
     const dispatch = useDispatch();
-    const display = useSelector(state => state.display.value);
+    const display = useSelector((state: any) => state.display.value);
 
-    const cleanItems = (e) => {
+    const cleanItems = (e: any) => {
         e.preventDefault();
         dispatch(clearCart());
     }
 
-    const payItems = (e) => {
+    const payItems = (e: any) => {
         if(totalToPay > 0){
             alert('Thanks for your purchase!');
             cleanItems(e);
@@ -34,7 +34,7 @@ const Cart = () => {
             {(selectedItems.length > 0) ? <Display /> : null}
             {(selectedItems.length > 0) ? (
                 <div className={styles[display]}>
-                    {selectedItems.map(item =>{
+                    {selectedItems.map((item: any) =>{
                         return <CartItem item={item} key={item.id} />
                     })}
                 </div>

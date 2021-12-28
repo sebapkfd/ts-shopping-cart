@@ -1,18 +1,19 @@
+import React from "react";
 import Item from "./Item";
 import { useDispatch, useSelector } from "react-redux";
 import { itemRemoved } from "../redux/cartSlice";
 import { changeAmount } from "../redux/cartSlice";
 import styles from '../styles/cartItem.module.css';
 
-const CartItem = ({ item }) => {
+const CartItem = ({ item }: any) => {
     const dispatch = useDispatch();
-    const display = useSelector(state => state.display.value);
+    const display = useSelector((state: any) => state.display.value);
 
     const removeitem = () => {
         dispatch(itemRemoved({id: item.id}));
     }
 
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         dispatch(changeAmount({id: item.id, amount: parseInt(e.target.value)}));
     }
 
@@ -27,7 +28,7 @@ const CartItem = ({ item }) => {
                     defaultValue={item.amount} 
                     min="1"
                     max="5"
-                    onChange={e => handleChange(e)}
+                    onChange={(e: any) => handleChange(e)}
                     />
                 <p>Total price: US$ {item.price*item.amount}</p>
                 <button onClick={() => removeitem()}>

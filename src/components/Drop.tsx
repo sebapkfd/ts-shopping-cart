@@ -1,6 +1,13 @@
+import React from "react";
 import styles from '../styles/filter.module.css';
 
-const Drop = ({ values: { title, show, setShow } }) => {
+interface Values {
+    title: string,
+    show: boolean,
+    setShow: (value: boolean) => void,
+}
+
+const Drop = ({ title, show, setShow }: Values ) => {
     const expandLogo = <span className="material-icons">expand_more</span>
     const hideLogo = <span className="material-icons">expand_less</span>
     

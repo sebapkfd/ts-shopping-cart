@@ -8,8 +8,8 @@ import Display from './Display';
 import styles from '../styles/catalog.module.css';
 
 const Catalog = () => {
-    const filter = useSelector(state => state.filter);
-    const display = useSelector(state => state.display.value);
+    const filter = useSelector((state: any) => state.filter);
+    const display = useSelector((state: any) => state.display.value);
     const filteredList = itemsList.filter(element => requeriments(element, filter));
 
     return(

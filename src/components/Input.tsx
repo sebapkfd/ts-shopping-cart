@@ -1,9 +1,15 @@
+import React from "react";
 import { useDispatch } from "react-redux";
 import { setNewFilter } from "../redux/filterSlice";
 import { startCase } from "lodash";
 import styles from '../styles/filter.module.css';
 
-const Input = ({ defaultVal, name }) => {
+interface Values {
+    defaultVal: number,
+    name: string
+}
+
+const Input = ({ defaultVal, name }: Values) => {
     const dispatch = useDispatch();
 
     return (
